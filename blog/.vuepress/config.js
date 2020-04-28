@@ -12,6 +12,7 @@ module.exports = {
   ],
   title: 'Rafael Neto',
   description: 'Apuntes de un programador Full Stack, .NET, JavaScript, HTML, CSS',
+  base: '/blog/',
   theme: '@vuepress/theme-blog',
   themeConfig: {
     /**
