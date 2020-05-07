@@ -82,7 +82,9 @@ module.exports = {
             buttonText: "Actualizar"
           }
         }
-      },
+      }
+    ],
+    [
       '@vuepress/google-analytics',
       {
         'ga': 'UA-164903805-1'
