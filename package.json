@@ -1,7 +1,7 @@
 {
   "name": "rneto-es-blog-vuepress",
   "version": "0.0.1",
-  "description": "Rafael Neto, apuntes de un programador Full Stack, .NET, JavaScript, HTML, CSS",
+  "description": "Rafael Neto. Apuntes de un programador Full Stack, JavaScript, HTML, CSS, .NET",
   "main": "index.js",
   "authors": {
     "name": "Rafael Neto"

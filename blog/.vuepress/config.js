@@ -11,7 +11,7 @@ module.exports = {
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   title: 'Rafael Neto',
-  description: 'Apuntes de un programador Full Stack, .NET, JavaScript, HTML, CSS',
+  description: 'Apuntes de un programador Full Stack, JavaScript, HTML, CSS, .NET',
   base: '/blog/',
   theme: '@vuepress/theme-blog',
   themeConfig: {
@@ -68,7 +68,7 @@ module.exports = {
     '/': {
       lang: 'es',
       title: 'Rafael Neto',
-      description: 'Apuntes de un programador Full Stack, .NET, JavaScript, HTML, CSS',
+      description: 'Apuntes de un programador Full Stack, JavaScript, HTML, CSS, .NET',
     }
   },
   plugins: [
