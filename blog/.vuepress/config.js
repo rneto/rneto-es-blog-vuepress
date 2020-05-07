@@ -48,12 +48,6 @@ module.exports = {
           link: 'https://twitter.com/rneto',
         },
       ],
-      copyright: [
-        {
-          text: 'Copyright © 2020-presente',
-          link: '',
-        },
-      ],
     },
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#feed
@@ -63,6 +57,10 @@ module.exports = {
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#smoothscroll
      */
     smoothScroll: true,
+    /**
+     * Ref: https://vuepress-theme-blog.ulivz.com/config/#dateformat
+     */
+    dateFormat: 'MMM DD YYYY',
   },
   locales: {
     '/': {
@@ -76,12 +74,7 @@ module.exports = {
       '@vuepress/pwa',
       {
         serviceWorker: true,
-        updatePopup: {
-          '/': {
-            message: "Nuevo contenido disponible.",
-            buttonText: "Actualizar"
-          }
-        }
+        updatePopup: false
       }
     ],
     [
