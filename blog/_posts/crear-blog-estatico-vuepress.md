@@ -1,5 +1,5 @@
 ---
-date: 2020-5-07
+date: 2020-5-08
 tags: 
   - vuepress
   - vuejs
@@ -46,9 +46,9 @@ Paso 2. Ejecutar y crear
 ``` bash
 # Ejecutar localhost
 yarn dev
+# Por defecto, el servidor de desarrollo de VuePress estará escuchando en http://localhost:8080/
 
 # Crear el blog
 yarn build
+# Los archivos del blog se habrán generado en la carpeta `.vuepress/dist`.
 ```
-
-Por defecto, el servidor de desarrollo de VuePress estará escuchando en http://localhost:8080/, y los archivos del blog se habrán generado en la carpeta `.vuepress/dist`.
