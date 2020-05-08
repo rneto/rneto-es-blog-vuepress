@@ -7,6 +7,8 @@ tags:
 permalink: /:slug
 ---
 
+<social-share class="social-share--header" />
+
 # Crear un blog estático con VuePress
 
 [VuePress](https://vuepress.vuejs.org) es un potente generador de sitios web estáticos basado en [Vue.js](https://vuejs.org/). Combina el uso de **markdown**, **Vue** y **webpack** para generar HTML estático pre-renderizado para cada página, que se ejecuta como una SPA una vez Vue toma el control tras la carga de una página.
@@ -52,3 +54,6 @@ yarn dev
 yarn build
 # Los archivos del blog se habrán generado en la carpeta `.vuepress/dist`.
 ```
+
+---
+<social-share class="social-share--footer" />

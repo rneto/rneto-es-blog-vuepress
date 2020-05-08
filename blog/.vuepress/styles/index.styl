@@ -16,7 +16,18 @@ body,
 .ui-post-title,
 .ui-post-title a,
 .vuepress-blog-theme-content
-  font-family 'Open Sans', sans-serif !important
+  font-family: 'Open Sans', sans-serif !important
 
 .home .hero img
-  max-width 450px!important
+  max-width: 450px!important
+
+.social-share--header
+  position: absolute
+  right: 0
+  @media (min-width: $MQNarrow)
+    right: 2rem
+  @media (max-width: $MQMobileNarrow)
+    right: 1.5rem
+
+.social-share--footer
+  text-align: center

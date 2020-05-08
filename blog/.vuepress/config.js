@@ -82,6 +82,16 @@ module.exports = {
       {
         'ga': 'UA-164903805-1'
       }
-    ]
+    ],
+    [
+      'social-share',
+      {
+        networks: ['twitter'],
+        twitterUser: 'rneto',
+        fallbackImage: '/images/logo.png',
+        isPlain: false,
+        noGlobalSocialShare: true,
+      },
+    ],
   ],
 }
