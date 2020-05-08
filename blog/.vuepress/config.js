@@ -99,7 +99,3 @@ module.exports = {
     ],
   ],
 }
-        {
-          type: 'web',
-          link: 'https://rneto.es',
-        },
