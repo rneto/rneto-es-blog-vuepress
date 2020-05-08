@@ -40,6 +40,10 @@ module.exports = {
     footer: {
       contact: [
         {
+          type: 'web',
+          link: 'https://rneto.es',
+        },
+        {
           type: 'github',
           link: 'https://github.com/rneto',
         },
@@ -95,3 +99,7 @@ module.exports = {
     ],
   ],
 }
+        {
+          type: 'web',
+          link: 'https://rneto.es',
+        },
