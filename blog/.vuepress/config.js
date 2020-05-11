@@ -78,7 +78,12 @@ module.exports = {
       '@vuepress/pwa',
       {
         serviceWorker: true,
-        updatePopup: false
+        updatePopup: {
+          '/': {
+            message: "Nuevo contenido disponible.",
+            buttonText: "Actualizar"
+          }
+        }
       }
     ],
     [
