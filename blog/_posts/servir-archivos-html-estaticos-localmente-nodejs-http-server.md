@@ -13,7 +13,7 @@ permalink: /:slug
 
 A menudo necesitamos servir localmente ficheros HTML estáticos, sin tener que instalar y configurar un servidor HTTP para un contenido tan simple.
 
-Una alternativa podría ser abrir el fichero HTML en nuestro navegador web favorito o hacer uso de la extensión de Google Chrome [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb), sin embargo, si queremos dar pasos hacía [Node.js](https://nodejs.org/en/) y aprovechar su potencial, una de las formas más sencillas de servir localmente el contenido de un directorio es usando el paquete **[http-server](https://www.npmjs.com/package/http-server)** que nos ofrece un **servidor HTTP sencillo, potente y con cero esfuerzo en cuanto a configuración inicial**.
+Algunas alternativas rápidas podrían ser abrir directamente el fichero HTML en nuestro navegador web favorito, hacer uso de la extensión [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb) de Google Chrome o usar la extensión [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) de Visual Studio Code, sin embargo, si queremos dar pasos hacia [Node.js](https://nodejs.org/en/) y aprovechar su potencial, una de las formas más sencillas de servir localmente el contenido de un directorio es usando el paquete **[http-server](https://www.npmjs.com/package/http-server)** que nos ofrece un **servidor HTTP sencillo, potente y con cero esfuerzo en cuanto a configuración inicial**.
 
 Lo primero que debes hacer es instalar el paquete. Puedes hacerlo globalmente si deseas servir el contenido de cualquier directorio.
 
