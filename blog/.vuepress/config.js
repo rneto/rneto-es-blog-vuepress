@@ -102,5 +102,11 @@ module.exports = {
         noGlobalSocialShare: true,
       },
     ],
+    [
+      'sitemap',
+      {
+        hostname: 'https://rneto.es/blog'
+      }
+    ]
   ],
 }
