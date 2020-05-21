@@ -6,7 +6,7 @@ tags:
 permalink: /:slug
 ---
 
-# Usar tareas y comandos npm en Visual Studio (2015, 2017, 2019)
+# Usar tareas y comandos npm en Visual Studio (2019, 2017, 2015)
 
 <social-share class="social-share--header" />
 
