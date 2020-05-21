@@ -18,7 +18,7 @@ Para ello es posible automatizar el uso de nuestro fichero _package.json_ a trav
 
 Lo que primero tendremos que hacer es instalar la extensión [NPM Task Runner](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.NPMTaskRunner). Con ella visualizaremos tanto los scripts predeterminados _install_ y _update_ de npm, así como los scripts personalizados que hayamos definido en nuestro fichero _package.json_.
 
-![Visual Studio Task Runner Explorer](/images/vs2019-task-runner-explorer.png)
+![Visual Studio Task Runner Explorer](/blog/images/vs2019-task-runner-explorer.png)
 
 Podemos acceder al Explorador del Ejecutador de tareas (_Task Runner Explorer_) desde el menú contextual al pulsar con el botón derecho sobre nuestro fichero _package.json_.
 
@@ -28,7 +28,7 @@ Es posible ejecutar los scrips desde el explorador haciendo doble click sobre el
 
 También es posible programar la ejecución de los scrips asociándolos a diferentes operaciones del proyecto (podemos asociar varias operaciones a cada script): _Antes de la compilación_ (_Before Build_), _Después de la compilación_ (_After Build_), _Limpiar compilación_ (_Clean Build_) o _Proyecto abierto_ (_Project Open_).
 
-![Visual Studio Task Runner Explorer Bindings](/images/vs2019-task-runner-explorer-bindings.png)
+![Visual Studio Task Runner Explorer Bindings](/blog/images/vs2019-task-runner-explorer-bindings.png)
 
 ## Problemas con NPM Task Runner, Visual Studio 2019 y ASP.NET Core
 
