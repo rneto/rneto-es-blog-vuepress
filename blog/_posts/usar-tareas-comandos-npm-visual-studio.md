@@ -32,9 +32,9 @@ También es posible programar la ejecución de los scrips asociándolos a difere
 
 ## Problemas con NPM Task Runner, Visual Studio 2019 y ASP.NET Core
 
-Cuando nuestro fichero _package.json_ esté ubicado en la carpeta _wwwroot_ (u otra carpeta que no sea la raíz del proyecto) el Explorador del Ejecutador de tareas (_Task Runner Explorer_) no lo reconocerá, por lo que deberemos moverlo a la ruta raíz del proyecto y redefinir nuestros scripts para que tengan en cuenta la ruta de nuestros recursos.
+Cuando nuestro fichero _package.json_ esté ubicado en la carpeta _wwwroot_ (u otra carpeta que no sea la raíz del proyecto), el Explorador del Ejecutador de tareas (_Task Runner Explorer_) no lo reconocerá, por lo que deberemos crear un segundo _package.json_ en la ruta raíz del proyecto en el que redefiniremos nuestros scripts.
 
-Una vez movido el fichero _package.json_ a la ruta raíz del proyecto, debemos establecer la ruta de ejecución del script. En el siguiente ejemplo se ha añadido ```cd wwwroot && ``` al script _build_ para el empaquetado con [Webpack](./usar-webpack-4-transformar-empaquetar-recursos-aplicacion-web.md).
+En el nuevo fichero _package.json_ estableceremos la ruta de ejecución del script en base a nuestros recursos. Así pues, en el siguiente ejemplo añadiremos ```cd wwwroot && ``` al principio del script _build_ para el empaquetado con [Webpack](./usar-webpack-4-transformar-empaquetar-recursos-aplicacion-web.md) de nuestros recursos.
 
 ``` bash
 {
