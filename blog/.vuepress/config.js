@@ -123,5 +123,8 @@ module.exports = {
         canonical_base: 'https://rneto.es/blog',
       }
     ],
+    [
+      'seo'
+    ],
   ],
 }
