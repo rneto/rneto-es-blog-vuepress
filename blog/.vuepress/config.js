@@ -56,6 +56,10 @@ module.exports = {
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#feed
      */
+    canonical_base: 'https://rneto.es/blog',
+    /**
+     * Ref: https://vuepress-theme-blog.ulivz.com/config/#summary
+     */
     summary: false,
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#smoothscroll
@@ -116,20 +120,6 @@ module.exports = {
     ],
     [
       'reading-progress'
-    ],
-    [ 
-      'feed', 
-      {
-        canonical_base: 'https://rneto.es/blog',
-        feeds: {
-          atom1: {
-            enable: false,
-          },
-          json1: {
-            enable: false,
-          },
-        },
-      }
     ],
     [
       'seo'
