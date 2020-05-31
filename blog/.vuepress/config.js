@@ -57,6 +57,9 @@ module.exports = {
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#feed
      */
     canonical_base: 'https://rneto.es/blog',
+    rss: true,
+    atom: false,
+    json: false,
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#summary
      */
