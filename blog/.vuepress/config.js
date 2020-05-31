@@ -107,6 +107,9 @@ module.exports = {
       {
         hostname: 'https://rneto.es/blog'
       }
+    ],
+    [
+      '@vuepress/back-to-top'
     ]
   ],
 }
