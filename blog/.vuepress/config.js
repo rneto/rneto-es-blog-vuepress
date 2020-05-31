@@ -121,11 +121,13 @@ module.exports = {
       'feed', 
       {
         canonical_base: 'https://rneto.es/blog',
-        atom1: {
-          enable: false,
-        },
-        json1: {
-          enable: false,
+        feeds: {
+          atom1: {
+            enable: false,
+          },
+          json1: {
+            enable: false,
+          },
         },
       }
     ],
