@@ -60,7 +60,11 @@ module.exports = {
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#summary
      */
-    summary: false,
+    summary: true,
+    /**
+     * Ref: https://vuepress-theme-blog.ulivz.com/config/#summaryLength
+     */
+    summaryLength: 250,
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#smoothscroll
      */
