@@ -7989,6 +7989,13 @@ vuepress-plugin-mailchimp@^1.4.1:
     jsonp "^0.2.1"
     query-string "^6.9.0"
 
+vuepress-plugin-nprogress@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-nprogress/-/vuepress-plugin-nprogress-1.1.7.tgz#53c5d7606e121c9c29f93b76e58bd6b3f6ac2a28"
+  integrity sha512-QbmCf50r5klCV8AxrN0NTXwORu0UlL+1bRZurPBfut98BvcgjyWqHM29UH1QggtxJFKkM1N4TFAfXQQg4qAQbg==
+  dependencies:
+    nprogress "^0.2.0"
+
 vuepress-plugin-sitemap@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-sitemap/-/vuepress-plugin-sitemap-2.3.1.tgz#51298aca77a5de96396fdbd1103e1637dd61ae6a"
