@@ -114,5 +114,8 @@ module.exports = {
     [
       'vuepress-plugin-nprogress'
     ],
+    [
+      'reading-progress'
+    ],
   ],
 }
