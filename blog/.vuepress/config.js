@@ -117,5 +117,11 @@ module.exports = {
     [
       'reading-progress'
     ],
+    [ 
+      'feed', 
+      {
+        canonical_base: 'https://rneto.es/blog',
+      }
+    ],
   ],
 }
