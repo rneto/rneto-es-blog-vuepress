@@ -24,9 +24,9 @@ Podemos acceder al Explorador del Ejecutador de tareas (_Task Runner Explorer_) 
 
 ## Ejecución y programación de scripts
 
-Es posible ejecutar los scrips desde el explorador haciendo doble click sobre ellos o con el botón derecho y la opción _Ejecutar_ (_Run_).
+Es posible ejecutar los scripts desde el explorador haciendo doble click sobre ellos o con el botón derecho y la opción _Ejecutar_ (_Run_).
 
-También es posible programar la ejecución de los scrips asociándolos a diferentes operaciones del proyecto (podemos asociar varias operaciones a cada script): _Antes de la compilación_ (_Before Build_), _Después de la compilación_ (_After Build_), _Limpiar compilación_ (_Clean Build_) o _Proyecto abierto_ (_Project Open_).
+También es posible programar la ejecución de los scripts asociándolos a diferentes operaciones del proyecto (podemos asociar varias operaciones a cada script): _Antes de la compilación_ (_Before Build_), _Después de la compilación_ (_After Build_), _Limpiar compilación_ (_Clean Build_) o _Proyecto abierto_ (_Project Open_).
 
 ![Visual Studio Task Runner Explorer Bindings](/blog/images/vs2019-task-runner-explorer-bindings.png)
 
