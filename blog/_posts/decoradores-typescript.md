@@ -2,7 +2,7 @@
 date: 2020-6-24
 tags: 
   - typescript
-  - patrones de diseño
+  - patron-de-diseno
 permalink: /:slug
 ---
 
