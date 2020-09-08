@@ -11,13 +11,13 @@ permalink: /15-mejores-extensiones-visual-studio-code-desarrollo-web
 
 Uso con asiduidad [Visual Studio Code](https://code.visualstudio.com/) tanto como editor de código fuente en proyectos web, como para la manipulación de ficheros de diferentes tipos. Creo sinceramente que es una gran herramienta que deberías probar pues tiene visos de convertirse (si no lo es ya) en **el mejor editor de código fuente, especialmente para el Desarrollo Web**.
 
-Como buen editor cabe la posibilidad de enriquecerlo con la instalación de extensiones disponibles en su [Marketplace](https://marketplace.visualstudio.com/VSCode) y que nos permiten agregarle idiomas, temas y muchos servicios adicionales. Además de ello, cabe destacar que cada extensión se ejecuta en un proceso separado, lo que ayuda a no ralentizar el rendimiento del propio editor.
+Como buen editor cabe la posibilidad de enriquecerlo con la instalación de extensiones que están disponibles en su [Marketplace](https://marketplace.visualstudio.com/VSCode) y que nos permiten agregarle idiomas, temas y muchos servicios adicionales. Además de esto, cabe destacar que cada extensión se ejecuta en un proceso separado, lo que ayuda a no ralentizar el rendimiento del propio editor.
 
 Aquí dejo una lista de las que considero las 15 mejores extensiones de Visual Studio Code para aumentar nuestra productividad con este maravilloso editor.
 
 ## 1. ESLint (Dirk Baeumer)
 
-[ESList](https://eslint.org/) es un analizador de código que nos permite escribir código de calidad. Con esta extensión y una configuración básica que deberás crear en tu proyecto, Visual Studio Code te permitirá analizar e identificar problemas en tu código JavaScript y Typescript antes de ejecutarlo.
+[ESLint](https://eslint.org/) es un analizador de código que nos permite escribir código de calidad. Con esta extensión y una configuración básica que deberás crear en tu proyecto, Visual Studio Code te permitirá analizar e identificar problemas en tu código JavaScript y Typescript antes de ejecutarlo.
 
 [ESLint (Dirk Baeumer)](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
@@ -79,7 +79,7 @@ Podríamos considerar esta extensión como una caja de herramientas para [Vue.js
 
 ## 11. i18n Ally (Anthony Fu)
 
-Puedes considerar esta extensión como un todo en uno para la internalización de ficheros desde Visual Studio Code ya que te ayudará a trabajar con tus ficheros de traducción desde múltiples frameworks.
+Puedes considerar esta extensión como un todo en uno para la internalización de ficheros desde Visual Studio Code, ya que te ayudará a trabajar con tus ficheros de traducción desde múltiples frameworks.
 
 [i18n Ally (Anthony Fu)](https://marketplace.visualstudio.com/items?itemName=antfu.i18n-ally)
 
@@ -104,7 +104,7 @@ A falta de soporte nativo en Visual Studio Code para ficheros Stylus, esta exten
 
 ## 15. Spanish Language Pack for Visual Studio Code (Microsoft)
 
-Me gusta hacer uso del inglés en mi día a día como desarrolador de software, así que personalmente prefiero programar en inglés y la versión también en inglés de mis aplicaciones como Visual Studio Code, pero si todavía no quieres dar ese paso, puedes instalarte esta extensión que te permitirá tenerlo completamente personalizado en Español.
+Me gusta hacer uso del inglés en mi día a día como desarrolador de software, así que personalmente prefiero programar en inglés y la versión también en inglés de mis aplicaciones como Visual Studio Code, pero si todavía no quieres dar ese paso, puedes instalarte esta extensión que te permitirá tenerlo completamente personalizado en español.
 
 [Spanish Language Pack for Visual Studio Code (Microsoft)](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-es)
 
