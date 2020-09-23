@@ -1,6 +1,6 @@
 ---
 date: 2020-9-8
-tags: 
+tags:
   - visualstudiocode
 permalink: /15-mejores-extensiones-visual-studio-code-desarrollo-web
 ---
@@ -63,7 +63,7 @@ Esta extensión ofrece de una manera muy rápida un servidor de desarrollo en vi
 
 [Live Server (Ritwick Dey)](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
-> Si además quieres conocer otras alternativas para servir archivos HTML estáticos desde Visual Studio Code, echa un vistazo a este otro artículo [Servir archivos HTML estáticos localmente con Node.js y http-server(./servir-archivos-html-estaticos-localmente-nodejs-http-server.md).
+> Si además quieres conocer otras alternativas para servir archivos HTML estáticos desde Visual Studio Code, echa un vistazo a este otro artículo [Servir archivos HTML estáticos localmente con Node.js y http-server](./servir-archivos-html-estaticos-localmente-nodejs-http-server.md).
 
 ## 9. Angular Essentials (Version 9) (johnpapa.angular-essentials)
 
