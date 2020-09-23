@@ -23,7 +23,7 @@ El [patrón Bridge](https://en.wikipedia.org/wiki/Bridge_pattern) es uno de los 
 
 Si consideramos nuestro algoritmo de ordenación como una clase abstracta basada en el principio de _Divide y vencerás_ (_Divide and conquer_ en inglés) donde rompemos y ordenamos la matriz de manera recursiva, podríamos tener diferentes implementaciones de ordenación, tanto para el algoritmo Quicksort, como para otros algoritmos basados en el mismo principio como [Merge sort](https://en.wikipedia.org/wiki/Merge_sort) o [Binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm) entre otros. Es por ello que he considerado usar el patrón Bridge como solución para esta demostración.
 
-## Interfaz de comportamiento, la implementación
+## Interfaz de comportamiento: _la implementación_
 
 Empezaremos por definir la interfaz que describe el comportamiento específico de nuestra necesidades, en nuestro caso, el algoritmo de ordenación. A partir de ella definiremos múltiples implementaciones concretas que se adaptarán al contrato definido por la interfaz.
 
@@ -34,7 +34,7 @@ export interface SorterAlgorithmInterface {
 ```
 _sorter-algorithm.interface.ts_
 
-## Clase _Divide y vencerás_: la abstracción
+## Divide y vencerás: _la abstracción_
 
 En segundo lugar definiremos la clase que ofrece el API de ordenación. Será una clase creada como abstracta y que tendrá una referencia a la implementación a través de una propiedad en la clase, por lo que no conocerá los detalles de dicha implementación de ordenación.
 
@@ -66,7 +66,7 @@ export abstract class DivideConquerSorter {
 ```
 _divide-conquer.sorter.ts_
 
-## Clase Quicksort de ordenación: extendiendo la abstracción
+## Quicksort de ordenación: _extendiendo la abstracción_
 
 Ahora vamos a crear la clase de ordenación Quisort sin modificar la implementación de la clase para simplificar el ejemplo, sin embaro podríamos hacer operaciones adicionales específicas a nuestras necesidades.
 
@@ -79,9 +79,9 @@ export class QuicksortSorter extends DivideConquerSorter {
 ```
 _quicksort.sorter.ts_
 
-## Ordenaciones Lomuto y nativa: creando nuestras implementaciones
+## Lomuto & nativa: _creando implementaciones_
 
-En este ejemplo he decidido realizar dos implementaciones de ordenación distintas, una en base al esquema de ordenación de (Lomuto)[https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme] y otra basada en la ordenación nativa del navegador para que podamos comparar la velocidad de ejecución de cada una de ellas.
+En este ejemplo he decidido realizar dos implementaciones distintas de ordenación, una en base al esquema de ordenación de (Lomuto)[https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme] y otra en base a la ordenación nativa del navegador para que podamos comparar la velocidad de ejecución de cada una de ellas.
 
 ``` ts
 import { SorterAlgorithmInterface } from '.';
@@ -136,7 +136,7 @@ export class NativeQuicksort implements SorterAlgorithmInterface {
 ```
 _native-quicksort.ts_
 
-## Clase cliente: usando nuestras implementaciones
+## Cliente: _uso de las implementaciones_
 
 Ya podemos hacer uso de nuestras clases y encajar todas las piezas.
 
