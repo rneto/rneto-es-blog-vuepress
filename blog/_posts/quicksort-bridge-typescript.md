@@ -144,6 +144,7 @@ Ya podemos hacer uso de nuestras clases y encajar todas las piezas.
 import { QuicksortSorter, omutoQuicksort, NativeQuicksort } from '.';
 
 const numbers: numbers[] = [1, -10, 4, 200];
+
 const lomutoQuicksort: LomutoQuicksort = new LomutoQuicksort();
 const nativeQuicksort: NativeQuicksort = new NativeQuicksort();
 
