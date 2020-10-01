@@ -80,11 +80,11 @@ _quicksort.sorter.ts_
 
 ## Básica & Lomuto & nativa: _creando implementaciones_
 
-Con el objetivo de comparar el rendimiento de diferentes implementaciones, he creado tres algoritmos distintos de ordenación basados en el mismo principio de _divide y vencerás_.
+Con el objetivo de comparar el rendimiento de diferentes implementaciones, he creado tres algoritmos distintos de ordenación basados en el mismo principio de _divide y vencerás_:
 
+1. En base a una interpretación básica de dicho principio de ordenación.
 1. En base al esquema de ordenación de [Lomuto](https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme).
 1. En base a la ordenación nativa de Chrome v8, el cual usa Quicksort para la implementación de _Array.sort_.
-1. En base a una interpretación básica de dicho principio de ordenación.
 
 ``` ts
 import { SorterAlgorithmInterface } from '.';
