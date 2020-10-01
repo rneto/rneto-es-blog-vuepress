@@ -75,13 +75,47 @@ import { DivideConquerSorter } from '.';
 
 export class QuicksortSorter extends DivideConquerSorter {
 }
-
 ```
 _quicksort.sorter.ts_
 
-## Lomuto & nativa: _creando implementaciones_
+## Básica & Lomuto & nativa: _creando implementaciones_
 
-En este ejemplo he decidido realizar dos implementaciones distintas de ordenación, una en base al esquema de ordenación de (Lomuto)[https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme] y otra en base a la ordenación nativa del navegador para que podamos comparar la velocidad de ejecución de cada una de ellas.
+Con el objetivo de comparar el rendimiento de diferentes implementaciones, he creado tres algoritmos distintos de ordenación basados en el mismo principio de _divide y vencerás_.
+
+1. En base al esquema de ordenación de [Lomuto](https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme).
+1. En base a la ordenación nativa de Chrome v8, el cual usa Quicksort para la implementación de _Array.sort_.
+1. En base a una interpretación básica de dicho principio de ordenación.
+
+``` ts
+import { SorterAlgorithmInterface } from '.';
+
+/**
+ * Basic quicksort algorithm implementation.
+ */
+export class BasicQuicksort implements SorterAlgorithmInterface {
+  sort(numbers: number[]): void {
+    if (numbers.length <= 1) {
+      return;
+    }
+
+    const pivot = numbers[numbers.length - 1];
+    const left = numbers.filter((n) => n < pivot);
+    const right = numbers.filter((n) => n > pivot);
+
+    this.sort(left);
+    this.sort(right);
+
+    numbers.splice(
+      0,
+      numbers.length,
+      ...left,
+      ...numbers.filter((n) => n === pivot),
+      ...right,
+    );
+  }
+}
+```
+_basic-quicksort.ts_
 
 ``` ts
 import { SorterAlgorithmInterface } from '.';
@@ -117,12 +151,12 @@ export class LomutoQuicksort implements SorterAlgorithmInterface {
 ```
 _lomuto-quicksort.ts_
 
-
 ``` ts
 import { SorterAlgorithmInterface } from '.';
 
 /**
  * Native quicksort algorithm implementation.
+ * Chrome v8 uses QuickSort for Array.sort implementation.
  */
 export class NativeQuicksort implements SorterAlgorithmInterface {
   sort(numbers: number[]): void {
@@ -141,16 +175,19 @@ _native-quicksort.ts_
 Ya podemos hacer uso de nuestras clases y encajar todas las piezas.
 
 ``` ts
-import { QuicksortSorter, omutoQuicksort, NativeQuicksort } from '.';
+import { QuicksortSorter, BasicQuicksort, LomutoQuicksort, NativeQuicksort } from '.';
 
-const numbers: numbers[] = [1, -10, 4, 200];
+const numbers: numbers[] = [1, -10, 4, 5, -1515, 3, 3, 3, 0, 0, 200];
 
+const basicQuicksort: BasicQuicksort = new BasicQuicksort();
 const lomutoQuicksort: LomutoQuicksort = new LomutoQuicksort();
 const nativeQuicksort: NativeQuicksort = new NativeQuicksort();
 
+const quickSorterServiceWithBasic: QuicksortSorter = new QuicksortSorter(basicQuicksort);
 const quickSorterServiceWithLomuto: QuicksortSorter = new QuicksortSorter(lomutoQuicksort);
 const quickSorterServiceWithNative: QuicksortSorter = new QuicksortSorter(nativeQuicksort);
 
+quickSorterServiceWithBasic.sort(numbers);
 quickSorterServiceWithLomuto.sort(numbers);
 quickSorterServiceWithNative.sort(numbers);
 ```
@@ -158,7 +195,7 @@ _index.ts_
 
 ## Ejemplo completo con prueba de rendimiendo
 
-He creado un proyecto TypeScript con un [ejemplo práctico de implementaciones del algoritmo QuickSort y uso del patrón Bridge con TypeScript](https://github.com/rneto/ts-quicksort-bridge).
+Puedes acceder al proyecto que he creado con un [ejemplo práctico de implementaciones del algoritmo Quicksort y uso del patrón Bridge con TypeScript](https://github.com/rneto/ts-quicksort-bridge) en GitHub.
 
 ---
 <social-share class="social-share--footer" />
