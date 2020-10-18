@@ -12,7 +12,7 @@ module.exports = {
   ],
   title: 'Rafael Neto',
   description: 'Apuntes de un programador Full Stack, JavaScript, HTML, CSS, .NET',
-  base: '/blog/',
+  base: '/',
   theme: '@vuepress/theme-blog',
   themeConfig: {
     /**
@@ -121,8 +121,8 @@ module.exports = {
     [
       'reading-progress'
     ],
-    [ 
-      'feed', 
+    [
+      'feed',
       {
         canonical_base: 'https://rneto.es/blog',
         feeds: {
