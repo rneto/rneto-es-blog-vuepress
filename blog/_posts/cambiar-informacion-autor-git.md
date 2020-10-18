@@ -2,7 +2,7 @@
 date: 2020-6-5
 tags:
   - git
-permalink: /:slug
+permalink: /blog/:slug
 ---
 
 # Cambiar la información del autor en Git

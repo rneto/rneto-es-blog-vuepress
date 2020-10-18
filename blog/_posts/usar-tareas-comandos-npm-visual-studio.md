@@ -3,7 +3,7 @@ date: 2020-5-21
 tags:
   - npm
   - visualstudio
-permalink: /:slug
+permalink: /blog/:slug
 ---
 
 # Usar tareas y comandos npm en Visual Studio (2019, 2017, 2015)

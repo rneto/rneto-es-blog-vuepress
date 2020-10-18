@@ -2,7 +2,7 @@
 date: 2020-9-8
 tags:
   - visualstudiocode
-permalink: /15-mejores-extensiones-visual-studio-code-desarrollo-web
+permalink: /blog/15-mejores-extensiones-visual-studio-code-desarrollo-web
 ---
 
 # Las 15 mejores extensiones de Visual Studio Code para el desarrollo web

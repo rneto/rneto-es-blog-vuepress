@@ -4,7 +4,7 @@ tags:
   - nodejs
   - npm
   - webpack
-permalink: /:slug
+permalink: /blog/:slug
 ---
 
 # Usar Webpack 4 para transformar y empaquetar recursos de una aplicación web

@@ -4,7 +4,7 @@ tags:
   - vuepress
   - vuejs
   - blog
-permalink: /:slug
+permalink: /blog/:slug
 ---
 
 # Crear un blog estático con VuePress

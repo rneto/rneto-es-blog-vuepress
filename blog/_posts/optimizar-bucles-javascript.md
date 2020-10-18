@@ -3,7 +3,7 @@ date: 2020-6-4
 tags:
   - javascript
   - es2015
-permalink: /:slug
+permalink: /blog/:slug
 ---
 
 # Optimizar bucles en JavaScript

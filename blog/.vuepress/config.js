@@ -27,19 +27,12 @@ module.exports = {
     directories: [
       {
         id: "blog",
-        dirname: "_blog",
-        title: "Post",
+        dirname: "_posts",
+        title: "Blog",
         path: "/blog/",
         itemPermalink: "/blog/:slug"
       }
     ],
-    /**
-     * https://vuepress-theme-blog.ulivz.com/config/#feed
-     */
-    feed: {
-      canonical_base: "https://rneto.es/",
-      posts_directories: ["/_blog/"]
-    },
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#nav
      */
@@ -58,10 +51,6 @@ module.exports = {
      */
     footer: {
       contact: [
-        {
-          type: 'web',
-          link: 'https://rneto.es',
-        },
         {
           type: 'github',
           link: 'https://github.com/rneto',
@@ -143,7 +132,7 @@ module.exports = {
     [
       'feed',
       {
-        canonical_base: 'https://rneto.es/blog',
+        canonical_base: 'https://rneto.es',
         feeds: {
           rss2: {
             enable: true,

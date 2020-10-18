@@ -4,7 +4,7 @@ tags:
   - algoritmo
   - typescript
   - patron-de-diseno
-permalink: /:slug
+permalink: /blog/:slug
 ---
 
 # Implementaciones del algoritmo QuickSort y uso del patrón Bridge con TypeScript

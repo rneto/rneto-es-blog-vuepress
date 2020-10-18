@@ -3,7 +3,7 @@ date: 2020-7-30
 tags:
   - css
   - html
-permalink: /:slug
+permalink: /blog/:slug
 ---
 
 # Cinco formas de centrar el texto en un div con CSS

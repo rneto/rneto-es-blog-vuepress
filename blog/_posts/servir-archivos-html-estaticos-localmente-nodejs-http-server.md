@@ -4,7 +4,7 @@ tags:
   - nodejs
   - npm
   - httpserver
-permalink: /:slug
+permalink: /blog/:slug
 ---
 
 # Servir archivos HTML estáticos localmente con Node.js y http-server

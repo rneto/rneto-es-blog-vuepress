@@ -2,7 +2,7 @@
 date: 2020-5-14
 tags:
   - git
-permalink: /:slug
+permalink: /blog/:slug
 ---
 
 # Configurar el usuario en Git

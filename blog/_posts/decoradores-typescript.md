@@ -3,7 +3,7 @@ date: 2020-6-24
 tags:
   - typescript
   - patron-de-diseno
-permalink: /:slug
+permalink: /blog/:slug
 ---
 
 # Decoradores en TypeScript

@@ -3,7 +3,7 @@ date: 2020-7-6
 tags:
   - aspnet
   - sqlserver
-permalink: /:slug
+permalink: /blog/:slug
 ---
 
 # Compartir la sesión entre aplicaciones web ASP.NET
