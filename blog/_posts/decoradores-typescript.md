@@ -1,6 +1,6 @@
 ---
 date: 2020-6-24
-tags: 
+tags:
   - typescript
   - patron-de-diseno
 permalink: /:slug
@@ -129,7 +129,7 @@ let user = new user();
 user.name = 'Rafael';
 user.email = 'email@email.com';
 
-validate(user).then(errors => { 
+validate(user).then(errors => {
   if (errors.length > 0) {
     console.log('User is not valid. Errors: ', errors);
   } else {

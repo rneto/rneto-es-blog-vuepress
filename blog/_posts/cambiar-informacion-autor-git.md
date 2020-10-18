@@ -1,6 +1,6 @@
 ---
 date: 2020-6-5
-tags: 
+tags:
   - git
 permalink: /:slug
 ---

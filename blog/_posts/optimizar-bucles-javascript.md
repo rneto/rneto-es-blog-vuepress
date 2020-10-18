@@ -1,6 +1,6 @@
 ---
 date: 2020-6-4
-tags: 
+tags:
   - javascript
   - es2015
 permalink: /:slug

@@ -1,6 +1,6 @@
 ---
 date: 2020-5-08
-tags: 
+tags:
   - vuepress
   - vuejs
   - blog

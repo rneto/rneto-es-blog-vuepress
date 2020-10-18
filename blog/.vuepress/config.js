@@ -22,12 +22,31 @@ module.exports = {
       return blogPluginOptions
     },
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/#nav
+     * Ref: https://vuepress-theme-blog.ulivz.com/config/#directories
+     */
+    directories: [
+      {
+        id: "blog",
+        dirname: "_blog",
+        title: "Post",
+        path: "/blog/",
+        itemPermalink: "/blog/:slug"
+      }
+    ],
+    /**
+     * https://vuepress-theme-blog.ulivz.com/config/#feed
+     */
+    feed: {
+      canonical_base: "https://rneto.es/",
+      posts_directories: ["/_blog/"]
+    },
+    /**
+     * Ref: https://vuepress-theme-blog.ulivz.com/config/#nav
      */
     nav: [
       {
         text: 'Blog',
-        link: '/',
+        link: '/blog/',
       },
       {
         text: 'Tags',
@@ -109,7 +128,7 @@ module.exports = {
     [
       'sitemap',
       {
-        hostname: 'https://rneto.es/blog'
+        hostname: 'https://rneto.es'
       }
     ],
     [

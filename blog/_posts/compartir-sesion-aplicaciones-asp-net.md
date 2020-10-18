@@ -1,6 +1,6 @@
 ---
 date: 2020-7-6
-tags: 
+tags:
   - aspnet
   - sqlserver
 permalink: /:slug
@@ -60,8 +60,8 @@ En primer lugar debemos crear una nueva entrada personalizada en el fichero _web
 
 ``` xml
 <appSettings>
-    <add key="APPLICATION" value="MiApp" />            
-</<appSettings>  
+    <add key="APPLICATION" value="MiApp" />
+</<appSettings>
 ```
 
 Y finalmente debemos agregar el siguente código al fichero _Global.asax_ también de ambas aplicaciones:

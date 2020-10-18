@@ -1,6 +1,6 @@
 ---
 date: 2020-7-30
-tags: 
+tags:
   - css
   - html
 permalink: /:slug
@@ -32,7 +32,7 @@ También es posible centrar el texto verticalmente mediante el uso de la propied
   background: #ffff99;
   color: #333;
 
-  line-height: 100px; 
+  line-height: 100px;
   text-align: center;
   vertical-align: middle;
 }
@@ -46,7 +46,7 @@ También es posible centrar el texto verticalmente mediante el uso de la propied
   background: #ffff99;
   color: #333;
 
-  line-height: 100px; 
+  line-height: 100px;
   text-align: center;
   vertical-align: middle;
 }
@@ -239,7 +239,7 @@ Cuando nuestro elemento contenedor no tenga un alto ni ancho fijos, sino que est
   display: table-cell;
 
   text-align: center;
-  vertical-align: middle;  
+  vertical-align: middle;
 
   background: #ffff99;
   color: #333;
@@ -262,7 +262,7 @@ Cuando nuestro elemento contenedor no tenga un alto ni ancho fijos, sino que est
   display: table-cell;
 
   text-align: center;
-  vertical-align: middle;  
+  vertical-align: middle;
 
   background: #ffff99;
   color: #333;

@@ -3,7 +3,7 @@ date: 2020-10-18
 tags:
   - vuepress
   - github-actions
-permalink: /blog/:slug
+permalink: /:slug
 ---
 
 # Usar GitHub Actions para automatizar la generación y despliegue de un blog estático creado con VuePress en GitHub Pages

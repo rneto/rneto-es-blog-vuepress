@@ -1,6 +1,6 @@
 ---
 date: 2020-5-21
-tags: 
+tags:
   - npm
   - visualstudio
 permalink: /:slug
