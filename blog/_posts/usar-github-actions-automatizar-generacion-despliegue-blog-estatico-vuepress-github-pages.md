@@ -42,7 +42,7 @@ jobs:
         BUILD_DIR: blog/.vuepress/dist/
 ```
 
-Si quieres ver cómo he configurado mi dominio personalizado _rneto.es_ de GitHub para el correcto despliegue y posterior funcionamiento de la web, échale un vistado a mi fichero [vuepress-deploy.yml](https://github.com/rneto/rneto-es-blog-vuepress/blob/master/.github/workflows/vuepress-deploy.yml), donde encontrarás la configuración CNAME necesaria.
+Si quieres ver cómo he configurado mi dominio personalizado _rneto.es_ de GitHub para el correcto despliegue y posterior funcionamiento de la web, échale un vistazo a mi fichero [vuepress-deploy.yml](https://github.com/rneto/rneto-es-blog-vuepress/blob/master/.github/workflows/vuepress-deploy.yml), donde encontrarás la configuración CNAME necesaria.
 
 En mi caso, he creado dichos directorios y fichero desde Visual Studio Code y cuando he intentado sincronizarlo con mi rama _master_ de origen la primera vez, me he encontrado con el siguiente error:
 
@@ -50,19 +50,19 @@ En mi caso, he creado dichos directorios y fichero desde Visual Studio Code y cu
 [remote rejected] master -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/vuepress-deploy.yml` without `workflow` scope)
 ```
 
-Al parecer es un [error identificado en Visual Studio Code](https://github.com/microsoft/vscode/issues/97396) y relacionado con las credenciales que han sido creadas con cierta antigüedad mediante Visual Studio Code como aplicación OAuth en Github.
+Al parecer es un [error identificado en Visual Studio Code](https://github.com/microsoft/vscode/issues/97396) relacionado con las credenciales que han sido creadas con cierta antigüedad mediante Visual Studio Code como aplicación OAuth en Github.
 
 Si a tí te llega a pasar lo mismo, puedes eliminar tus credenciales de GitHub de Windows para que Visual Studio Code te pida autenticarte nuevamente cuando vuelvas a conectarte a algún repositorio remoto de GitHub. Este manual de [cómo eliminar tus credenciales de Git de Windows](https://cmatskas.com/how-to-update-your-git-credentials-on-windows/) puede servirte como referencia.
 
 ### Paso 2. Crear un token personal en GitHub
 
-Pulsa en el _icono de tu perfil de GitHub > Settings > Developer settings > Personal access tokens > Generate new token > Marca el check "repo"_. Entonces obtendrás un token que deberás copiar para usar en el siguiente paso (sólo lo podrás copiar en este paso).
+Pulsa en el _icono de tu perfil de GitHub > Settings > Developer settings > Personal access tokens > Generate new token > Marca el check "repo"_. Entonces obtendrás un token que deberás copiar para usar en el siguiente paso.
 
 ### Paso 3: Crear una clave secreta
 
 En tu repositorio  donde tengas tu código de VuePress, accede a _Settings > Secrets > Create a new secret y escribe ACCESS_TOKEN en la caja "Name" y pega el token personal en la caja "Value".
 
-Con estos simples pasos, al publicar un nuevo cambio en el repositorio de origen, automáticamenet se generarán y publicarán tus cambios en el repositorio de destino donde tengas tu blog VuePress compilado.
+Y eso es todo. Con estos simples pasos, al subir un nuevo cambio al repositorio de origen, automáticamenet se generarán y publicarán en el repositorio de destino donde tengas tu blog VuePress publicado.
 
 ---
 <social-share class="social-share--footer" />
