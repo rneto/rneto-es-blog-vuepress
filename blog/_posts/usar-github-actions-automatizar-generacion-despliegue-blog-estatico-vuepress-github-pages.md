@@ -60,7 +60,7 @@ Pulsa en el _icono de tu perfil de GitHub > Settings > Developer settings > Pers
 
 ### Paso 3: Crear una clave secreta
 
-En tu repositorio  donde tengas tu código de VuePress, accede a _Settings > Secrets > Create a new secret y escribe ACCESS_TOKEN en la caja "Name" y pega el token personal en la caja "Value".
+En tu repositorio  donde tengas tu código de VuePress, accede a _Settings > Secrets > Create a new secret_ y escribe ACCESS_TOKEN en la caja "Name" y pega el token personal en la caja "Value".
 
 Y eso es todo. Con estos simples pasos, al subir un nuevo cambio al repositorio de origen, automáticamenet se generarán y publicarán en el repositorio de destino donde tengas tu blog VuePress publicado.
 
