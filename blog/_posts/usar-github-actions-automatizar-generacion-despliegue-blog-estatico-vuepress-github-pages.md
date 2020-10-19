@@ -1,5 +1,5 @@
 ---
-date: 2020-10-18
+date: 2020-10-19
 tags:
   - vuepress
   - github-actions
@@ -42,7 +42,9 @@ jobs:
         BUILD_DIR: blog/.vuepress/dist/
 ```
 
-En mi caso, he creado dichos directorios y fichero desde Visual Studio Code y cuando he intentado sincronizarlo con mi rama _master_ de origen, he tenido el siguiente error:
+Si quieres ver cómo he configurado mi dominio personalizado _rneto.es_ de GitHub para el correcto despliegue y posterior funcionamiento de la web, échale un vistado a mi fichero [vuepress-deploy.yml](https://github.com/rneto/rneto-es-blog-vuepress/blob/master/.github/workflows/vuepress-deploy.yml), donde encontrarás la configuración CNAME necesaria.
+
+En mi caso, he creado dichos directorios y fichero desde Visual Studio Code y cuando he intentado sincronizarlo con mi rama _master_ de origen la primera vez, me he encontrado con el siguiente error:
 
 ``` bash
 [remote rejected] master -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/vuepress-deploy.yml` without `workflow` scope)
