@@ -47,19 +47,21 @@ module.exports = {
       },
     ],
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/#footer
+     * Ref: https://vuepress-theme-blog.ulivz.com/config/#footer
      */
     footer: {
       contact: [
         {
-          type: 'github',
-          link: 'https://github.com/rneto',
-        },
-        {
-          type: 'twitter',
-          link: 'https://twitter.com/rneto',
+          type: 'mail',
+          link: 'mailto:hola@rneto.es',
         },
       ],
+      copyright: [
+        {
+          text: "Rafael Neto © 2020",
+          link: ""
+        }
+      ]
     },
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#summary
