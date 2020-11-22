@@ -16,7 +16,7 @@ Para ello me he basado en una acción generada en GitHub explícitamente para di
 
 ## Uso
 
-Paso a transcribir los pasos indicados en dicha acción con una serie de apuntes de mi cosecha.
+A continuación seguiremos los pasos indicados en dicha acción a los que he añadido una serie de apuntes de mi cosecha.
 
 ### Paso 1. Crear el fichero de la acción
 
