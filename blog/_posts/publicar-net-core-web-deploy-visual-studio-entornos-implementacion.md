@@ -129,7 +129,7 @@ Básicamente es necesario añadir un fichero _web.config_ con el siguiente conte
 
 [http://go.microsoft.com/fwlink/?LinkId=221672#ERROR_COULD_NOT_CONNECT_TO_REMOTES](http://go.microsoft.com/fwlink/?LinkId=221672#ERROR_COULD_NOT_CONNECT_TO_REMOTES)
 
-Si las soluciones propuestas por Microsoft no son válidas, otra posible causa del error puede que esté en la restricción de direcciones IP del propio _Management Service_, cuyo valor debe ser _Allow_ o indicar explícitamente las direcciones IP desde las cuales se realizará el despliegue.
+Si las soluciones propuestas por Microsoft no son válidas, otra posible causa del error puede que esté en la restricción de direcciones IP del propio _Management Service_ del IIS, cuyo valor debe ser _Allow_ o indicar explícitamente las direcciones IP desde las cuales se realizará el despliegue.
 
 
 ### ERROR: _Could not verify server's certificate_
@@ -158,7 +158,7 @@ Debemos seguir los siguientes pasos:
 
 ### Otros errores
 
-https://docs.microsoft.com/en-us/iis/publish/troubleshooting-web-deploy/troubleshooting-web-deploy-problems-with-visual-studio
+[https://docs.microsoft.com/en-us/iis/publish/troubleshooting-web-deploy/troubleshooting-web-deploy-problems-with-visual-studio](https://docs.microsoft.com/en-us/iis/publish/troubleshooting-web-deploy/troubleshooting-web-deploy-problems-with-visual-studio)
 
 ---
 <social-share class="social-share--footer" />
