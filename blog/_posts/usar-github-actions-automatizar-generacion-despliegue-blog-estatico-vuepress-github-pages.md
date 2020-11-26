@@ -2,7 +2,7 @@
 date: 2020-10-19
 tags:
   - vuepress
-  - github-actions
+  - githubactions
 permalink: /blog/:slug
 ---
 
