@@ -40,7 +40,7 @@ Si te estás planteando la pregunta de _¿por qué usar Angular y Material Desig
 - [Angular](https://angular.io)
   - [Primeros pasos](https://angular.io/guide/quickstart)
   - [Guía de estilo](https://angular.io/guide/styleguide)
-  - **Arquitectura y buenas prácticas** _próximamente_
+  - [Arquitectura y buenas prácticas](./arquitectura-buenas-practicas-angular.md)
   - **Despliegue automático en Azure** _próximamente_
 - [TypeScript](https://www.typescriptlang.org/)
   - [Playground](https://www.typescriptlang.org/play/)
