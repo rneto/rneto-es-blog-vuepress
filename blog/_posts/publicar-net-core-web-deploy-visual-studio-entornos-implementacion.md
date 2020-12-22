@@ -125,6 +125,13 @@ Básicamente es necesario añadir un fichero _web.config_ con el siguiente conte
 </configuration>
 ```
 
+### ERROR: _Web deployment task failed_
+
+[https://go.microsoft.com/fwlink/?LinkId=221672#ERROR_DESTINATION_NOT_REACHABLE](https://go.microsoft.com/fwlink/?LinkId=221672#ERROR_DESTINATION_NOT_REACHABLE)
+
+El error se produce porque _Web Management Service_ o _Remote Agent_ no están instalados o arrancados en el servidor. La instalación del _Manager Service_ se agregando al servidor el rol _Web Server (IIS)/Management Tool/Management Service_. Una vez instalado, debemos reiniciar el _IIS Manager_ y arrancar el _Management Service_ a nivel de servidor.
+
+
 ### ERROR: _Could not connect to the remote computer_
 
 [http://go.microsoft.com/fwlink/?LinkId=221672#ERROR_COULD_NOT_CONNECT_TO_REMOTES](http://go.microsoft.com/fwlink/?LinkId=221672#ERROR_COULD_NOT_CONNECT_TO_REMOTES)
