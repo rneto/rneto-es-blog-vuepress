@@ -7,6 +7,8 @@ permalink: /blog/:slug
 
 # Arquitectura y buenas prácticas para una aplicación basada en Angular
 
+<social-share class="social-share--header" />
+
 En este artículo encontrarás el planteamiento de una posible evolución de los conceptos de arquitectura de una aplicación Angular que podemos extraer de la [guía de estilo de referencia oficial](https://angular.io/guide/styleguide) de Angular. Para ello he definido una serie de pautas y buenas prácticas a la hora de planificar y estructurar nuestra aplicación con el objectivo de hacerla escalable.
 
 > La escalabilidad en una aplicación Angular implica soportar el aumento del tamaño de los datos cargados en la misma, lo que aumenta la complejidad y el tamaño del proyecto y generalmente es seguido de tiempos de carga más largos.
@@ -40,6 +42,7 @@ app/
       |- ...
    |- feature1-routing.module.ts
    |- feature1.module.ts
+   |- index.ts
 |- feature2/
    |- ...
 |- feature3/
@@ -66,7 +69,7 @@ Como podemos apreciar, existen tres módulos principales en el proyecto:
 - _CoreModule_: incluye las funcionalidades básicas de la aplicación, en su mayoría servicios globales, que se utilizarán en toda la aplicación a nivel global. No debe ser importado por los módulos de funcionalidades de la aplicación.
 - _SharedModule_: es normalmente un conjunto de componentes o servicios que se reutilizarán en otros módulos de la aplicación, pero que no son aplicados globalmente en la aplicación. Puede ser importado por los módulos de funcionalidades.
 
-Los demás módulos, son los denominados [módulos de funcionalidades de la aplicación](https://angular.io/guide/feature-modules). Dichos módulos estarán aislados entre si y se ubicarán en el directorios específicos bajo el directorio raíz de la aplicación.
+El tercero de estos módulos se engloba en los denominados [módulos de funcionalidades de la aplicación](https://angular.io/guide/feature-modules). Dichos módulos estarán aislados entre si y se ubicarán en el directorios específicos bajo el directorio raíz de la aplicación.
 
 Los módulos de funcionalidades se clasifican en [seis tipos](https://angular.io/guide/module-types) con el objetivo de separar las responsabilidades en:
 - **Dominio:** ofrece una experiencia de usuario dedicada a un dominio de aplicación en particular, como editar un cliente o realizar un pedido
@@ -74,7 +77,7 @@ Los módulos de funcionalidades se clasifican en [seis tipos](https://angular.io
 - **Enrutamiento:** proporciona la configuración de enrutamiento para otro módulo y separa las preocupaciones de enrutamiento de su módulo complementario.
 - **Servicio:** proporciona servicios de utilidad tales como acceso a datos y mensajería.
 - **Complemento:** hace que los componentes, directivas y demás artilugios estén disponibles para los módulos externos. Muchas bibliotecas de componentes de _UI_ de terceros son módulos de complementos (_widgets_).
-- **Compartir:** permite reutilizar piezas de la aplicación como directivas, transformadores (_pipes_) y componentes. Es al módulo que conmunmente llamamos _SharedModule_.
+- **Compartido:** permite reutilizar piezas de la aplicación como directivas, transformadores (_pipes_) y componentes. Es al módulo que conmunmente llamamos _SharedModule_.
 
 Esta estructura permite la separación de responsabilidades de una manera clara, además de ser el punto de partida para la implementación de la carga diferida de los contenidos de la aplicación, paso fundamental para la preparación de una arquitectura escalable.
 
@@ -114,7 +117,7 @@ import { Injectable } from '@angular/core';
 export class AuthService {
 }
 ```
-auth.service.ts
+_auth.service.ts_
 
 > **CONSEJO ·** Podemos potenciar la reutilización de los servicios y funcionalidades de _CoreModule_ en otras aplicaciones creando un nuevo directorio _core_ en la raíz de la aplicación y moviendo cada funcionalidad de _CoreModule_ a un nuevo módulo.
 
