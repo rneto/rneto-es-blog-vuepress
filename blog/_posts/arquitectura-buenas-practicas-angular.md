@@ -9,7 +9,7 @@ permalink: /blog/:slug
 
 <social-share class="social-share--header" />
 
-En este artículo encontrarás el planteamiento de una posible evolución de los conceptos de arquitectura de una aplicación Angular que podemos extraer de la [guía de estilo de referencia oficial](https://angular.io/guide/styleguide) de Angular. Para ello he definido una serie de pautas y buenas prácticas a la hora de planificar y estructurar nuestra aplicación con el objectivo de hacerla escalable.
+En este artículo encontrarás el planteamiento de una posible evolución de los conceptos de arquitectura de una aplicación Angular que podemos extraer de la [guía de estilo de referencia oficial de Angular](https://angular.io/guide/styleguide). Para ello he definido una serie de pautas y buenas prácticas a la hora de planificar y estructurar nuestra aplicación con el objectivo de hacerla escalable.
 
 > La escalabilidad en una aplicación Angular implica soportar el aumento del tamaño de los datos cargados en la misma, lo que aumenta la complejidad y el tamaño del proyecto y generalmente es seguido de tiempos de carga más largos.
 
@@ -69,15 +69,15 @@ Como podemos apreciar, existen tres módulos principales en el proyecto:
 - _CoreModule_: incluye las funcionalidades básicas de la aplicación, en su mayoría servicios globales, que se utilizarán en toda la aplicación a nivel global. No debe ser importado por los módulos de funcionalidades de la aplicación.
 - _SharedModule_: es normalmente un conjunto de componentes o servicios que se reutilizarán en otros módulos de la aplicación, pero que no son aplicados globalmente en la aplicación. Puede ser importado por los módulos de funcionalidades.
 
-El tercero de estos módulos se engloba en los denominados [módulos de funcionalidades de la aplicación](https://angular.io/guide/feature-modules). Dichos módulos estarán aislados entre si y se ubicarán en el directorios específicos bajo el directorio raíz de la aplicación.
+El tercero de estos módulos se engloba en los denominados [módulos de funcionalidades de la aplicación](https://angular.io/guide/feature-modules). Dichos módulos estarán aislados entre si y se ubicarán en directorios específicos bajo el directorio raíz de la aplicación.
 
 Los módulos de funcionalidades se clasifican en [seis tipos](https://angular.io/guide/module-types) con el objetivo de separar las responsabilidades en:
-- **Dominio:** ofrece una experiencia de usuario dedicada a un dominio de aplicación en particular, como editar un cliente o realizar un pedido
-- **Enrutador:** es el módulo de dominio que actúa como componente principal de la funcionalidad y cuyo objetivo es el de encaminar la navegación del usuario por la funcionalidad. Por definición, todos los módulos cargados de forma diferida (_lazy loading_) son módulos de funcionalidades enrutados.
-- **Enrutamiento:** proporciona la configuración de enrutamiento para otro módulo y separa las preocupaciones de enrutamiento de su módulo complementario.
-- **Servicio:** proporciona servicios de utilidad tales como acceso a datos y mensajería.
-- **Complemento:** hace que los componentes, directivas y demás artilugios estén disponibles para los módulos externos. Muchas bibliotecas de componentes de _UI_ de terceros son módulos de complementos (_widgets_).
-- **Compartido:** permite reutilizar piezas de la aplicación como directivas, transformadores (_pipes_) y componentes. Es al módulo que conmunmente llamamos _SharedModule_.
+- _Dominio_: ofrece una experiencia de usuario dedicada a un dominio de aplicación en particular, como editar un cliente o realizar un pedido
+- _Enrutador_: es el módulo de dominio que actúa como componente principal de la funcionalidad y cuyo objetivo es el de encaminar la navegación del usuario por la funcionalidad. Por definición, todos los módulos cargados de forma diferida ([lazy loading](#carga-diferida)) son módulos de funcionalidades enrutados.
+- _Enrutamiento_: proporciona la configuración de enrutamiento para otro módulo y separa las preocupaciones de enrutamiento de su módulo complementario.
+- _Servicio_: proporciona servicios de utilidad tales como acceso a datos y mensajería.
+- _Complemento_: hace que los componentes, directivas y demás artilugios estén disponibles para los módulos externos. Muchas bibliotecas de componentes de _UI_ de terceros son módulos de complementos (_widgets_).
+- _Compartido_: permite reutilizar piezas de la aplicación como directivas, transformadores (_pipes_) y componentes. Es al módulo que conmunmente llamamos _SharedModule_.
 
 Esta estructura permite la separación de responsabilidades de una manera clara, además de ser el punto de partida para la implementación de la carga diferida de los contenidos de la aplicación, paso fundamental para la preparación de una arquitectura escalable.
 
@@ -106,7 +106,7 @@ Esta estructura permite la separación de responsabilidades de una manera clara,
 ```
 _core.module.ts_
 
-- Con Angular 10, la forma preferida de crear un servicio _singleton_ es especificar en el servicio que debe ser proporcionado en la raíz de la aplicación. Para ello, se debe configurar la propiedad _providedIn_ como _root_ en el decorador _@Injectable_ del servicio. De este modo, no es necesario indicar explícitamente en la propiedad _providers_ del decorador _NgModule_ de _CoreModule_ nuestros servicios _singleton_.
+- Desde Angular 6, la forma preferida de crear un servicio _singleton_ es indicando en el propio servicio, que debe ser proporcionado en la raíz de la aplicación. Para ello, se debe configurar la propiedad _providedIn_ como _root_ en el decorador _@Injectable_ del servicio. De este modo, no es necesario indicar explícitamente en la propiedad _providers_ del decorador _NgModule_ de _CoreModule_ nuestros servicios _singleton_.
 
 ``` js
 import { Injectable } from '@angular/core';
@@ -126,9 +126,9 @@ _auth.service.ts_
 
 - Todos los componentes, servicios y _pipelines_ compartidos deben ser implementados en este módulo.
 - No importará ni inyectará servicios u otras características del _CoreModule_ u otras características en sus constructores.
-- Sí podrán definir servicios que no deban ser persistentes.
+- Sí podrá definir servicios que no deban ser persistentes.
 - Sus componentes deberán recibir todos los datos a través de atributos en el modelo del componente que los utiliza. Todo esto se resume en el hecho de que _SharedModule_ no tiene ninguna dependencia del resto de nuestra aplicación.
-- Es el módulo en el que deberemos importar y reexportar los componentes de Angular Material y los módulos _CommonModule_, _FormsModule_ y _FlexLayoutModule_ por ejemplo.
+- Es el módulo en el por ejemplo deberemos importar y reexportar los componentes de Angular Material y los módulos _CommonModule_, _FormsModule_ y _FlexLayoutModule_.
 
 > **CONSEJO ·** Podemos potenciar la reutilización de componentes de interfaz de _SharedModule_ en otras aplicaciones creando un nuevo directorio _ui_ en el raíz de la aplicación y moviendo cada grupo de componentes de _SharedModule_ a un nuevo módulo.
 
@@ -172,7 +172,7 @@ _core-routing.module.ts_
 
 ### Carga diferida
 
-Para evitar posibles problemas de rendimiento en la carga de la aplicación, se hará uso del patrón _carga diferida_ (_[Lazy Loading](https://angular.io/guide/lazy-loading-ngmodules)_), capacidad incorporada en Angular y que permite aplazar la carga de una parte particular de la aplicación hasta que sea realmente necesaria.
+Para evitar posibles problemas de rendimiento en la carga de la aplicación, se hará uso del patrón _carga diferida_ (_[Lazy-Loading](https://angular.io/guide/lazy-loading-ngmodules)_), capacidad incorporada en Angular y que permite aplazar la carga de una parte particular de la aplicación hasta que sea realmente necesaria.
 
 Basta con definir correctamente las rutas de los módulos, para que apunte a un archivo de módulo que será cargado sólo cuando sea realmente necesario.
 
@@ -187,7 +187,7 @@ const routes: Routes = [
 ```
 _core-routing.module.ts_
 
-Gracias a la estructura de módulos definida, nuestros módulos de funcionalidades podrán cargarse de forma diferida una vez que se haya inicializado la aplicación, lo que reducirá enormemente el tiempo de inicialización de la aplicación. Además de ello, cuando la aplicación crezca y se añadan más módulos, el paquete de núcleo de la aplicación y por lo tanto su tiempo de inicio seguirán siendo los mismos.
+Gracias a la estructura de módulos definida, nuestros módulos de funcionalidades podrán cargarse de forma diferida una vez que se haya inicializado la aplicación, lo que reducirá enormemente el tiempo de arranque de la aplicación. Además de ello, cuando la aplicación crezca y se añadan más módulos, el paquete de núcleo de la aplicación y por lo tanto su tiempo de inicio seguirán siendo los mismos.
 
 
 ## Flujo de datos
@@ -208,7 +208,7 @@ Cuando sea necesario estructurar los componentes por niveles, debemos seguir las
   - Todos los datos de entrada que necesitan se pasan a través de sus parámetros _@Input_.
   - Si el componente desea comunicarse hacia fuera, debe emitir un evento a través del atributo _@Output_.
   - Cuantos más componentes tengamos de este tipo más sencillo será el flujo de datos y más fácil será trabajar con él.
-  - La estrategia de detección de cambios para estos componentes puede ajustarse a [_onPush_](https://blog.mgechev.com/2017/11/11/faster-angular-applications-onpush-change-detection-immutable-part-1/), que activará el proceso de detección de cambios para el componente sólo cuando se hayan modificado las propiedades de entrada. Es un método fácil y muy eficiente para optimizar aplicaciones Angular.
+  - La estrategia de detección de cambios para estos componentes puede ajustarse a [_onPush_](https://blog.mgechev.com/2017/11/11/faster-angular-applications-onpush-change-detection-immutable-part-1/), que activará el proceso de detección de cambios para el componente sólo cuando se hayan modificado las propiedades de entrada. Es un método fácil de implementar y muy eficiente para optimizar aplicaciones Angular.
 
 > Si conseguimos encontrar el equilibrio entre un número adecuado de componentes y el principio de responsabilidad única, más sencillo será el flujo de datos y más fácil será trabajar con él.
 
@@ -237,7 +237,7 @@ import { AuthService } from '../../../.../core/services/auth.service';
 import { AuthService } from '@app/core';
 ```
 
-Para ello, debemos en primer lugar configurar las propiedades _baseUrl_ y _paths_ en nuestro archivo _tsconfig.json_ de la siguiente manera (verás que estamos creado un alias para tod la aplicación y otro para los _environments_):
+Para ello, debemos configurar en primer lugar las propiedades _baseUrl_ y _paths_ en nuestro archivo _tsconfig.json_ de la siguiente manera (verás que estamos creado un alias para toda la aplicación y otro para los _environments_):
 
 ``` js
 {
@@ -260,6 +260,20 @@ A continuación, debemos agregar un archivo _index.ts_ por cada paquete (se llam
 export * from './core.module';
 export * from './services/auth-guard.service';
 export * from './services/auth.service';
+```
+_app/core/index.ts_
+
+Este fichero se podría simplificar más aún si extrapolamos la creación de ficheros _index.ts_ en el resto de carpetas de nuestros artefactos.
+
+``` js
+export * from './auth-guard.service';
+export * from './auth.service';
+```
+_app/core/services/index.ts_
+
+``` js
+export * from './core.module';
+export * from './services';
 ```
 _app/core/index.ts_
 
@@ -322,20 +336,29 @@ _Conventional Commits_ define el `tipo` (obligatorio), el `ámbito` (opcional), 
 [optional footer(s)]
 ```
 _format_
+
 ```
 feat: allow provided config object to extend other configs
 
 BREAKING CHANGE: `extends` key in config file is now used for extending other config files
 ```
 _example_
+
+```
+refactor!: drop support for Node 6
+```
+_example_
+
 ```
 docs: correct spelling of CHANGELOG
 ```
 _example_
+
 ```
-feat(lang): add polish language
+feat(lang): add Spanish language
 ```
 _example_
+
 ```
 fix: correct minor typos in code
 
@@ -348,20 +371,21 @@ Refs #133
 ```
 _example_
 
-> **Tipos**
-_build_: Cambio que afecta a la compilación del sistema o a dependencias externas
-_ci_: Cambios en la configuración CI
-_docs_: Cambios sólo en la documentación
-_feat_: Una nueva funcionalidad
-_fix_: La solución de un error
-_perf_: Un cambio de código que mejora el rendimiento
-_refactor_: Un cambio de código que no corrige un error ni añade una característica
-_style_: Cambios que no afectan el significado del código (espacios en blanco, formato, un punto y coma que falta, etc)
-_test_: Añadir pruebas que faltan o corregir pruebas existentes
+**Resumen de tipos**
+- _build_: Cambio que afecta a la compilación del sistema o a dependencias externas
+- _ci_: Cambios en la configuración CI
+- _docs_: Cambios sólo en la documentación
+- _feat_: Una nueva funcionalidad
+- _fix_: La solución de un error
+- _perf_: Un cambio de código que mejora el rendimiento
+- _refactor_: Un cambio de código que no corrige un error ni añade una característica
+- _style_: Cambios que no afectan el significado del código (espacios en blanco, formato, un punto y coma que falta, etc)
+- _test_: Añadir pruebas que faltan o corregir pruebas existentes
 
 
 ## Angular Material
 
+[Angular Material](https://material.angular.io/) es una librería de componentes web basada en Material Design y creada por el propio equipo de Angular.
 
 ### Sidenav
 
