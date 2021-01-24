@@ -40,11 +40,11 @@ En primer lugar, **es muy importante para evitar futuros conflictos entre versio
 
 Escribiendo simplemente el comando ```nmv``` en nuestro terminal, tendremos una lista de todas las opciones disponibles.
 
-**Instalación de Node.js**
+#### Instalación de Node.js
 
 Basta con que usemos el comando ```nvm install [version]``` para que instalemos la versión de Node.js que queramos tener disponible. Debemos tener derechos administrativos de Windows para ejecutar este comando.
 
-**Cambio de version Node.js a usar**
+#### Cambio de version Node.js a usar
 
 Usando el comando ```nvm use [version]``` indicaremos qué versión de Node.js queremos usar. Debemos tener derechos administrativos de Windows para ejecutar este comando.
 
@@ -64,7 +64,7 @@ nvm use 15.6.7
 npm install -g yarn
 ```
 
-**Consultar las instalaciones existentes de Node.js**
+#### Consultar las instalaciones existentes de Node.js
 
 Con el comando ```nvm install list``` nos mostrará la lista de versiones Node.js instaladas, así como la versión actualmente activa.
 
