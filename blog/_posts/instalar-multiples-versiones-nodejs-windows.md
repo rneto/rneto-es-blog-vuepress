@@ -28,7 +28,7 @@ Poniéndonos en este contexto, podría darse el caso por ejemplo de que por alg�
 
 ## Node Version Manager (nvm) al rescate
 
-Ahora que ya no hay marcha atrás, toca descubrir herramientas como [nvm windows](https://github.com/coreybutler/nvm-windows) que nos permitirá administratar en nuestro equipo Windows múltiples instalaciones de Node.js. Si eres usuario de Max o Linux, debes usar el proyecto [nvm](https://github.com/creationix/nvm), muy similar pero exclusivo para dichos entornos.
+Ahora que ya no hay marcha atrás, toca descubrir herramientas como [nvm windows](https://github.com/coreybutler/nvm-windows) que nos permitirá administratar en nuestro equipo Windows múltiples instalaciones de Node.js. Si eres usuario de Mac o Linux, debes usar el proyecto [nvm](https://github.com/creationix/nvm), muy similar pero exclusivo para dichos entornos.
 
 ### Instalación
 
@@ -38,7 +38,7 @@ En primer lugar, **es muy importante para evitar futuros conflictos entre versio
 
 ### Uso
 
-Escribiendo simplemente el comando ```nmv``` en nuestro terminal, tendremos una lista de todas las opciones disponibles.
+Escribiendo simplemente el comando ```nvm``` en nuestro terminal, tendremos una lista de todas las opciones disponibles.
 
 #### Instalación de Node.js
 
