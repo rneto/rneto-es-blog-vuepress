@@ -50,18 +50,23 @@ Usando el comando ```nvm use [version]``` indicaremos qué versión de Node.js q
 
 Una vez establecida la versión en uso, ya podemos trabajar con ella con los comandos habituales, ```npm i``` por ejemplo.
 
-Debemos tener en cuenta que a partir de este momento, debemos instalar cada utilidad global que necesitemos en cada una de las version de Node.js que vayamos a mantener. Es el caso por ejemplo de _yarn_, cuyas versiones deberemos instalar por cada instancia de Node.js.
+Debemos tener en cuenta que a partir de este momento, debemos instalar cada utilidad global que necesitemos en cada una de las version de Node.js que vayamos a mantener. Es el caso por ejemplo de _Yarn_ o _Angular CLI_, cuyas versiones deberemos instalar por cada instancia de Node.js.
 
 ``` bash
 nvm install 10.23.1
 nvm use 10.23.1
 npm install -g yarn
+npm install -g @angular/cli
+
 nvm install 12.20.1
 nvm use 12.20.1
 npm install -g yarn
+npm install -g @angular/cli
+
 nvm install 15.6.7
 nvm use 15.6.7
 npm install -g yarn
+npm install -g @angular/cli
 ```
 
 #### Consultar las instalaciones existentes de Node.js
