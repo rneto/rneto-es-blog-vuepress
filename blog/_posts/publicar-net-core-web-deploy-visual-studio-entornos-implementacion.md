@@ -76,6 +76,22 @@ En ocasiones debemos incluir en nuestra publicación carpetas que de forma prede
 En el anterior ejemplo la carpeta ```myfolder``` está al mismo nivel que la carpeta de nuestro proyecto. Si dicha carpeta estuviera dentro de nuestro proyecto, bastaría cambiar ```$(MSBuildProjectDirectory)\..\myfolder\**\*``` por ```myfolder\**\*```.
 
 
+### Omisión de carpetas
+
+En otras ocasiones simplementer queremos excluir de nuestra publicación carpetas que de forma predeterminada nuestro proyecto sí agregarían al despliegue. En dicho caso debemos realizar la siguiente modificación en el fichero del perfil de publicación:
+
+```xml
+  <ItemGroup>
+    <MsDeploySkipRules Include="CustomSkipFolder">
+      <ObjectName>dirPath</ObjectName>
+      <AbsolutePath>myfolder\\mysubfolder</AbsolutePath>
+    </MsDeploySkipRules>
+  </ItemGroup>
+```
+
+En el anterior ejemplo se excluiría de la publicación la carpeta ```myfolder\mysubfolder```.
+
+
 ## Creación del entorno de ejecución en IIS 8 o posterior
 
 Para poder publicar nuestro proyecto en el servidor IIS, previamente debemos haber preparado el entorno de ejecución siguiendo los siguientes pasos en el servidor de publicación:
