@@ -51,6 +51,31 @@ Cuando hacemos uso de la [configuración en ASP.NET Core](https://docs.microsoft
 Agregando dicha configuración, nos aseguraremos de que cuando publiquemos nuestra aplicación ésta hará uso del fichero de configuración del entorno que hayamos establecido en el nodo _EnvironmentName_. El proceso por el que se aplicará dicha configuración será mediante la creación automática de un fichero _web.config_ en el que se indicará de manera explícita la varialble de entorno _ASPNETCORE_ENVIRONMENT_ con el valor que hayamos establecido en nuestro nuevo nodo.
 
 
+### Publicación de carpetas personalizadas
+
+En ocasiones debemos incluir en nuestra publicación carpetas que de forma predeterminada nuestro proyecto no agregaría. Es el caso por ejemplo de una carpeta situada al mismo nivel que la carpeta de nuestro proyecto. Para ello debemos realizar la siguiente modificación en el fichero del perfil de publicación:
+
+```xml
+  <PropertyGroup>
+    <PipelineCollectFilesPhaseDependsOn>
+      IncludeCustomFiles;
+      $(PipelineCollectFilesPhaseDependsOn);
+    </PipelineCollectFilesPhaseDependsOn>
+  </PropertyGroup>
+  <Target Name="IncludeCustomFiles">
+    <Message Text="Including custom files" Importance="high" />
+    <ItemGroup>
+      <_CustomFiles Include="$(MSBuildProjectDirectory)\..\myfolder\**\*" />
+      <FilesForPackagingFromProject Include="%(_CustomFiles.Identity)">
+        <DestinationRelativePath>myfolder\%(RecursiveDir)%(Filename)%(Extension)</DestinationRelativePath>
+      </FilesForPackagingFromProject>
+    </ItemGroup>
+  </Target>
+```
+
+En el anterior ejemplo la carpeta ```myfolder``` está al mismo nivel que la carpeta de nuestro proyecto. Si dicha carpeta estuviera dentro de nuestro proyecto, bastaría cambiar ```$(MSBuildProjectDirectory)\..\myfolder\**\*``` por ```myfolder\**\*```.
+
+
 ## Creación del entorno de ejecución en IIS 8 o posterior
 
 Para poder publicar nuestro proyecto en el servidor IIS, previamente debemos haber preparado el entorno de ejecución siguiendo los siguientes pasos en el servidor de publicación:
