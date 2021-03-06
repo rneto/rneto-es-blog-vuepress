@@ -19,9 +19,7 @@ De esta manera podríamos definir los siguientes bloques de agrupación de propi
 1. _**TE**-xt_ (direction, font-size, font-family, letter-spacing, line-height, text-align, text-decoration, text-indent, text-shadow, text-transform, vertical-align)
 1. _**O**-ther_ (cursor, overflow)
 
-
 Tomemos como punto de partida la siguiente clase que podría servir para por ejemplo sobreponer un _DIV_ sobre el contenido de nuestra página y donde no se ha aplicado aún la técnica _PODICOTEO_:
-
 
 ``` css
 .overlay {
@@ -41,7 +39,6 @@ Tomemos como punto de partida la siguiente clase que podría servir para por eje
 ```
 
 Al aplicar la técnica _PODICOTEO_ tendríamos el siguiente resultado:
-
 
 ``` css
 .overlay {
@@ -64,7 +61,6 @@ Al aplicar la técnica _PODICOTEO_ tendríamos el siguiente resultado:
 ```
 
 Como podemos comprobar, agrupando las propiedades por tipo y posteriormente ordenándolas alfabéticamente (también soy partidario de añadir una línea en blanco entre grupos), se facilita el entendimiento del comportamiento de la clase, a la vez que permite identificar en qué parte de la misma debemos poner el foco cuando queramos realizar futuras modificaciones.
-
 
 ---
 <social-share class="social-share--footer" />

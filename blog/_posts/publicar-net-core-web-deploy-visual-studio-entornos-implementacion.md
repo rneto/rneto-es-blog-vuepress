@@ -50,7 +50,6 @@ Cuando hacemos uso de la [configuración en ASP.NET Core](https://docs.microsoft
 
 Agregando dicha configuración, nos aseguraremos de que cuando publiquemos nuestra aplicación ésta hará uso del fichero de configuración del entorno que hayamos establecido en el nodo _EnvironmentName_. El proceso por el que se aplicará dicha configuración será mediante la creación automática de un fichero _web.config_ en el que se indicará de manera explícita la varialble de entorno _ASPNETCORE_ENVIRONMENT_ con el valor que hayamos establecido en nuestro nuevo nodo.
 
-
 ### Publicación de carpetas personalizadas
 
 En ocasiones debemos incluir en nuestra publicación carpetas que de forma predeterminada nuestro proyecto no agregaría. Es el caso por ejemplo de una carpeta situada al mismo nivel que la carpeta de nuestro proyecto. Para ello debemos realizar la siguiente modificación en el fichero del perfil de publicación:
@@ -75,7 +74,6 @@ En ocasiones debemos incluir en nuestra publicación carpetas que de forma prede
 
 En el anterior ejemplo la carpeta ```myfolder``` está al mismo nivel que la carpeta de nuestro proyecto. Si dicha carpeta estuviera dentro de nuestro proyecto, bastaría cambiar ```$(MSBuildProjectDirectory)\..\myfolder\**\*``` por ```myfolder\**\*```.
 
-
 ### Omisión de carpetas
 
 En otras ocasiones simplementer queremos excluir de nuestra publicación carpetas que de forma predeterminada nuestro proyecto sí agregarían al despliegue. En dicho caso debemos realizar la siguiente modificación en el fichero del perfil de publicación:
@@ -90,7 +88,6 @@ En otras ocasiones simplementer queremos excluir de nuestra publicación carpeta
 ```
 
 En el anterior ejemplo se excluiría de la publicación la carpeta ```myfolder\mysubfolder```.
-
 
 ## Creación del entorno de ejecución en IIS 8 o posterior
 
@@ -109,13 +106,11 @@ Para poder publicar nuestro proyecto en el servidor IIS, previamente debemos hab
    - Al nuevo sitio creado se le asignará a un nuevo pool propio, sin código gestionado (_No Managed Code_).
    - Asignaremos al nuevo sitio web el certificado que hemos importado previamente a través del apartado _Bindings_ de la sección _Actions_ del IIS, mediante la creación de una entrada para el protocolo _https_. Si necesitáramos configurar más de un certificado en una misma IP, tendremos que activar la opción _Require Server Name Indication_.
 
-
 ## Errores comunes durante el proceso de publicación y al consumir servicios publicados
 
 Cuando intentemos realizar la publicación de nuestro proyecto o bien intentemos consumir los servicios de dicho proyecto una vez publicados, podemos encontrarnos con algunos errores comunes como los de de a continuación.
 
 Recordemos que la publicación de un proyecto se puede realizar desde el _Explorador de soluciones_ de Visual Studio, pulsamos con el botón derecho en el proyecto y seleccionamos la opción _Publicar_ o como alternativa seleccionando el proyecto y elegir _Publicar {NOMBRE DEL PROYECTO}_ en el menú _Compilar_.
-
 
 ### ERROR: _The remote certificate is invalid according to the validation procedure._
 
@@ -166,13 +161,11 @@ Básicamente es necesario añadir un fichero _web.config_ con el siguiente conte
 </configuration>
 ```
 
-
 ### ERROR: _Web deployment task failed_
 
 [https://go.microsoft.com/fwlink/?LinkId=221672#ERROR_DESTINATION_NOT_REACHABLE](https://go.microsoft.com/fwlink/?LinkId=221672#ERROR_DESTINATION_NOT_REACHABLE)
 
 El error se produce porque _Web Management Service_ o _Remote Agent_ no están instalados o arrancados en el servidor. La instalación de _Manager Service_ se realiza agregando al servidor el rol _Web Server (IIS)/Management Tool/Management Service_. Una vez instalado, debemos reiniciar el _IIS Manager_ y arrancar el _Management Service_ a nivel de servidor.
-
 
 ### ERROR: _Web deployment task failed_
 
@@ -180,13 +173,11 @@ El error se produce porque _Web Management Service_ o _Remote Agent_ no están i
 
 Además de las soluciones propuestas por Microsoft, también cabe la posibilidad de que este error se produzca por haber instalado el _Manager Service_ después de _Web Deploy_. En ese caso, debemos desinstalar y volver a instalar _Web Deploy_.
 
-
 ### ERROR: _Could not connect to the remote computer_
 
 [http://go.microsoft.com/fwlink/?LinkId=221672#ERROR_COULD_NOT_CONNECT_TO_REMOTES](http://go.microsoft.com/fwlink/?LinkId=221672#ERROR_COULD_NOT_CONNECT_TO_REMOTES)
 
 Si las soluciones propuestas por Microsoft no son válidas, otra posible causa del error puede que esté en la restricción de direcciones IP del propio _Management Service_ del IIS, cuyo valor debe ser _Allow_ o indicar explícitamente las direcciones IP desde las cuales se realizará el despliegue.
-
 
 ### ERROR: _Could not verify server's certificate_
 
@@ -204,13 +195,11 @@ Debemos seguir los siguientes pasos:
 1. En el desplegable de _SSL certificate_ seleccionamos el certificado que queremos usar.
 1. Volvemos a arrancar el servicio con el botón _Start_ (aceptamos cuando nos pregunte si queremos guardar los cambios).
 
-
 #### Solución 2 (usar el certificado auto firmado)
 
 [Opción 2.1 (ASP.NET Core 3.0) "Publicación en un servidor mediante un certificado que no es de confianza"](https://docs.microsoft.com/es-es/aspnet/core/host-and-deploy/visual-studio-publish-profiles?view=aspnetcore-3.0#publish-to-a-server-using-an-untrusted-certificate)
 
 [Opción 2.2](https://stackoverflow.com/questions/33659696/publishing-from-visual-studio-2015-allow-untrusted-certificates)
-
 
 ### Otros errores
 

@@ -15,7 +15,6 @@ De manera predeterminada, el ancho y alto (también ancho y alto máximos) que i
 
 Dicho comportamiento se deriva del valor por defecto de la propiedad CSS _box-sizing_ que está establecido en _content-box_.
 
-
 ``` html
 <div class="box-sizing-default">
     box-sizing default
@@ -125,7 +124,6 @@ Con el uso del valor _border-box_ de la propiedad _box-sizing_, tanto el _paddin
 <div class="box-sizing-border-box box-sizing-border-box--styled">
     styled box-sizing border-box
 </div>
-
 
 ---
 <social-share class="social-share--footer" />

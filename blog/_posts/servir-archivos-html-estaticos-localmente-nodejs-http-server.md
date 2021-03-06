@@ -67,6 +67,5 @@ Debemos añadir un nuevo script al fichero _package.json_ (en el siguiente ejemp
 
 Ahora, cuando ejecutemos el comando ```npm start``` en nuestro directorio, se iniciará el servidor y a su vez se abrirá nuestro navegador web predeterminado con la página _index.html_ de nuestro directorio.
 
-
 ---
 <social-share class="social-share--footer" />

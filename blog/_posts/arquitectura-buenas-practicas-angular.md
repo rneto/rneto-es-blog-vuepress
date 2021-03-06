@@ -13,7 +13,6 @@ En este artículo encontrarás el planteamiento de una posible evolución de los
 
 > La escalabilidad en una aplicación Angular implica soportar el aumento del tamaño de los datos cargados en la misma, lo que aumenta la complejidad y el tamaño del proyecto y generalmente es seguido de tiempos de carga más largos.
 
-
 ## Estructura de la aplicación
 
 Seguiremos una estructura de proyecto orientada a módulos. Con dicho enfoque, oficialmente recomendado, los módulos son claramente visibles en el árbol de carpetas como directorios separados y cada módulo contiene todos los archivos que están relacionados con el módulo en cuestión.
@@ -81,13 +80,11 @@ Los módulos de funcionalidades se clasifican en [seis tipos](https://angular.io
 
 Esta estructura permite la separación de responsabilidades de una manera clara, además de ser el punto de partida para la implementación de la carga diferida de los contenidos de la aplicación, paso fundamental para la preparación de una arquitectura escalable.
 
-
 ### AppModule
 
 - Este módulo ocupa la raíz de la carpeta de la aplicación y deberá contener exclusivamente lo más elemental.
 - Su función es simplemente arrancar la aplicación Angular y proporcionar la salida de la ruta raíz (_router-outlet_). **Este enfoque también deja abierta la posibilidad de ejecutar múltiples aplicaciones Angular independientes a través de la misma URL base.**
 - Importará los módulos _CoreModule_ y _SharedModule_.
-
 
 ### CoreModule
 
@@ -121,7 +118,6 @@ _auth.service.ts_
 
 > **CONSEJO ·** Podemos potenciar la reutilización de los servicios y funcionalidades de _CoreModule_ en otras aplicaciones creando un nuevo directorio _core_ en la raíz de la aplicación y moviendo cada funcionalidad de _CoreModule_ a un nuevo módulo.
 
-
 ### SharedModule
 
 - Todos los componentes, servicios y _pipelines_ compartidos deben ser implementados en este módulo.
@@ -132,14 +128,12 @@ _auth.service.ts_
 
 > **CONSEJO ·** Podemos potenciar la reutilización de componentes de interfaz de _SharedModule_ en otras aplicaciones creando un nuevo directorio _ui_ en el raíz de la aplicación y moviendo cada grupo de componentes de _SharedModule_ a un nuevo módulo.
 
-
 ### Feature modules
 
 - Crearemos múltiples módulos de funcionalidades para cada característica independiente de nuestra aplicación.
 - Los módulos de funcionalidades sólo deben importar servicios de _CoreModule_ o _SharedModule_, así pues, si el módulo de funcionalidades _feature1_ necesita importar un servicio del módulo _feature2_, será necesario trasladar ese servicio al _CoreModule_.
 - Podrán contener sus propios artefactos (servicios, interfaces o modelos entre otros) siempre y cuando sean exclusivos para el propio módulo.
 - Permitirá asegurarnos de que los cambios en una característica no pueden afectar o interrumpir el resto de nuestra aplicación.
-
 
 ## Enrutamiento
 
@@ -169,7 +163,6 @@ const routes: Routes = [
 ```
 _core-routing.module.ts_
 
-
 ### Carga diferida
 
 Para evitar posibles problemas de rendimiento en la carga de la aplicación, se hará uso del patrón _carga diferida_ (_[Lazy-Loading](https://angular.io/guide/lazy-loading-ngmodules)_), capacidad incorporada en Angular y que permite aplazar la carga de una parte particular de la aplicación hasta que sea realmente necesaria.
@@ -188,7 +181,6 @@ const routes: Routes = [
 _core-routing.module.ts_
 
 Gracias a la estructura de módulos definida, nuestros módulos de funcionalidades podrán cargarse de forma diferida una vez que se haya inicializado la aplicación, lo que reducirá enormemente el tiempo de arranque de la aplicación. Además de ello, cuando la aplicación crezca y se añadan más módulos, el paquete de núcleo de la aplicación y por lo tanto su tiempo de inicio seguirán siendo los mismos.
-
 
 ## Flujo de datos
 
@@ -212,7 +204,6 @@ Cuando sea necesario estructurar los componentes por niveles, debemos seguir las
 
 > Si conseguimos encontrar el equilibrio entre un número adecuado de componentes y el principio de responsabilidad única, más sencillo será el flujo de datos y más fácil será trabajar con él.
 
-
 ## Administración de estado
 
 Un estado dado es usualmente compartido y su información afecta a múltiples componentes e incluso pantallas a la vez. Es por ello que las operaciones sobre el estado suelen ser complejas en una aplicación Angular, donde además se pueden llegar a realizar con frecuencia.
@@ -222,7 +213,6 @@ Una de las maneras de abordar estos problemas es aprovechar el flujo de datos un
 La idea detrás de _Redux_ es que todo el estado de la aplicación se almacena en un único _[store](https://github.com/angular-redux/platform/tree/master/packages/store)_, el objeto que representa el estado actual de la aplicación. Un _store_ es inmutable, no puede ser modificado, cada vez que un estado necesita ser cambiado, un nuevo objeto tiene que ser creado.
 
 Un único punto de referencia para todo el estado de la aplicación simplifica el problema de la sincronización entre las diferentes partes de la aplicación. No tienes que buscar una información determinada en diferentes módulos o componentes, todo está disponible en el _store_.
-
 
 ## Aliases para la aplicación y entorno
 
@@ -277,7 +267,6 @@ export * from './services';
 ```
 _app/core/index.ts_
 
-
 ## Sass
 
 Soy partidario de establecer _[Sass](https://sass-lang.com/)_ como preprocesador de estilos CSS a utilizar. Además de las ventajas propias de Sass, éste nos permite integrar de una manera más efectiva la biblioteca oficial de componentes de Angular Material así como sus amplias capacidades de personalización.
@@ -297,7 +286,6 @@ ng config schematics.@schematics/angular:component.styleext scss
 _@schematics/angular es el esquema predeterminado para Angular CLI_
 _Será necesario además renombrar la extensión de todas las hojas de estilo de css a scss._
 
-
 ## Compilación manual para producción
 
 Dadas las limitaciones de compilación para producción ofrecidas de manera predeterminada por _Angular CLI_ en el archivo _package.json_, debemos hacer una pequeña personalización en dicho archivo para poder disponer de la posibilidad de compilar la aplicación con opciones específicas para su integración en producción.
@@ -316,7 +304,6 @@ Dadas las limitaciones de compilación para producción ofrecidas de manera pred
 _package.json_
 
 _[ng build](https://angular.io/cli/build)_
-
 
 ## Commits y changelog
 
@@ -382,7 +369,6 @@ _example_
 - _style_: Cambios que no afectan el significado del código (espacios en blanco, formato, un punto y coma que falta, etc)
 - _test_: Añadir pruebas que faltan o corregir pruebas existentes
 
-
 ## Angular Material
 
 [Angular Material](https://material.angular.io/) es una librería de componentes web basada en Material Design y creada por el propio equipo de Angular.
@@ -439,7 +425,6 @@ _sidevav.component.ts_
 
 > _[NgZone](https://angular.io/api/core/NgZone)_ nos permite ejecuta nuestro trabajo en la zona de Angular.
 En el ejemplo de _sidevav.component.ts_ lo usamos para que un componente hijo sea notificado de que la variable _scrolledContent_ ha cambiado.
-
 
 ---
 <social-share class="social-share--footer" />

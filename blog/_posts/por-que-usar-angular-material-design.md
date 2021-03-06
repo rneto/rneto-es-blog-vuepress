@@ -13,7 +13,6 @@ permalink: /blog/:slug
 
 Si te estás planteando la pregunta de _¿por qué usar Angular y Material Design?_, quisiera que conocieras algunas de las ventajas de crear una aplicación SPA (Single Page Aplication) basada en Angular como framework Javascript para el cliente y Angular Material como marco centrado en la interfaz de usuario.
 
-
 ## Ventajas de una aplicación SPA basada en Angular
 
 - Se mejora la experiencia de navegación del usuario ya que es posible realizar la **carga parcial y diferida de los contenidos de la página**, lo que repercute en el rendimiento general de la aplicación.
@@ -47,7 +46,6 @@ Si te estás planteando la pregunta de _¿por qué usar Angular y Material Desig
 - [Angular Material](https://material.angular.io/)
 - [Material Design](https://material.io/)
   - [Introducción](https://material.io/design/introduction/)
-
 
 ---
 <social-share class="social-share--footer" />

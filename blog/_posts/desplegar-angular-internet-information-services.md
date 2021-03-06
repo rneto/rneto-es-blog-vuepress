@@ -40,7 +40,8 @@ Para la automatizar el despliegue del nuevo fichero, en primer lugar debemos añ
 A continuación, vamos a configurarlo en los _assets_ del proyecto en el fichero _angular.json_:
 
 ``` json
-  ...
+{
+  ...,
   "build": {
     ...,
     "options": {
@@ -51,8 +52,9 @@ A continuación, vamos a configurarlo en los _assets_ del proyecto en el fichero
       ],
       ...
     },
-  }
+  },
   ...
+}
 ```
 _angular.json_
 

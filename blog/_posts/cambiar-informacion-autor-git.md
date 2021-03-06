@@ -47,13 +47,11 @@ fi
 
 Y finalmente publicamos el nuevo histórico al repositorio de origen:
 
-
 ``` bash
 git push --force --tags origin 'refs/heads/*'
 ```
 
 Llegados a este punto, ya podemos eliminar el clon temporal que habíamos creado y comprobar en nuestro origen que el histórico ha sido actualizado.
-
 
 ---
 <social-share class="social-share--footer" />

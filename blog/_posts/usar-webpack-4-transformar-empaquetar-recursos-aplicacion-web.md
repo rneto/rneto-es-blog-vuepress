@@ -36,9 +36,6 @@ exports.getName = getName;
 
 Webpack tomaría como archivo de entrada nuestro _index.js_, analizaría sus dependencias (_user.js_) y generaría un nuevo recurso único _main.js_ con todo el código necesario.
 
-
-
-
 ## Instalación de Webpack de manera global
 
 Para poder instalar Webpack es necesario tener previamente instalado [Node.js](https://nodejs.org/es/).
@@ -95,7 +92,6 @@ Aprovecharíamos además para añadir un nuevo script al fichero _package.json_ 
 Ahora, cuando ejecutemos el comando ```npm run build``` en nuestro directorio, se realizará el empaquetado de nuestros archivos de manera predeterminara en _./build/main.js_.
 
 Puedes consultar todo el código del anterior ejemplo en [GitHub](https://github.com/rneto/webpack-4-basic-js-build-test).
-
 
 ---
 <social-share class="social-share--footer" />

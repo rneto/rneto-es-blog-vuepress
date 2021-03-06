@@ -89,7 +89,6 @@ Esta extensión usa distintos juegos de colores para facilitar la identificació
 
 [Bracket Pair Colorizer (CoenraadS)](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
 
-
 ## 13. Bootstrap 4, Font awesome 4, Font Awesome 5 Free & Pro snippets (Ashok Koyi)
 
 Con esta extensión podremos crear fácilmente fragmentos de código basados en Bootstrap 4, Font awesome 4 y Font Awesome 5.
@@ -107,7 +106,6 @@ A falta de soporte nativo en Visual Studio Code para ficheros Stylus, esta exten
 Me gusta hacer uso del inglés en mi día a día como desarrolador de software, así que personalmente prefiero programar en inglés y la versión también en inglés de mis aplicaciones como Visual Studio Code, pero si todavía no quieres dar ese paso, puedes instalarte esta extensión que te permitirá tenerlo completamente personalizado en español.
 
 [Spanish Language Pack for Visual Studio Code (Microsoft)](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-es)
-
 
 ---
 <social-share class="social-share--footer" />

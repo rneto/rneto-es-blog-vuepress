@@ -56,7 +56,6 @@ También es posible centrar el texto verticalmente mediante el uso de la propied
   text align center
 </div>
 
-
 ## 2. Método _margin auto_
 
 Esta técnica se basa en usar la propiedad _margin_ del elemento que queremos alinear para así distanciarlo de los bordes de su contenedor y conseguir el efecto de centrado deseado. Si la combinamos con las características de flexbox, también podemos conseguir la alineación vertical de nuestro texto:
@@ -105,7 +104,6 @@ Esta técnica se basa en usar la propiedad _margin_ del elemento que queremos al
   </span>
 </div>
 
-
 ## 3. Método _flexbox_
 
 Flexbox nos permite definir de una manera eficiente la alineación y posición de nuestros elementos. Para ello haremos uso de la alineación vertical (_align-items_) y horizontal (_justify-content_) propias de flexbox.
@@ -145,7 +143,6 @@ Flexbox nos permite definir de una manera eficiente la alineación y posición d
 <div class="flexbox">
     flexbox
 </div>
-
 
 ## 4. Método _position absolute_
 
@@ -207,7 +204,6 @@ Al establecer la posición absoluta, estamos eliminando el elemento del flujo de
     position absolute
   </span>
 </div>
-
 
 ## 5. Método _table cell_
 
