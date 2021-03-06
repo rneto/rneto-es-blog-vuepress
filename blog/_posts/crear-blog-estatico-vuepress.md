@@ -1,8 +1,8 @@
 ---
 date: 2020-5-08
 tags:
-  - vuepress
-  - vuejs
+  - VuePress
+  - Vuejs
   - blog
 permalink: /blog/:slug
 ---

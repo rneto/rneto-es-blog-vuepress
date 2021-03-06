@@ -2,8 +2,8 @@
 date: 2020-9-23
 tags:
   - algoritmo
-  - typescript
-  - patron-de-diseno
+  - TypeScript
+  - PatronDeDiseño
 permalink: /blog/:slug
 ---
 

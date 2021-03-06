@@ -2,7 +2,7 @@
 date: 2020-5-21
 tags:
   - npm
-  - visualstudio
+  - VisualStudio
 permalink: /blog/:slug
 ---
 

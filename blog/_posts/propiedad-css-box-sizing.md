@@ -1,7 +1,7 @@
 ---
 date: 2020-12-23
 tags:
-  - css
+  - CSS
 permalink: /blog/:slug
 ---
 

@@ -1,8 +1,8 @@
 ---
 date: 2020-7-6
 tags:
-  - aspnet
-  - sqlserver
+  - ASPNET
+  - SQLServer
 permalink: /blog/:slug
 ---
 

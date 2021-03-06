@@ -1,7 +1,7 @@
 ---
 date: 2020-12-19
 tags:
-  - angular
+  - Angular
 permalink: /blog/:slug
 ---
 

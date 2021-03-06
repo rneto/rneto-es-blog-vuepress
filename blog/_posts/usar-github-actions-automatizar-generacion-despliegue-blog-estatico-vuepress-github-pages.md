@@ -1,8 +1,8 @@
 ---
 date: 2020-10-19
 tags:
-  - vuepress
-  - githubactions
+  - VuePress
+  - GitHubActions
 permalink: /blog/:slug
 ---
 

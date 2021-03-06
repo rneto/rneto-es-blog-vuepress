@@ -1,7 +1,7 @@
 ---
 date: 2020-6-5
 tags:
-  - git
+  - Git
 permalink: /blog/:slug
 ---
 

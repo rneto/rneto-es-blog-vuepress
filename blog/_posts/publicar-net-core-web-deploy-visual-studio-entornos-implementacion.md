@@ -1,11 +1,11 @@
 ---
 date: 2020-11-26
 tags:
-  - aspnet
-  - dotnetcore
-  - iis
-  - webdeploy
-  - visualstudio
+  - ASPNET
+  - NETCore
+  - IIS
+  - WebDeploy
+  - VisualStudio
 permalink: /blog/:slug
 ---
 

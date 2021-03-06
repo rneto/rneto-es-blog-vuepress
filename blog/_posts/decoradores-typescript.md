@@ -1,8 +1,8 @@
 ---
 date: 2020-6-24
 tags:
-  - typescript
-  - patron-de-diseno
+  - TypeScript
+  - PatronDeDiseño
 permalink: /blog/:slug
 ---
 

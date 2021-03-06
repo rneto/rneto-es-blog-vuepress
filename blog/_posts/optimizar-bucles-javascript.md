@@ -1,8 +1,8 @@
 ---
 date: 2020-6-4
 tags:
-  - javascript
-  - es2015
+  - JavaScript
+  - ES2015
 permalink: /blog/:slug
 ---
 

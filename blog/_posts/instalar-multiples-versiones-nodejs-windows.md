@@ -1,7 +1,7 @@
 ---
 date: 2021-1-24
 tags:
-  - nodejs
+  - Nodejs
   - nvm
   - npm
 permalink: /blog/:slug
@@ -11,7 +11,7 @@ permalink: /blog/:slug
 
 <social-share class="social-share--header" />
 
-Una vez nos hemos sumergido en los nuevos frameworks y entornos de trabajo front end modernos, vamos a empezar a encontrarnos con que cada uno de nuestros proyectos puede haber sido creado con una versión diferente de Node.js, lo que implica que debamos empezar a tener en cuenta la versión mínima y máxima soportada de cada paquete _npm_ en cada versión de Node.js. Es el caso por ejemplo del paquete [node-sass](https://github.com/sass/node-sass), cuyas versiones mínimas y máximas compatibles con Node.js son:
+Una vez nos hemos sumergido en los frameworks y entornos de trabajo front end modernos, vamos a empezar a encontrarnos con que cada uno de nuestros proyectos puede haber sido creado con una versión diferente de Node.js, lo que implica que debamos empezar a tener en cuenta la versión mínima y máxima soportada de cada paquete _npm_ en cada versión de Node.js. Es el caso por ejemplo del paquete [node-sass](https://github.com/sass/node-sass), cuyas versiones mínimas y máximas compatibles con Node.js son:
 
 Node.js  | Versión node-sass soportada
 --------|----------------------------
@@ -24,7 +24,7 @@ Node 10 | 4.9+
 Node 8  | 4.5.3+, <5.0
 Node <8 | <5.0
 
-Poniéndonos en este contexto, podría darse el caso por ejemplo de que por algún motivo no hemos podido aún migrar un _viejo_ proyecto Angular de la versión 7.0.0 a la más actual. En ese caso, si queremos seguir trabajando en él sin realizar la migración, nos encontraremos en nuestro fichero _package.json_ la dependencia ```"@angular-devkit/build-angular": "~0.7.0"```, que a su vez depende de ```"node-sass": "^4.9.3"```. Esto implica que en lugar de trabajar con la versión más actual de Node.js, deberíamos hacerlo (según la tabla anterior) con la versión _10.x_ de Node.js, ya que en caso contrario tendríamos problemas con el uso de librerías dependientes como _node-sass_.
+Poniéndonos en este contexto, podría darse el caso por ejemplo de que no hayamos podido migrar un _viejo_ proyecto Angular de la versión 7.0.0 a la más actual. En ese caso, si queremos seguir trabajando en él sin realizar la migración, nos encontraremos en nuestro fichero _package.json_ la dependencia ```"@angular-devkit/build-angular": "~0.7.0"```, que a su vez depende de ```"node-sass": "^4.9.3"```. Esto implica que en lugar de trabajar con la versión más actual de Node.js, deberíamos hacerlo (según la tabla anterior) con la versión _10.x_ de Node.js, ya que en caso contrario tendríamos problemas con el uso de librerías dependientes como _node-sass_.
 
 ## Node Version Manager (nvm) al rescate
 

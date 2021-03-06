@@ -1,9 +1,9 @@
 ---
 date: 2020-12-11
 tags:
-  - angular
-  - materialdesign
-  - angularmaterial
+  - Angular
+  - MaterialDesign
+  - AngularMaterial
 permalink: /blog/:slug
 ---
 
