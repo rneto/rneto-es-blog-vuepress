@@ -76,7 +76,7 @@ _tailwind.config.js_
 
 Si por el contrario lo que queremos es priorizar las clases de Angular Material, debemos reescribir los estilos de Tailwind CSS que no queramos que nos afecten o inclusive usar sus propias clases para _proteger_ los estilos de los componentes de Angular Material.
 
-Esto nos puede ocurrir por ejemplo de los botones, donde la clase base de Tailwind CSS siempre les agregará un contorno cuando reciban el foco:
+Esto nos puede ocurrir por ejemplo con los botones, donde la clase base de Tailwind CSS siempre les agregará un contorno cuando reciban el foco:
 
 ``` css
 button:focus {
@@ -85,7 +85,7 @@ button:focus {
 }
 ```
 
-Podremos reescribir dicho estilo en nuestro fichero _styles.scss_ estableciendo el valor deseado:
+Así que podremos reescribir dicho estilo en nuestro fichero _styles.scss_ estableciendo el valor deseado:
 
 ``` scss
 button:focus {
@@ -109,7 +109,7 @@ También cabría la posibilidad de usar una clase propia de Tailwind CSS en nues
 <button mat-button class="focus:outline-none">Basic</button>
 ```
 
-Y para terminar, la que quizás sea la vía más interesante para evitar los problemas de compatibilidad entre ambos sistemas (y seguramente la más acertada para proyectos ya existentes o de los cuales queremos controlar las clases base), es deshabilitar por completo los estilos base de Tailwind CSS con la siguiente modificación en el fichero _tailwind.config.js_:
+Y para terminar, la que quizás sea la vía más interesante para evitar los problemas de compatibilidad entre ambos sistemas (y seguramente la más acertada para proyectos ya existentes o de los cuales queremos controlar las clases base), es deshabilitar por completo los estilos _preflight_ (son los estilos creados para suavizar las inconsistencias entre navegadores) de Tailwind CSS con la siguiente modificación en el fichero _tailwind.config.js_:
 
 ``` js
 module.exports = {
