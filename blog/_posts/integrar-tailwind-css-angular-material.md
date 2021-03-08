@@ -15,9 +15,13 @@ Si todavía no sabes qué es Tailwind CSS, te recomiendo que le eches un vistazo
 
 ## Instalación de Tailwind CSS en Angular
 
-Ya es una realidad, desde la versión 11.2 de Angular **ya tenemos disponible el soporte nativo de Tailwind CSS en nuestras aplicaciones**, así que es muy sencillo empezar a disfrutar de sus ventajas:
-1. Primero debemos asegurarnos de estar en la última versión de Angular, por lo que ejecutamos `ng update` para actualizar nuestra aplicación si no estamos en la versión 11.2 o superior.
-   - Es posible que tengamos alertas que nos indiquen que debamos ejecutar por separado la actualización de Angular CLI con `ng update @angular/cli` (del que también deberemos tener la versión 11.2 o superior) y la de Angular Core con `ng update @angular/core`.
+Desde la versión 11.2 de Angular **ya está disponible el soporte nativo de Tailwind CSS**, así que es muy sencillo empezar a disfrutar de sus ventajas en nuestras aplicaciones:
+1. En primer lugar debemos asegurarnos de estar en la versión 11.2 o superior de Angular. Podemos actualizarnos ejecutando `ng update` o siguiendo la [guía de actualización de Angular](https://update.angular.io/).
+   - Si ejecutamos el comando `ng update`, es posible que tengamos alertas que nos indiquen que debemos ejecutar por separado la actualización de Angular CLI con `ng update @angular/cli` y Angular Core con `ng update @angular/core`.
+   - Si simplemente queremos la versión intermedia más reciente de Angular 11, debemos ejecutar `ng update @angular/cli@11` y `ng update @angular/core@11`, o lo que sería lo mismo `ng update @angular/core@11 @angular/cli@11`.
+        > Hay que tener en cuenta que desde la versión 7 de Angular, las versiones principales de Angular Core y CLI están alineadas, por lo que ambas tienen que ser iguales si queremos usar Angular CLI para desarrollar nuestra aplicación.
+
+        > Recordemos también que las versiones intermedias son totalmente compatibles con las versiones intermedias anteriores por lo que no deberíamos de tener problemas al pasarnos por ejemplo de la versión 11.0.0 a la 11.2.4.
 1. A continuación instalamos Tailwind CSS con el comando `npm install -D tailwindcss`
 1. Creamos el fichero de configuración de Tailwind CSS _tailwind.config.js_ en la carpeta raíz de nuestra aplicación con el comando `npx tailwindcss init`.
 1. Y finalmente importamos los estilos base a nuestro fichero _styles.scss_:
@@ -27,7 +31,7 @@ Ya es una realidad, desde la versión 11.2 de Angular **ya tenemos disponible el
 @import 'tailwindcss/utilities';
 ```
 
-Así de rápido, no hay más. A partir de ese momento ya podemos empezar a usar Tailwind CSS en nuestra aplicación:
+A partir de ese momento ya podemos empezar a usar Tailwind CSS en nuestra aplicación:
 
 ``` html
 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Button</button>
@@ -36,7 +40,7 @@ _app.component.html_
 
 ## Instalación de Angular Material
 
-La instalación de Angular Material está completamente guiada a través de Angular CLI, por lo que al ejecutar el comando `ng add @angular/material` en nuestra aplicación, podremos instalar muy fácilmente todo lo necesario.
+La instalación de Angular Material está completamente guiada a través de Angular CLI, por lo que al ejecutar el comando `ng add @angular/material` en nuestra aplicación, podremos instalar todo lo necesario.
 
 A continuación debemos importar los módulos de los componentes que queramos usar en nuestra aplicación:
 
@@ -76,7 +80,7 @@ _tailwind.config.js_
 
 Si por el contrario lo que queremos es priorizar las clases de Angular Material, debemos reescribir los estilos de Tailwind CSS que no queramos que nos afecten o inclusive usar sus propias clases para _proteger_ los estilos de los componentes de Angular Material.
 
-Esto nos puede ocurrir por ejemplo de los botones, donde la clase base de Tailwind CSS siempre les agregará un contorno cuando reciban el foco:
+Esto nos puede ocurrir por ejemplo con los botones, donde la clase base de Tailwind CSS siempre les agregará un contorno cuando reciban el foco:
 
 ``` css
 button:focus {
@@ -85,7 +89,7 @@ button:focus {
 }
 ```
 
-Podremos reescribir dicho estilo en nuestro fichero _styles.scss_ estableciendo el valor deseado:
+Así que podremos reescribir dicho estilo en nuestro fichero _styles.scss_ estableciendo el valor deseado:
 
 ``` scss
 button:focus {
@@ -109,7 +113,7 @@ También cabría la posibilidad de usar una clase propia de Tailwind CSS en nues
 <button mat-button class="focus:outline-none">Basic</button>
 ```
 
-Y para terminar, la que quizás sea la vía más interesante para evitar los problemas de compatibilidad entre ambos sistemas (y seguramente la más acertada para proyectos ya existentes o de los cuales queremos controlar las clases base), es deshabilitar por completo los estilos base de Tailwind CSS con la siguiente modificación en el fichero _tailwind.config.js_:
+Y para terminar, la que quizás sea la vía más interesante para evitar los problemas de compatibilidad entre ambos sistemas (y seguramente la más acertada para proyectos ya existentes o de los cuales queremos controlar las clases base), es deshabilitar por completo los estilos _preflight_ (son los estilos creados para suavizar las inconsistencias entre navegadores) de Tailwind CSS con la siguiente modificación en el fichero _tailwind.config.js_:
 
 ``` js
 module.exports = {
