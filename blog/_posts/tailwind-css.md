@@ -1,5 +1,5 @@
 ---
-date: 2021-03-07
+date: 2021-03-08
 tags:
   - TailwindCSS
 permalink: /blog/:slug
@@ -121,9 +121,9 @@ Y este sería el resultado:
   <iframe src="https://htmlpreview.github.io/?https://github.com/rneto/mini-projects/blob/master/basic-tailwind-css/index.html"></iframe>
 </div>
 
-Puedes ver el código completo del anterior ejemplo al que he llamado _Basic Tailwind CSS_ en mi repositorio de GitHub [Mini projects](https://github.com/rneto/mini-projects).
+Puedes ver el código completo del anterior ejemplo al que he llamado [Basic Tailwind CSS](https://github.com/rneto/mini-projects/tree/master/basic-tailwind-css) en mi repositorio de GitHub [Mini projects](https://github.com/rneto/mini-projects).
 
-Y si quieres profundizar un poco más sobre Tailwind CSS y Angular, aquí podrás conocer [cómo integrar Tailwind CSS con Angular Material en una aplicación Angular](./integrar-tailwind-css-angular-material.md).
+Y si quieres profundizar un poco más sobre Tailwind CSS con Angular e inclusive Angular Material, te sugiero visitar mi artículo sobre [cómo integrar Tailwind CSS con Angular Material en una aplicación Angular](./integrar-tailwind-css-angular-material.md).
 
 ---
 <social-share class="social-share--footer" />
