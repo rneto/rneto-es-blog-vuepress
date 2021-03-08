@@ -11,11 +11,7 @@ permalink: /blog/:slug
 
 <social-share class="social-share--header" />
 
-<<<<<<< HEAD
 Si todavía no sabes qué es Tailwind CSS, te recomiendo que le eches un vistazo a mi artículo sobre [¿Qué es Tailwind CSS?](./tailwind-css.md). Y si no conoces Material Design o Angular Material, también te sugiero que le eches un vistazo a este otro artículo sobre [¿Por qué usar Angular y Material Design?](./por-que-usar-angular-material-design.md) y donde planteo algunas de las ventajas de su uso.
-=======
-Si todavía no sabes qué es Tailwind CSS, te recomiendo que le eches un vistazo a mi artículo sobre [¿Qué es Tailwind CSS?](./tailwind-css). Y si no conoces Material Design o Angular Material, también te sugiero que le eches un vistazo a este otro artículo sobre [¿Por qué usar Angular y Material Design?](./por-que-usar-angular-material-design.md#ventajas-del-uso-de-material-design-y-angular-material) y donde planteo algunas de las ventajas de su uso.
->>>>>>> 9c1a33694521ca63acce05c547ec8853500c8c2d
 
 ## Instalación de Tailwind CSS en Angular
 
