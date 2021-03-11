@@ -18,10 +18,13 @@ Si todavía no sabes qué es Tailwind CSS, te recomiendo que le eches un vistazo
 Desde la versión 11.2 de Angular **ya está disponible el soporte nativo de Tailwind CSS**, así que es muy sencillo empezar a disfrutar de sus ventajas en nuestras aplicaciones:
 1. En primer lugar debemos asegurarnos de estar en la versión 11.2 o superior de Angular. Podemos actualizarnos ejecutando `ng update` o siguiendo la [guía de actualización de Angular](https://update.angular.io/).
    - Si ejecutamos el comando `ng update`, es posible que tengamos alertas que nos indiquen que debemos ejecutar por separado la actualización de Angular CLI con `ng update @angular/cli` y Angular Core con `ng update @angular/core`.
-   - Si simplemente queremos la versión intermedia más reciente de Angular 11, debemos ejecutar `ng update @angular/cli@11` y `ng update @angular/core@11`, o lo que sería lo mismo `ng update @angular/core@11 @angular/cli@11`.
-        > Hay que tener en cuenta que desde la versión 7 de Angular, las versiones principales de Angular Core y CLI están alineadas, por lo que ambas tienen que ser iguales si queremos usar Angular CLI para desarrollar nuestra aplicación.
 
-        > Recordemos también que las versiones intermedias son totalmente compatibles con las versiones intermedias anteriores por lo que no deberíamos de tener problemas al pasarnos por ejemplo de la versión 11.0.0 a la 11.2.4.
+        > Tengamos en cuenta que desde la versión 7 de Angular, las versiones principales de Angular Core y CLI están alineadas, por lo que ambas tienen que ser iguales si queremos usar Angular CLI para desarrollar nuestra aplicación.
+
+   - Si simplemente queremos la versión intermedia más reciente de Angular 11, debemos ejecutar `ng update @angular/cli@11` y `ng update @angular/core@11`, o lo que sería lo mismo `ng update @angular/core@11 @angular/cli@11`.
+
+        > Recordemos que las versiones intermedias son totalmente compatibles con las versiones intermedias anteriores por lo que no deberíamos de tener problemas al pasarnos por ejemplo de la versión 11.0.0 a la 11.2.4.
+
 1. A continuación instalamos Tailwind CSS con el comando `npm install -D tailwindcss`
 1. Creamos el fichero de configuración de Tailwind CSS _tailwind.config.js_ en la carpeta raíz de nuestra aplicación con el comando `npx tailwindcss init`.
 1. Y finalmente importamos los estilos base a nuestro fichero _styles.scss_:

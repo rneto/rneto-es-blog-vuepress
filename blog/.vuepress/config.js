@@ -52,13 +52,13 @@ module.exports = {
     footer: {
       contact: [
         {
-          type: 'mail',
-          link: 'mailto:hola@rneto.es',
+          type: 'twitter',
+          link: 'https://mobile.twitter.com/RNeto',
         },
       ],
       copyright: [
         {
-          text: "Rafael Neto © 2020",
+          text: "Rafael Neto © 2021",
           link: ""
         }
       ]
