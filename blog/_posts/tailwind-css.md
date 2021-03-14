@@ -80,25 +80,22 @@ Y este sería el resultado:
 
 <style>
   .responsive-embed {
-    /*position: relative;
+    position: relative;
     display: block;
     width: 100%;
     padding: 0;
-    overflow: hidden;*/
-
-    position: relative;
-    width: 100%;
     overflow: hidden;
-    padding-top: 100%;
+    -webkit-overflow-scrolling: touch;
+  	overflow-y: scroll;
   }
 
   .responsive-embed::before {
-    /*padding-top: 56.25%;*/
+    padding-top: 75%;
   }
 
   .responsive-embed::before {
-    /*display: block;
-    content: "";*/
+    display: block;
+    content: "";
   }
 
   .responsive-embed__element,
@@ -106,7 +103,7 @@ Y este sería el resultado:
   .responsive-embed iframe,
   .responsive-embed object,
   .responsive-embed video {
-    /*position: absolute;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -118,16 +115,7 @@ Y este sería el resultado:
     align-items: center;
     display: flex;
     justify-content: center;
-    text-align: center;*/
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
+    text-align: center;
   }
 </style>
 
