@@ -85,11 +85,6 @@ Y este sería el resultado:
     width: 100%;
     padding: 0;
     overflow: hidden;*/
-
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding-top: 100%;
   }
 
   .responsive-embed::before {
@@ -120,11 +115,6 @@ Y este sería el resultado:
     justify-content: center;
     text-align: center;*/
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
     width: 100%;
     height: 100%;
     border: none;
