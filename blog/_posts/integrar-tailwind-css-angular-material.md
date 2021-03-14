@@ -25,14 +25,25 @@ Desde la versión 11.2 de Angular **ya está disponible el soporte nativo de Tai
 
         > Recordemos que las versiones intermedias son totalmente compatibles con las versiones intermedias anteriores por lo que no deberíamos de tener problemas al pasarnos por ejemplo de la versión 11.0.0 a la 11.2.4.
 
-1. A continuación instalamos Tailwind CSS con el comando `npm install -D tailwindcss`
+1. A continuación instalamos Tailwind CSS con el comando `npm install -D tailwindcss`.
 1. Creamos el fichero de configuración de Tailwind CSS _tailwind.config.js_ en la carpeta raíz de nuestra aplicación con el comando `npx tailwindcss init`.
+1. Configuramos Tailwind CSS para que elimine los estilos no utilizados en nuestra aplicación:
+      ``` js
+      module.exports = {
+        purge: {
+          enabled: true,
+          content: ['./src/**/*.{html,ts}'],
+        },
+        ...
+      }
+      ```
+      _tailwind.config.js_
 1. Y finalmente importamos los estilos base a nuestro fichero _styles.scss_:
-``` scss
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-```
+    ``` scss
+    @import 'tailwindcss/base';
+    @import 'tailwindcss/components';
+    @import 'tailwindcss/utilities';
+    ```
 
 A partir de ese momento ya podemos empezar a usar Tailwind CSS en nuestra aplicación:
 
@@ -120,7 +131,6 @@ Y para terminar, la que quizás sea la vía más interesante para evitar los pro
 
 ``` js
 module.exports = {
-  ...,
   corePlugins: {
     preflight: false,
   },
