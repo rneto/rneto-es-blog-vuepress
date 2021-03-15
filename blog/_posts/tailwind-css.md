@@ -86,7 +86,6 @@ Y este sería el resultado:
     padding: 0;
     overflow: hidden;
     -webkit-overflow-scrolling: touch;
-  	overflow-y: scroll;
   }
 
   .responsive-embed::before {
