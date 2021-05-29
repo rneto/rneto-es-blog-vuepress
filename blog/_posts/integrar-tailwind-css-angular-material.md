@@ -2,6 +2,7 @@
 date: 2021-03-08
 tags:
   - Angular
+  - AngularMaterial
   - MaterialDesign
   - TailwindCSS
 permalink: /blog/:slug
