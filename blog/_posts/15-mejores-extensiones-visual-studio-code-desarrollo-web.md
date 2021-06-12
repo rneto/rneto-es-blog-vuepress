@@ -2,7 +2,7 @@
 date: 2021-6-12
 tags:
   - VisualStudioCode
-permalink: /blog/15-mejores-extensiones-visual-studio-code-desarrollo-web
+permalink: /blog/:slug
 ---
 
 # Las 15 mejores extensiones de Visual Studio Code para el desarrollo web
@@ -27,7 +27,7 @@ Con esta extensión vamos a conseguir una experiencia de desarrollo más avanzad
 
 [Tailwind CSS IntelliSense (Brad Cornes)](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
-> Si te interesa saber qué es Tailwind CSS o cómo combinarlo con Angular e inclusive con Angular Material, echa un vistazo a estos otros artículos: [¿Qué es Tailwind CSS?](./tailwind-css.md) e [Integrar Tailwind CSS con Angular Material en una aplicación Angular](./integrar-tailwind-css-angular-material.md).
+> Si te interesa saber qué es Tailwind CSS o cómo combinarlo con Angular e inclusive con Angular Material, echa un vistazo a estos otros artículos: [¿Qué es Tailwind CSS?](/blog/tailwind-css/) e [Integrar Tailwind CSS con Angular Material en una aplicación Angular](/blog/integrar-tailwind-css-angular-material/).
 
 ## 3. Prettier - Code formatter (esbenp.prettier-vscode)
 
@@ -65,7 +65,7 @@ Esta extensión ofrece de una manera muy rápida un servidor de desarrollo en vi
 
 [Live Server (Ritwick Dey)](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
-> Si además quieres conocer otras alternativas para servir archivos HTML estáticos desde Visual Studio Code, echa un vistazo a este otro artículo: [Servir archivos HTML estáticos localmente con Node.js y http-server](./servir-archivos-html-estaticos-localmente-nodejs-http-server.md).
+> Si además quieres conocer otras alternativas para servir archivos HTML estáticos desde Visual Studio Code, echa un vistazo a este otro artículo: [Servir archivos HTML estáticos localmente con Node.js y http-server](/blog/servir-archivos-html-estaticos-localmente-nodejs-http-server/).
 
 ## 9. Angular Essentials (johnpapa.angular-essentials)
 
