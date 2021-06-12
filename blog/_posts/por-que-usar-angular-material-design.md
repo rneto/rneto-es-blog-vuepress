@@ -39,12 +39,12 @@ Si te estás planteando la pregunta de _¿por qué usar Angular y Material Desig
 - [Angular](https://angular.io)
   - [Primeros pasos](https://angular.io/guide/quickstart)
   - [Guía de estilo](https://angular.io/guide/styleguide)
-  - [Arquitectura y buenas prácticas](./arquitectura-buenas-practicas-angular.md)
+  - [Arquitectura y buenas prácticas](/blog/arquitectura-buenas-practicas-angular/)
   - **Despliegue automático en Azure** _próximamente_
 - [TypeScript](https://www.typescriptlang.org/)
   - [Playground](https://www.typescriptlang.org/play/)
 - [Angular Material](https://material.angular.io/)
-  - [Integrar Tailwind CSS con Angular Material en una aplicación Angular](./integrar-tailwind-css-angular-material.md)
+  - [Integrar Tailwind CSS con Angular Material en una aplicación Angular](/blog/integrar-tailwind-css-angular-material/)
 - [Material Design](https://material.io/)
   - [Introducción](https://material.io/design/introduction/)
 
