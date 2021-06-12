@@ -34,7 +34,7 @@ También es posible programar la ejecución de los scripts asociándolos a difer
 
 Cuando nuestro fichero _package.json_ esté ubicado en la carpeta _wwwroot_ (u otra carpeta que no sea la raíz del proyecto), el Explorador del Ejecutador de tareas (_Task Runner Explorer_) no lo reconocerá, por lo que deberemos crear un segundo _package.json_ en la ruta raíz del proyecto en el que redefiniremos nuestros scripts.
 
-En el nuevo fichero _package.json_ estableceremos la ruta de ejecución del script en base a nuestros recursos. Así pues, en el siguiente ejemplo añadiremos ```cd wwwroot && ``` al principio del script _build_ para el empaquetado con [Webpack](./usar-webpack-4-transformar-empaquetar-recursos-aplicacion-web.md) de nuestros recursos.
+En el nuevo fichero _package.json_ estableceremos la ruta de ejecución del script en base a nuestros recursos. Así pues, en el siguiente ejemplo añadiremos ```cd wwwroot && ``` al principio del script _build_ para el empaquetado con [Webpack](/blog/usar-webpack-4-transformar-empaquetar-recursos-aplicacion-web/) de nuestros recursos.
 
 ``` bash
 {
