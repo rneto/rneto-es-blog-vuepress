@@ -124,7 +124,7 @@ Y este sería el resultado:
 
 Puedes ver el código completo del anterior ejemplo al que he llamado [Basic Tailwind CSS](https://github.com/rneto/mini-projects/tree/master/basic-tailwind-css) en mi repositorio de GitHub [Mini projects](https://github.com/rneto/mini-projects).
 
-Y si quieres profundizar un poco más sobre Tailwind CSS con Angular e inclusive Angular Material, te sugiero visitar mi artículo sobre [cómo integrar Tailwind CSS con Angular Material en una aplicación Angular](./integrar-tailwind-css-angular-material.md).
+Y si quieres profundizar un poco más sobre Tailwind CSS con Angular e inclusive Angular Material, te sugiero visitar mi artículo sobre [cómo integrar Tailwind CSS con Angular Material en una aplicación Angular](/blog/integrar-tailwind-css-angular-material/).
 
 ---
 <social-share class="social-share--footer" />
