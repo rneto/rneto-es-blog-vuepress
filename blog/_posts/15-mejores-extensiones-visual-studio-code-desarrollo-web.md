@@ -1,5 +1,5 @@
 ---
-date: 2020-9-8
+date: 2021-6-12
 tags:
   - VisualStudioCode
 permalink: /blog/15-mejores-extensiones-visual-studio-code-desarrollo-web

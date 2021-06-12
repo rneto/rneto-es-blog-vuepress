@@ -229,7 +229,7 @@ Y ya podemos usar nuestro nuevo componente. En este caso he creado un fichero _i
     <title>My calendar</title>
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel='stylesheet' href='https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css'>
+    <link rel='stylesheet' href='elements/my-calendar.css'>
 
     <script>
       function initCalendar() {
