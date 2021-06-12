@@ -10,7 +10,7 @@ permalink: /blog/:slug
 
 <social-share class="social-share--header" />
 
-Tras unos meses con [mi blog creado con VuePress](./crear-blog-estatico-vuepress.md), he dedicido automatizar la generación y despliegue en GitHub Pages de los nuevos artículos como este.
+Tras unos meses con [mi blog creado con VuePress](/blog/crear-blog-estatico-vuepress/), he dedicido automatizar la generación y despliegue en GitHub Pages de los nuevos artículos como este.
 
 Para ello me he basado en una acción generada en GitHub explícitamente para dicho fin llamada [Vuepress deploy](https://github.com/marketplace/actions/vuepress-deploy).
 
