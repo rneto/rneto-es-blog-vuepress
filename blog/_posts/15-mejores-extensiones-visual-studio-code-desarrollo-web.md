@@ -27,7 +27,7 @@ Con esta extensión vamos a conseguir una experiencia de desarrollo más avanzad
 
 [Tailwind CSS IntelliSense (Brad Cornes)](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
-> Si te interesa saber cómo combinar Tailwind CSS con Angular e inclusive con Angular Material, echa un vistazo a este otro artículo: [Integrar Tailwind CSS con Angular Material en una aplicación Angular](./integrar-tailwind-css-angular-material.md).
+> Si te interesa saber qué es Tailwind CSS o cómo combinarlo con Angular e inclusive con Angular Material, echa un vistazo a estos otros artículos: [¿Qué es Tailwind CSS?](./tailwind-css.md) e [Integrar Tailwind CSS con Angular Material en una aplicación Angular](./integrar-tailwind-css-angular-material.md).
 
 ## 3. Prettier - Code formatter (esbenp.prettier-vscode)
 
