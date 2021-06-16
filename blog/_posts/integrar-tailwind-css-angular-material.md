@@ -8,7 +8,7 @@ tags:
 permalink: /blog/:slug
 ---
 
-# Integrar Tailwind CSS con Angular Material en una aplicación Angular
+# Integrar Tailwind CSS en Angular y combinarlo con Material
 
 <social-share class="social-share--header" />
 
