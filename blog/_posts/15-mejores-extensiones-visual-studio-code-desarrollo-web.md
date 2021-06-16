@@ -13,7 +13,7 @@ Uso con asiduidad [Visual Studio Code](https://code.visualstudio.com/) tanto com
 
 Como buen editor cabe la posibilidad de enriquecerlo con la instalación de extensiones que están disponibles en su [Marketplace](https://marketplace.visualstudio.com/VSCode) y que nos permiten agregarle idiomas, temas y muchos servicios adicionales. Además de esto, cabe destacar que cada extensión se ejecuta en un proceso separado, lo que ayuda a no ralentizar el rendimiento del propio editor.
 
-Aquí dejo una lista de las que considero las 15 mejores extensiones de Visual Studio Code para aumentar nuestra productividad con este maravilloso editor. Si por el contrario eres más de Visual Studio, te recomiendo [Las 5 mejores extensiones gratuitas para Visual Studio](/blog/5-mejores-extensiones-visual-studio/).
+Aquí dejo una lista de las que considero las 15 mejores extensiones de Visual Studio Code para aumentar nuestra productividad con este maravilloso editor. Si por el contrario eres más de Visual Studio, te recomiendo [Las 5 mejores extensiones gratuitas para Visual Studio](/blog/5-mejores-extensiones-gratuitas-visual-studio/).
 
 ## 1. ESLint (Dirk Baeumer)
 
