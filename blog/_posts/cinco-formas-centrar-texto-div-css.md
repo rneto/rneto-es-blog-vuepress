@@ -79,7 +79,7 @@ Esta técnica se basa en usar la propiedad _margin_ del elemento que queremos al
 }
 
 .margin-auto__content {
-  margin: auto auto;
+  margin: auto;
 }
 ```
 
@@ -94,7 +94,7 @@ Esta técnica se basa en usar la propiedad _margin_ del elemento que queremos al
 }
 
 .margin-auto__content {
-  margin: auto auto;
+  margin: auto;
 }
 </style>
 
@@ -106,7 +106,7 @@ Esta técnica se basa en usar la propiedad _margin_ del elemento que queremos al
 
 ## 3. Método _flexbox_
 
-Flexbox nos permite definir de una manera eficiente la alineación y posición de nuestros elementos. Para ello haremos uso de la alineación vertical (_align-items_) y horizontal (_justify-content_) propias de flexbox.
+Flexbox nos permite definir de una manera eficiente la alineación y posición de nuestros elementos. Para ello haremos uso de la alineación horizontal (_justify-content_) y vertical (_align-items_) propias de flexbox cuando asumimos el valor inicial de _flex-direction: row_.
 
 ``` html
 <div class="flexbox">
