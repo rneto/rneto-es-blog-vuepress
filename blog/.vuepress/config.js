@@ -162,7 +162,7 @@ module.exports = {
 [
 
 '@vssue/vuepress-plugin-vssue', {
-    platform: 'github',
+    platform: 'github-v4',
     owner: 'rneto',
     repo: 'rneto.es',
     clientId: 'd08327ef8b1457b3432a',
