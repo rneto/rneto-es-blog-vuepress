@@ -81,10 +81,9 @@ module.exports = {
     dateFormat: 'MMM DD YYYY',
     comment: {
       service: "vssue",
-      autoCreateIssue: true,
       prefix: "[Post]",
       owner: "rneto",
-      repo: "rneto.es",
+      repo: "rneto-es-blog-vuepress",
       clientId: "d08327ef8b1457b3432a",
       clientSecret: "b698b4ae39532b21aee0521a9c28af4a83362892"
     },
