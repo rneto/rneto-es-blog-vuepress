@@ -6,7 +6,7 @@ tags:
 permalink: /blog/:slug
 ---
 
-# Gestionar el estado de la aplicación en Angular usando RxJs BehaviorSubject para servicios de datos observables
+# Gestionar el estado de una aplicación Angular usando RxJs BehaviorSubject para servicios de datos observables
 
 <social-share class="social-share--header" />
 
@@ -116,12 +116,12 @@ export class AppComponent {
 ```
 _app.component.ts_
 
-He creado en StackBlitz un proyecto Angular con el [ejemplo de servicio de datos con RxJs BehaviorSubject](https://stackblitz.com/edit/angular-testing-service-data-with-rxjs-behaviorsubject) para que puedas verlo en acción.
+He creado en StackBlitz un proyecto Angular con este [ejemplo de servicio de datos con RxJs BehaviorSubject](https://stackblitz.com/edit/angular-testing-service-data-with-rxjs-behaviorsubject) para verlo en acción.
 
 
 ## Uso de servicios de datos para las entradas y salidas de los componentes Angular
 
-La forma estándar de gestionar la interacción entre los componentes de Angular propone el uso de parámetros _@Input_ para la entrada de datos y la emisión de eventos de salida con el atributo _@Output_, sin embargo, es posible que se produzca un paso excesivo de datos entre componentes anidados o que inclusive se complique la estrategia de centralización del estado de la aplicación por el flujo de eventos. Cuando esto se produzca, podemos llegar a replantear nuestra estrategia de entradas y salidas de nuestros componentes y hacer uso de un servicio de datos observable para simplicar y desacoplar la comunicación entre nuestros componentes de una manera sencilla y eficaz.
+La forma estándar de gestionar la interacción entre los componentes de Angular propone el uso de parámetros _@Input_ para la entrada de datos y la emisión de eventos de salida con el atributo _@Output_, sin embargo, es posible que se produzca un paso excesivo de datos entre componentes anidados o que inclusive se complique la estrategia de centralización del estado de la aplicación por el flujo de eventos. Cuando esto se produzca, podemos llegar a replantearnos la estrategia de entradas y salidas de nuestros componentes y hacer uso de un servicio de datos observable para simplicar y desacoplar la comunicación entre nuestros componentes de una manera sencilla y eficaz.
 
 ---
 <social-share class="social-share--footer" />
