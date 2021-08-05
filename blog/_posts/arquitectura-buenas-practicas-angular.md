@@ -214,6 +214,8 @@ La idea detrás de _Redux_ es que todo el estado de la aplicación se almacena e
 
 Un único punto de referencia para todo el estado de la aplicación simplifica el problema de la sincronización entre las diferentes partes de la aplicación. No tienes que buscar una información determinada en diferentes módulos o componentes, todo está disponible en el _store_.
 
+> Si quieres disponer de una solución de almacenamiento centralizada, sencilla y poco costosa, también te recomiendo que le eches un vistazo a este otro artículo que he creado sobre [Gestionar el estado de la aplicación en Angular usando RxJs BehaviorSubject para servicios de datos observables](/blog/gestionar-estado-angular-rxjs-behaviorsubject-servicios-datos-observables/).
+
 ## Aliases para la aplicación y entorno
 
 Usar un alias para las carpetas y entornos de nuestra aplicación nos permitirá realizar importaciones de una manera más limpia y consistente a lo largo de la evolución de nuestra aplicación.
