@@ -45,5 +45,11 @@ De entre todas las extensiones que incluye, la que considero más importante e i
 
 [Productivity Power Tools 2017/2019 (Microsoft DevLabs)](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.ProductivityPowerPack2017)
 
+## 5+1. SlowCheetah (Microsoft)
+
+Esta extensión nos permite transformar nuestros ficheros _*.config_ (_log4net.config_, _app.config_ o cualquier otro) tal y como ya lo hacemos con el _Web.config_. Con esta extensión tendremos un nuevo menú contextual en el explorador de soluciones para dichos ficheros y que nos permitirá añadir los transformadores para todos nuestros entornos. Además cuenta con un extra bastante interesante que nos permite previsualizar cada transformación.
+
+[SlowCheetah (Microsoft)](https://marketplace.visualstudio.com/items?itemName=vscps.SlowCheetah-XMLTransforms)
+
 ---
 <social-share class="social-share--footer" />
