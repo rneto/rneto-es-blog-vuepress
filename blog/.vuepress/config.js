@@ -59,7 +59,7 @@ module.exports = {
       copyright: [
         {
           text: "Rafael Neto © 2021",
-          link: ""
+          link: "/index.html"
         }
       ]
     },
@@ -79,6 +79,14 @@ module.exports = {
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#dateformat
      */
     dateFormat: 'MMM DD YYYY',
+    NOcomment: {
+      service: "vssue",
+      prefix: "[Post]",
+      owner: "rneto",
+      repo: "rneto.es",
+      clientId: "d08327ef8b1457b3432a",
+      clientSecret: "b698b4ae39532b21aee0521a9c28af4a83362892"
+    },
   },
   locales: {
     '/': {
@@ -151,6 +159,17 @@ module.exports = {
     [
       'seo'
     ],
+[
+
+'@vssue/vuepress-plugin-vssue', {
+    platform: 'github-v4',
+    owner: 'rneto',
+    repo: 'rneto.es',
+    clientId: 'd08327ef8b1457b3432a',
+    clientSecret: 'b698b4ae39532b21aee0521a9c28af4a83362892',
+  },
+
+]
   ],
   //evergreen: true,
 }
