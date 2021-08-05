@@ -83,7 +83,7 @@ export class HelloComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.userServiceSubscription.unsubscribe();
+    this.userServiceSubscription?.unsubscribe();
   }
 }
 ```
