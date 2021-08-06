@@ -49,6 +49,8 @@ De entre todas las extensiones que incluye, la que considero más importante e i
 
 Esta extensión nos permite transformar nuestros ficheros _*.config_ (_log4net.config_, _app.config_ o cualquier otro) tal y como ya lo hacemos con el _Web.config_. Con esta extensión tendremos dos nuevas opciones en el menú contextual para dichos ficheros desde el explorador de soluciones, una que nos permitirá añadir los transformadores al fichero principal cuando lo seleccionemos y otra cuando seleccionemos cada transformador para previsualizar dicha transformación (esta funcionalidad es útil cuando nuestra versión de Visual Studio no cuente aún con dicha opción por defecto).
 
+**IMPORTANTE:** La extensión sólo nos habilita la capacidad de gestionar los ficheros de transformación, así que además de la misma, para que las transformaciones se apliquen durante el proceso de compilación, es necesario que también instalemos en nuestro proyecto el paquete de NuGet [Microsoft.VisualStudio.SlowCheetah](https://www.nuget.org/packages/Microsoft.VisualStudio.SlowCheetah/).
+
 [SlowCheetah (Microsoft)](https://marketplace.visualstudio.com/items?itemName=vscps.SlowCheetah-XMLTransforms)
 
 ---
