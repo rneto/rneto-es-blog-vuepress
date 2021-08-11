@@ -20,22 +20,40 @@ Para la automatizar el despliegue del nuevo fichero, en primer lugar debemos añ
 
 ``` xml
 <configuration>
-	<system.webServer>
-		<rewrite>
-			<rules>
-				<rule name="Angular Routes" stopProcessing="true">
-					<match url=".*" />
-					<conditions logicalGrouping="MatchAll">
-						<add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
-						<add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
-					</conditions>
-					<action type="Rewrite" url="/index.html" />
-				</rule>
-			</rules>
-		</rewrite>
-	</system.webServer>
+  <location path="index.html">
+    <system.webServer>
+      <httpProtocol>
+        <customHeaders>
+          <add name="Cache-Control" value="no-store, max-age=0" />
+        </customHeaders>
+      </httpProtocol>
+    </system.webServer>
+  </location>
+  <system.webServer>
+    <rewrite>
+      <rules>
+        <rule name="HTTP to HTTPS" enabled="true" stopProcessing="true">
+          <match url="(.*)" />
+          <conditions>
+            <add input="{HTTPS}" pattern="^OFF$" />
+          </conditions>
+          <action type="Redirect" url="https://{HTTP_HOST}{REQUEST_URI}" />
+        </rule>
+        <rule name="Angular Routes" enabled="true" stopProcessing="true">
+          <match url=".*" />
+          <conditions logicalGrouping="MatchAll">
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="/index.html" />
+        </rule>
+      </rules>
+    </rewrite>
+  </system.webServer>
 </configuration>
 ```
+
+> **Caché del fichero _index.html_**: Además de las reglas de reescritura básicas para el correcto enrutado de nuestra aplicación por parte de IIS, he aprovechado para añadir la configuración de la caché para el recurso _index.html_ de nuestra aplicación y que nos evitará problemas con los navegadores cuando necesitemos actualizar nuestra aplicación en el futuro.
 
 A continuación, vamos a configurarlo en los _assets_ del proyecto en el fichero _angular.json_:
 
