@@ -53,7 +53,7 @@ Para la automatizar el despliegue del nuevo fichero, en primer lugar debemos añ
 </configuration>
 ```
 
-> **Caché del fichero _index.html_**: Además de las reglas de reescritura básicas para el correcto enrutado de nuestra aplicación por parte de IIS, he aprovechado para añadir la configuración de la caché para el recurso _index.html_ de nuestra aplicación y que nos evitará problemas con los navegadores cuando necesitemos actualizar nuestra aplicación en el futuro.
+> CONSEJO · El fichero _web.config_ también se puede usar para añadir la configuración de la caché para el recurso _index.html_ (o cualquier otro de nuestra aplicación), así que para evitar futuros problemas con la caché de los navegadores cuando queramos desplegar nuevas versiones de nuestra aplicación, he aprovechado para añadir una sección específica que nos será de gran ayuda en el futuro.
 
 A continuación, vamos a configurarlo en los _assets_ del proyecto en el fichero _angular.json_:
 
