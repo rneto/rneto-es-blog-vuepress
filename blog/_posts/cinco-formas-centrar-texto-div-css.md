@@ -1,5 +1,5 @@
 ---
-date: 2020-7-30
+date: 2021-8-18
 tags:
   - CSS
   - HTML
@@ -12,49 +12,48 @@ permalink: /blog/:slug
 
 Aquí presento una lista de cinco técnicas para centrar el texto en un div mediante CSS.
 
-## 1. Método _text align center_
 
-Es la técnica más sencilla y que se basa en la alineación del texto mediante el uso de la propiedad _text-align_ del elemento padre.
+## 1. Método _flexbox_
 
-También es posible centrar el texto verticalmente mediante el uso de la propiedad _vertical-align_ en combinación con la propiedad _line-height_ (debe establecerse con la misma altura que el contenedor del texto, por lo que suele usarse en contenedores con alto fijo):
+Flexbox nos permite definir de una manera eficiente la alineación y posición de nuestros elementos. Para ello haremos uso de la alineación horizontal (_justify-content_) y vertical (_align-items_) propias de flexbox cuando asumimos el valor inicial de _flex-direction: row_.
 
 ``` html
-<div class="text-align-center">
-  text align center
+<div class="flexbox">
+    flexbox
 </div>
 ```
 
 ``` css
-.text-align-center {
+.flexbox {
+  align-items: center;
+  display: flex;
   height: 100px;
+  justify-content: center;
   width: 200px;
 
   background: #ffff99;
   color: #333;
-
-  line-height: 100px;
-  text-align: center;
-  vertical-align: middle;
 }
 ```
 
 <style>
-.text-align-center {
+.flexbox {
+  align-items: center;
+  display: flex;
   height: 100px;
+  justify-content: center;
   width: 200px;
 
   background: #ffff99;
   color: #333;
-
-  line-height: 100px;
-  text-align: center;
-  vertical-align: middle;
 }
 </style>
 
-<div class="text-align-center">
-  text align center
+<div class="flexbox">
+    flexbox
 </div>
+
+> Podemos simplificar más aún este ejemplo usando sólo ```display: grid;``` y ```place-items: center;``` en lugar de ```display: flex;```, ```align-items: center;``` y ```justify-content: center;```.
 
 ## 2. Método _margin auto_
 
@@ -104,44 +103,48 @@ Esta técnica se basa en usar la propiedad _margin_ del elemento que queremos al
   </span>
 </div>
 
-## 3. Método _flexbox_
+## 3. Método _text align center_
 
-Flexbox nos permite definir de una manera eficiente la alineación y posición de nuestros elementos. Para ello haremos uso de la alineación horizontal (_justify-content_) y vertical (_align-items_) propias de flexbox cuando asumimos el valor inicial de _flex-direction: row_.
+Es la técnica clásica más sencilla y se basa en la alineación del texto mediante el uso de la propiedad _text-align_ del elemento padre.
+
+También es posible centrar el texto verticalmente mediante el uso de la propiedad _vertical-align_ en combinación con la propiedad _line-height_ (debe establecerse con la misma altura que el contenedor del texto, por lo que suele usarse en contenedores con alto fijo):
 
 ``` html
-<div class="flexbox">
-    flexbox
+<div class="text-align-center">
+  text align center
 </div>
 ```
 
 ``` css
-.flexbox {
-  align-items: center;
-  display: flex;
+.text-align-center {
   height: 100px;
-  justify-content: center;
   width: 200px;
 
   background: #ffff99;
   color: #333;
+
+  line-height: 100px;
+  text-align: center;
+  vertical-align: middle;
 }
 ```
 
 <style>
-.flexbox {
-  align-items: center;
-  display: flex;
+.text-align-center {
   height: 100px;
-  justify-content: center;
   width: 200px;
 
   background: #ffff99;
   color: #333;
+
+  line-height: 100px;
+  text-align: center;
+  vertical-align: middle;
 }
 </style>
 
-<div class="flexbox">
-    flexbox
+<div class="text-align-center">
+  text align center
 </div>
 
 ## 4. Método _position absolute_
