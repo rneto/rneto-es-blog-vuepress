@@ -5,7 +5,7 @@ tags:
 permalink: /blog/15-mejores-extensiones-visual-studio-code-desarrollo-web
 ---
 
-# Las 15 mejores extensiones de Visual Studio Code para el desarrollo web
+# Las 15 mejores extensiones de Visual Studio Code (VSCode 2021) para el desarrollo web
 
 <social-share class="social-share--header" />
 
