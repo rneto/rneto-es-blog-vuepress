@@ -19,7 +19,7 @@ Flexbox nos permite definir de una manera eficiente la alineación y posición d
 
 ``` html
 <div class="flexbox">
-    flexbox
+  flexbox
 </div>
 ```
 
@@ -50,7 +50,7 @@ Flexbox nos permite definir de una manera eficiente la alineación y posición d
 </style>
 
 <div class="flexbox">
-    flexbox
+  flexbox
 </div>
 
 > Podemos simplificar más aún este ejemplo usando sólo ```display: grid;``` y ```place-items: center;``` en lugar de ```display: flex;```, ```align-items: center;``` y ```justify-content: center;```.
