@@ -269,6 +269,8 @@ export * from './services';
 ```
 _app/core/index.ts_
 
+> En caso de que usando VSCode, este no reconozca nuestros alias al usarlos en los _import_, deberemos reiniciar nuestro servidor TypeScript. Para ello en VSCode pulsamos _Cmd/Ctrl + Shift + P_, escribimos _Typescript: Restart TS Server_ y pulsamos _Enter_.
+
 ## Sass
 
 Soy partidario de establecer _[Sass](https://sass-lang.com/)_ como preprocesador de estilos CSS a utilizar. Además de las ventajas propias de Sass, éste nos permite integrar de una manera más efectiva la biblioteca oficial de componentes de Angular Material así como sus amplias capacidades de personalización.
