@@ -1,5 +1,5 @@
 ---
-date: 2021-6-12
+date: 2021-9-8
 tags:
   - VisualStudioCode
 permalink: /blog/15-mejores-extensiones-visual-studio-code-desarrollo-web
@@ -90,6 +90,8 @@ Puedes considerar esta extensión como un todo en uno para la internalización d
 Esta extensión usa distintos juegos de colores para facilitar la identificación visual de los diferentes corchetes, llaves o paréntesis presentes en nuestro código.
 
 [Bracket Pair Colorizer (CoenraadS)](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
+
+> Desde la versión 1.60 ya contamos con esta funcionalidad de manera nativa en Visual Studio Code y dado que no está implementada de manera completamente idéntica a lo que ofrece la extensión, te sugiero que pruebes ambas opciones y elijas la que más te interese. Ten además en cuenta que _Bracket Pair Colorizer 2_ ya no se mantiene, así que es posible que en algún momento debas activarte la funcionalidad nativa. Para habilitar la nueva funcionalidad debemos configurar `"editor.bracketPairColorization.enabled": true`, así que pulsamos `Ctrl+,`, escribimos _bracketPairColorization_ en la caja de búsqueda y marcamos el check de la opción encontrada (_Editor > Bracket Pair Colorization: Enabled_).
 
 ## 13. JavaScript (ES6) code snippets (charalampos karypidis)
 
