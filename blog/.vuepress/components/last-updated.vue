@@ -15,6 +15,18 @@
       return {
         text: 'Última revisión'
       }
+    },
+    mounted: function() {
+      this.appendToHeader()
+    },
+    methods: {
+      appendToHeader: function(){
+        let headerReference = document.querySelector('.post-meta-date');
+        let lastUpdatedReference = document.querySelector('.last-updated');
+        if (headerReference && lastUpdatedReference) {
+          headerReference.after(lastUpdatedReference);
+        }
+      }
     }
   }
 </script>
