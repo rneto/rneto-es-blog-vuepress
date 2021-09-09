@@ -1,5 +1,3 @@
-const moment = require('moment');
-
 module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/images/logo.png' }],
@@ -173,14 +171,7 @@ module.exports = {
 
     ],
     [
-      '@vuepress/last-updated',
-      {
-        transformer: (timestamp, lang) => {
-          const moment = require('moment')
-          moment.locale(lang)
-          return moment(timestamp).fromNow()
-        }
-      }      
+      '@vuepress/last-updated'   
     ]
   ],
   //evergreen: true,
