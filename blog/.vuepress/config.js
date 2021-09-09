@@ -79,6 +79,7 @@ module.exports = {
      * Ref: https://vuepress-theme-blog.billyyyyy3320.com/config/#dateformat
      */
     dateFormat: 'MMM DD YYYY',
+    lastUpdated: 'Last Updated',
     NOcomment: {
       service: "vssue",
       prefix: "[Post]",
