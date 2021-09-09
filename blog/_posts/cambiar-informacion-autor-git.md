@@ -9,6 +9,8 @@ permalink: /blog/:slug
 
 <social-share class="social-share--header" />
 
+<last-updated />
+
 {{ $page.lastUpdated }}
 
 Cuando por algún motivo queramos cambiar el nombre o el email que están registrados en los commits de un repositorio [Git](https://git-scm.com/), será necesario reescribir todo el histórico del repositorio.
