@@ -1,3 +1,5 @@
+const moment = require('moment');
+
 module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/images/logo.png' }],
