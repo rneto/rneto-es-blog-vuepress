@@ -79,7 +79,6 @@ module.exports = {
      * Ref: https://vuepress-theme-blog.billyyyyy3320.com/config/#dateformat
      */
     dateFormat: 'MMM DD YYYY',
-    lastUpdated: 'Last Updated',
     NOcomment: {
       service: "vssue",
       prefix: "[Post]",
@@ -160,17 +159,27 @@ module.exports = {
     [
       'seo'
     ],
-[
+    [
+      '@vssue/vuepress-plugin-vssue',
+      {
+        platform: 'github-v4',
+        owner: 'rneto',
+        repo: 'rneto.es',
+        clientId: 'd08327ef8b1457b3432a',
+        clientSecret: 'b698b4ae39532b21aee0521a9c28af4a83362892',
+      },
 
-'@vssue/vuepress-plugin-vssue', {
-    platform: 'github-v4',
-    owner: 'rneto',
-    repo: 'rneto.es',
-    clientId: 'd08327ef8b1457b3432a',
-    clientSecret: 'b698b4ae39532b21aee0521a9c28af4a83362892',
-  },
-
-]
+    ],
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          const moment = require('moment')
+          moment.locale(lang)
+          return moment(timestamp).fromNow()
+        }
+      }      
+    ]
   ],
   //evergreen: true,
 }
