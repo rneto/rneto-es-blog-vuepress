@@ -16,13 +16,13 @@ module.exports = {
   theme: '@vuepress/theme-blog',
   themeConfig: {
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/#modifyblogpluginoptions
+     * Ref: https://vuepress-theme-blog.billyyyyy3320.com/#modifyblogpluginoptions
      */
     modifyBlogPluginOptions(blogPluginOptions) {
       return blogPluginOptions
     },
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#directories
+     * Ref: https://vuepress-theme-blog.billyyyyy3320.com/config/#directories
      */
     directories: [
       {
@@ -34,7 +34,7 @@ module.exports = {
       }
     ],
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#nav
+     * Ref: https://vuepress-theme-blog.billyyyyy3320.com/config/#nav
      */
     nav: [
       {
@@ -47,7 +47,7 @@ module.exports = {
       },
     ],
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#footer
+     * Ref: https://vuepress-theme-blog.billyyyyy3320.com/config/#footer
      */
     footer: {
       contact: [
@@ -64,19 +64,19 @@ module.exports = {
       ]
     },
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#summary
+     * Ref: https://vuepress-theme-blog.billyyyyy3320.com/config/#summary
      */
     summary: true,
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#summaryLength
+     * Ref: https://vuepress-theme-blog.billyyyyy3320.com/config/#summaryLength
      */
     summaryLength: 250,
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#smoothscroll
+     * Ref: https://vuepress-theme-blog.billyyyyy3320.com/config/#smoothscroll
      */
     smoothScroll: true,
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#dateformat
+     * Ref: https://vuepress-theme-blog.billyyyyy3320.com/config/#dateformat
      */
     dateFormat: 'MMM DD YYYY',
     NOcomment: {
