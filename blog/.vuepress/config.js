@@ -171,7 +171,12 @@ module.exports = {
 
     ],
     [
-      '@vuepress/last-updated'   
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          const dayjs = require('dayjs')
+          return dayjs(timestamp).locale('lang').format('MMM DD YYYY')
+        }
     ]
   ],
   //evergreen: true,
