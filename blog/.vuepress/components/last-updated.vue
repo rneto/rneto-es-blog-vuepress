@@ -20,12 +20,14 @@
       this.appendToHeader()
     },
     methods: {
-      appendToHeader: function(){
-        let headerReference = document.querySelector('.post-meta-date');
-        let lastUpdatedReference = document.querySelector('.last-updated');
-        if (headerReference && lastUpdatedReference) {
-          headerReference.after(lastUpdatedReference);
-        }
+      appendToHeader: function() {
+        setTimeout(() => {
+          let headerReference = document.querySelector('.post-meta-date');
+          let lastUpdatedReference = document.querySelector('.last-updated');
+          if (headerReference && lastUpdatedReference) {
+            headerReference.after(lastUpdatedReference);
+          }
+        }, 100);
       }
     }
   }
