@@ -21,7 +21,8 @@
 
 <style scoped>
   .last-updated {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
     line-height: 12px;
     font-size: 12px;
     margin-right: 20px;
