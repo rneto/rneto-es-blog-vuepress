@@ -950,10 +950,26 @@
     "@vssue/utils" "^1.4.0"
     axios "^0.18.1"
 
+"@vssue/api-github-v4@^1.4.7":
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/@vssue/api-github-v4/-/api-github-v4-1.4.7.tgz#873554ec8e8351e5eeb8ca76246c2914b20e1bc4"
+  integrity sha512-Tk4ZYyX03RwoVy29RW1+ZdqESzX/gLsN9010Eaq0WT/2pNV+8quyT9TMypIZp6rZCGNYTSdxB8ET4IiF7SLKXQ==
+  dependencies:
+    "@vssue/utils" "^1.4.7"
+    axios "^0.21.1"
+
 "@vssue/utils@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@vssue/utils/-/utils-1.4.0.tgz#3cc2fd8492a3409e343289981e2209b6ca2f8313"
   integrity sha512-3d9WCYNurdFKApFzU8i7YD1GCGhunEVYnwSJxwQ2rDmEdpLneAYNJWg9+QS6bqzB+Pw7ymtwLf/Sqti9+xUGqA==
+  dependencies:
+    date-fns "^1.29.0"
+    qs "^6.6.0"
+
+"@vssue/utils@^1.4.7":
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/@vssue/utils/-/utils-1.4.7.tgz#58a9ec2687d26080aa04cab17e8f87049f1342c3"
+  integrity sha512-e94karP4szmSNT2L4bgIT+VGToBSY3bdlgmGcomcD2qCXTWDK4krSOYm8ES+BhHTcmCvzQYU/xenHR4tzrythA==
   dependencies:
     date-fns "^1.29.0"
     qs "^6.6.0"
@@ -964,6 +980,13 @@
   integrity sha512-oP63mMvue54ASrfMJVTpmT74is4eU2OeAqDqSOLYUytpqgba2AKPXnq6xhY8fua/+hxpttq0pOVajF6GL4WTgg==
   dependencies:
     vssue "^1.4.6"
+
+"@vssue/vuepress-plugin-vssue@^1.4.8":
+  version "1.4.8"
+  resolved "https://registry.yarnpkg.com/@vssue/vuepress-plugin-vssue/-/vuepress-plugin-vssue-1.4.8.tgz#37b8ada338c1222a143eb648555372d2959f4624"
+  integrity sha512-0QzegHl/Rx4/XgXswThIJi4Yk+b6AIaM450jX6p4RbOM6yOTzEKLTMduUo54Rvhq/NHNusu4Yy/w1iY8NTqBEg==
+  dependencies:
+    vssue "^1.4.8"
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
@@ -1739,6 +1762,13 @@ axios@^0.18.1:
   dependencies:
     follow-redirects "1.5.10"
     is-buffer "^2.0.2"
+
+axios@^0.21.1:
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
+  integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
+  dependencies:
+    follow-redirects "^1.14.0"
 
 babel-extract-comments@^1.0.0:
   version "1.0.0"
@@ -3654,6 +3684,11 @@ follow-redirects@^1.0.0:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
   integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
+
+follow-redirects@^1.14.0:
+  version "1.14.3"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.3.tgz#6ada78118d8d24caee595595accdc0ac6abd022e"
+  integrity sha512-3MkHxknWMUtb23apkgz/83fDoe+y+qr0TdgacGIA7bew+QLBo3vdgEN2xEsuXNivpFy4CyDhBBZnNZOtalmenw==
 
 for-in@^1.0.2:
   version "1.0.2"
@@ -7714,9 +7749,9 @@ url-parse-lax@^3.0.0:
     prepend-http "^2.0.0"
 
 url-parse@^1.4.3:
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.4.7.tgz#a8a83535e8c00a316e403a5db4ac1b9b853ae278"
-  integrity sha512-d3uaVyzDB9tQoSXFvuSUNFibTd9zxd2bkVrDRvF5TmvWWQwqE4lgYJ5m+x1DbecWkw+LK4RNl2CU1hHuOKPVlg==
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.5.3.tgz#71c1303d38fb6639ade183c2992c8cc0686df862"
+  integrity sha512-IIORyIQD9rvj0A4CLWsHkBBJuNqWpFQe224b6j9t/ABmquIS0qDU2pY6kl6AuOrL5OkCXHMCFNe1jBcuAggjvQ==
   dependencies:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
@@ -7816,6 +7851,17 @@ vssue@^1.4.6:
   integrity sha512-s92qMIaI/9LzBQCUUaX0fpNlA3kRRGtm0hQxDN/YBziOB4NXTWgPvoimLreyjP75hRItHvVhKzkXiZ8bIMjy7A==
   dependencies:
     "@vssue/utils" "^1.4.0"
+    github-markdown-css "^3.0.1"
+    vue "^2.6.10"
+    vue-i18n "^8.11.2"
+    vue-property-decorator "^8.1.1"
+
+vssue@^1.4.8:
+  version "1.4.8"
+  resolved "https://registry.yarnpkg.com/vssue/-/vssue-1.4.8.tgz#e0de059d16bf870dd7d72735d71761dfedfcfeb5"
+  integrity sha512-Stp0CxF65Uv658qgYUgYKEDiWM8wskUfKCOT9ISJwz/Qn58N050vYnFYClnUXG060ZQi1YQxkTCuJAw8ee3YlQ==
+  dependencies:
+    "@vssue/utils" "^1.4.7"
     github-markdown-css "^3.0.1"
     vue "^2.6.10"
     vue-i18n "^8.11.2"
