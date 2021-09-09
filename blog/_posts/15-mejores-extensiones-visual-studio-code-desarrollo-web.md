@@ -8,6 +8,7 @@ permalink: /blog/15-mejores-extensiones-visual-studio-code-desarrollo-web
 # Las 15 mejores extensiones de Visual Studio Code (VSCode 2021) para el desarrollo web
 
 <social-share class="social-share--header" />
+<last-updated />
 
 Uso con asiduidad [Visual Studio Code](https://code.visualstudio.com/) tanto como editor de código fuente en proyectos web, como para la manipulación de ficheros de diferentes tipos. Creo sinceramente que es una gran herramienta que deberías probar pues tiene visos de convertirse (si no lo es ya) en **el mejor editor de código fuente, especialmente para el Desarrollo Web**.
 
