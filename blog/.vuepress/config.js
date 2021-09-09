@@ -78,7 +78,7 @@ module.exports = {
     /**
      * Ref: https://vuepress-theme-blog.billyyyyy3320.com/config/#dateformat
      */
-    dateFormat: 'MMM DD YYYY',
+    dateFormat: 'DD MMM YYYY',
     NOcomment: {
       service: "vssue",
       prefix: "[Post]",
@@ -175,7 +175,7 @@ module.exports = {
       {
         transformer: (timestamp, lang) => {
           const dayjs = require('dayjs')
-          return dayjs(timestamp).locale('lang').format('MMM DD YYYY')
+          return dayjs(timestamp).locale('lang').format('DD MMM YYYY')
         }
       }
     ]
