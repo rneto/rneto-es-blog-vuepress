@@ -127,7 +127,10 @@ module.exports = {
     [
       'sitemap',
       {
-        hostname: 'https://rneto.es'
+        hostname: 'https://rneto.es',
+        dateFormatter: val => {
+          return new Date().toISOString()
+        }
       }
     ],
     [
