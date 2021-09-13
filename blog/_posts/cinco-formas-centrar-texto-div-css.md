@@ -210,7 +210,7 @@ Al establecer la posición absoluta, estamos eliminando el elemento del flujo de
 
 ## 5. Método _table cell_
 
-Cuando nuestro elemento contenedor no tenga un alto ni ancho fijos, sino que está adaptado al 100% de su elemento padre (suele usarse por ejemplo cuando al elemento _html_ o _body_ se establecen al 100%), podemos establecer la propiedad _display: table-cell;_ para extender el tamaño de nuestro texto hasta el tamaño de su contenedor, al cual también debemos añadir la propiedad _display: table;_. Una vez extendido nuestro elemento, ya podemos centrar el texto como en el método 1.
+Cuando nuestro elemento contenedor no tenga un alto ni ancho fijos, sino que está adaptado al 100% de su elemento padre (suele usarse por ejemplo cuando al elemento _html_ o _body_ se establecen al 100%), podemos establecer la propiedad _display: table-cell;_ para extender el tamaño de nuestro texto hasta el tamaño de su contenedor, al cual también debemos añadir la propiedad _display: table;_. Una vez extendido nuestro elemento, ya podemos centrar el texto como en el método 3.
 
 ``` html
 <div class="table-cell">
