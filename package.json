@@ -25,8 +25,7 @@
     "vuepress-plugin-seo": "^0.1.4",
     "vuepress-plugin-sitemap": "^2.3.1",
     "vuepress-plugin-social-share": "^0.3.2",
-    "dayjs": "^1.10.6",
-    "moment": "^2.29.1"
+    "dayjs": "^1.10.6"
   },
  "dependencies": {
     "@vssue/api-github-v4": "^1.4.7",
