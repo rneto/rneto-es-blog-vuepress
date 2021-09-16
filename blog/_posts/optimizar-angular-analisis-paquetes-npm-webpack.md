@@ -23,30 +23,34 @@ A la velocidad a la que se mueve nuestro entorno de trabajo, seguro que se nos o
 ### Instalación
 En primer lugar lo que haremos será añadir el paquete necesario a nuestras dependencias de desarrollo:
 
-`npm install --save-dev webpack-bundle-analyzer`
+``` bash
+npm install --save-dev webpack-bundle-analyzer
+```
 
 ### Configuración de scripts
 A continuación modificaremos el fichero _package.json_ de nuestra aplicación para simplificar el proceso de generación del análisis de paquetes:
 
-``` JS
-  ...,
+``` js
+...,
   "scripts": {
     ...,
     "stats": "ng build --stats-json & webpack-bundle-analyzer dist/my-app/stats.json"
   },
-  ...,
+...,
 ```
+_package.json_
 
 ### Análisis de paquetes
 A partir de este momento ya tenemos automatizado el análisis y visualización de nuestro mapa de paquetes mediante el siguiente comando:
 
-`npm run-script stats`
+``` bash
+npm run-script stats
+```
 
 Y este será el resultado que veremos en nuestro navegador:
 
 ![Mapa interactivo de paquetes con webpack](https://cloud.githubusercontent.com/assets/302213/20628702/93f72404-b338-11e6-92d4-9a365550a701.gif)
-
-_ Mapa interactivo de paquetes con webpack_
+_Mapa interactivo de paquetes con webpack_
 
 Con esta información ya podemos conocer qué hay dentro de los paquetes, qué módulos ocupan más espacio y qué módulos no deberían estar ahí, así que adelante con la optimización.
 
