@@ -14,7 +14,7 @@ permalink: /blog/:slug
  
 Más allá de la optimización de una aplicación Angular a través por ejemplo de la [carga diferida de módulos](/blog/arquitectura-buenas-practicas-angular/#carga-diferida) o mediante el uso de una estrategia de detección de cambios basada en _OnPush_, también debemos tener en cuenta el hecho de que los paquetes de terceros que incluyamos, igualmente afectarán al tiempo de carga de la aplicación, bien por su propio tamaño o inclusive por su tiempo de inicialización. Es por ello que optimizar Angular mediante el análisis de paquetes npm, también debe ser uno de nuestros objetivos antes de poner la aplicación en producción.
 
-A la velocidad a la que se mueve nuestro entorno de trabajo, seguro que se nos ocurren paquetes que hemos ido dejando de usar (en mi caso por ejemplo he sustituido _ng-zorro-antd_ por [_Tailwind CSS_ con _Angular Material_](/blog/integrar-tailwind-css-angular-material/) y que pueden en algunos casos haberse quedado como dependencia importada en el código sin que nos hayamos dado cuenta, o inclusive paquetes que cubrían necesidades que el lenguaje ya soporta (como usar _lodash_ en lugar de [métodos JavaScript de alto nivel como _map_, _filter_, _reduce_, _some_, _every_ o _forEach_](/blog/optimizar-bucles-javascript/)), pero cuya dependencia no se llegó a eliminar durante las iteraciones de refactorización. También existen esas dependencias de paquetes de terceros que sirven para cubrir funcionalidades sencillas que bien podríamos implementar nosotros mismos sin apenas esfuerzo si supiéramos lo que dicho paquete incrementa el tamaño de nuestra aplicación.
+A la velocidad a la que se mueve nuestro entorno de trabajo, seguro que se nos ocurren paquetes que hemos ido dejando de usar (en mi caso por ejemplo he sustituido _ng-zorro-antd_ por [_Tailwind CSS_ con _Angular Material_](/blog/integrar-tailwind-css-angular-material/)) y que pueden en algunos casos haberse quedado como dependencia importada en el código sin que nos hayamos dado cuenta. También están los paquetes que cubrían necesidades que el lenguaje ya soporta (como usar _lodash_ en lugar de [métodos JavaScript de alto nivel como _map_, _filter_, _reduce_, _some_, _every_ o _forEach_](/blog/optimizar-bucles-javascript/)), pero cuya dependencia no se llegó a eliminar durante las iteraciones de refactorización. Y no nos olvidemos de esas dependencias de paquetes de terceros que sirven para cubrir funcionalidades sencillas que bien podríamos implementar nosotros mismos sin apenas esfuerzo si supiéramos lo que dicho paquete incrementa el tamaño de nuestra aplicación.
 
 ## ¿Cómo analizar los paquetes de nuestra aplicación Angular?
  
@@ -45,6 +45,7 @@ A partir de este momento ya tenemos automatizado el análisis y visualización d
 Y este será el resultado que veremos en nuestro navegador:
 
 ![Mapa interactivo de paquetes con webpack](https://cloud.githubusercontent.com/assets/302213/20628702/93f72404-b338-11e6-92d4-9a365550a701.gif)
+
 _ Mapa interactivo de paquetes con webpack_
 
 Con esta información ya podemos conocer qué hay dentro de los paquetes, qué módulos ocupan más espacio y qué módulos no deberían estar ahí, así que adelante con la optimización.
