@@ -272,6 +272,10 @@ _app/core/index.ts_
 
 > En caso de que usando VSCode, este no reconozca nuestros alias al usarlos en los _import_, deberemos reiniciar nuestro servidor TypeScript. Para ello en VSCode pulsamos _Cmd/Ctrl + Shift + P_, escribimos _Typescript: Restart TS Server_ y pulsamos _Enter_.
 
+## Optimización mediante el análisis de paquetes
+
+Una estrategia adicional a las ya mencionadas para incrementar la optimización de nuestra aplicación Angular consiste en realizar el [análisis de paquetes npm con webpack](/blog/optimizar-angular-analisis-paquetes-npm-webpack/).
+
 ## Sass
 
 Soy partidario de establecer _[Sass](https://sass-lang.com/)_ como preprocesador de estilos CSS a utilizar. Además de las ventajas propias de Sass, éste nos permite integrar de una manera más efectiva la biblioteca oficial de componentes de Angular Material así como sus amplias capacidades de personalización.
@@ -428,8 +432,7 @@ export class SidenavComponent implements AfterViewInit {
 ```
 _sidevav.component.ts_
 
-> _[NgZone](https://angular.io/api/core/NgZone)_ nos permite ejecuta nuestro trabajo en la zona de Angular.
-En el ejemplo de _sidevav.component.ts_ lo usamos para que un componente hijo sea notificado de que la variable _scrolledContent_ ha cambiado.
+> [NgZone](https://angular.io/api/core/NgZone) nos permite ejecutar nuestro trabajo en la zona de Angular. En el ejemplo de _sidevav.component.ts_ lo usamos para que un componente hijo sea notificado de que la variable _scrolledContent_ ha cambiado.
 
 ---
 <social-share class="social-share--footer" />
