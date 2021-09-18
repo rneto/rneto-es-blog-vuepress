@@ -63,14 +63,14 @@ Y cuyos cambios realizados han sido:
 
 - Se agregan tantos comandos `start` como entornos (`start:development`, `start:staging`, y `start:production`) con el parámetro `--configuration` establecido con el nombre de cada entorno (veremos su explicación cuando veamos el fichero _angular.json_).
 - Se agregan tantos comandos `build` como entornos (`build:development`, `build:staging` y `build:production`) también con el parámetro `--configuration` establecido con el nombre de cada entorno. 
-- Al comando `ng serve` he añadido o la opción `--o`, que aunque no sea relevante para la configuración por entorno, sí que nos hace más cómoda la ejecución de la aplicación al hacer que se abra automatizándote nuestro navegador predeterminado.
-- Y para terminar también he añadido como mejora no relativa a la configuración por entorno el comando `stats` como mejora para el [análisis de paquetes npm con webpack](/blog/optimizar-angular-analisis-paquetes-npm-webpack/).
+- Al comando `ng serve` he añadido la opción `--o`, que aunque no sea relevante para la configuración por entorno, sí que nos hace más cómoda la ejecución de la aplicación al hacer que se abra automatizándote nuestro navegador predeterminado.
+- Y para terminar también he añadido como mejora al fichero, más allá de la configuración por entorno, el comando `stats` para el [análisis de paquetes npm con webpack](/blog/optimizar-angular-analisis-paquetes-npm-webpack/).
 
 ## Extender la configuración de la plantilla inicial de _angular.json_ 
 
 Estas son las secciones _architect.build.configurations_ y _architect.serve_ de un fichero _angular.json_ estándar de una aplicación Angular: 
 
-``` js 
+``` js
 …, 
   "architect": {
     "build": {
@@ -232,7 +232,7 @@ _angular.json_
 
 Y cuyos cambios realizados han sido: 
 
-- Bajo la sección _architect.build.configurations_ se agregan tantas configuraciones como entornos personalizados (el _default_ usará la configuración por defecto de desarrollo de Angular CLI, como el fichero _environment.ts_) hayamos definido. Estas configuraciones deben corresponder con los nombres especificados en el parámetro `--configuration` de los comandos `start` y `build` personalizados que hemos creado en el fichero _package.json_. Como el fichero ya incluye la configuración _production_, sólo tenemos que crear las configuraciones _development_ y _staging_.
+- Bajo la sección _architect.build.configurations_ se agregan tantas configuraciones como entornos personalizados hayamos definido (el _default_ usará la configuración por defecto de desarrollo de Angular, como el fichero _environment.ts_). Estas configuraciones deben corresponder con los nombres especificados en el parámetro `--configuration` de los comandos `start` y `build` personalizados que hemos creado en el fichero _package.json_. Como el fichero ya incluye la configuración _production_, sólo tenemos que crear las configuraciones _development_ y _staging_.
 - En cada configuración creada bajo la sección _architect.build.configurations_, hemos personalizado los nombres de los ficheros de entorno (sección _fileReplacements_) que vamos a usar, en nuestro caso _environment.development.ts_, _environment.staging.ts_ y _environment.production.ts_ (hemos sustituido el nombre del fichero original _environment.prod.ts_ para mantener la coherencia con los nuevos que hemos creado).
 - A la sección _architect.serve_ hemos añadido los dos nuevos entornos que nos faltaban (_devlopment_ y _staging_) dado que el de producción ya estaba creado.
 
@@ -245,7 +245,7 @@ Dado que ya contamos con los ficheros de configuración de entorno _environment.
 
 ## Usar la configuración personalizada según entorno de ejecución
 
-A partir de este momento ya podemos arrancar nuestra aplicación o empaquetarla para cada uno de los entornos que hemos definido, como siempre lo hemos hecho:
+A partir de este momento ya podemos arrancar nuestra aplicación o empaquetarla para cada uno de los entornos definidos de la siguiente manera:
 
 ``` bash
 npm run start
