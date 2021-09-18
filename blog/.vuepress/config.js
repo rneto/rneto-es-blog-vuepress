@@ -163,7 +163,7 @@ module.exports = {
       'seo'
     ],
     [
-      '@vssue/vuepress-plugin-vssue',
+      '@NO-vssue/vuepress-plugin-vssue',
       {
         platform: 'github-v4',
         owner: 'rneto',
@@ -174,7 +174,7 @@ module.exports = {
 
     ],
     [
-      '@vuepress/last-updated',
+      '@NO-vuepress/last-updated',
       {
         transformer: (timestamp, lang) => {
           const dayjs = require('dayjs')
