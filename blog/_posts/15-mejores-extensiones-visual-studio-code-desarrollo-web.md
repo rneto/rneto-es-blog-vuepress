@@ -35,6 +35,8 @@ Con esta extensión vamos a conseguir una experiencia de desarrollo más avanzad
 
 [Prettier - Code formatter (esbenp.prettier-vscode)](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
+> Si al formatear los ficheros de una aplicación Angular tienes problemas en que aplique la comilla simple, asegúrate de tener tu fichero _.editorconfig_ correctamente configurado con la propiedad `quote_type = single`.
+
 ## 4. XML Tools (Josh Johnson)
 
 A falta de soporte nativo en Visual Studio Code, esta extensión le añade herramientas de formato XML, XQuery y XPath.
