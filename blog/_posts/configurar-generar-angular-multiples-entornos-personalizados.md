@@ -63,7 +63,7 @@ Y cuyos cambios realizados han sido:
 
 - Se agregan tantos comandos `start` como entornos (`start:development`, `start:staging`, y `start:production`) con el parámetro `--configuration` establecido con el nombre de cada entorno (veremos su explicación cuando veamos el fichero _angular.json_).
 - Se agregan tantos comandos `build` como entornos (`build:development`, `build:staging` y `build:production`) también con el parámetro `--configuration` establecido con el nombre de cada entorno. 
-- Al comando `ng serve` he añadido la opción `--o`, que aunque no sea relevante para la configuración por entorno, sí que nos hace más cómoda la ejecución de la aplicación al hacer que se abra automatizándote nuestro navegador predeterminado.
+- Al comando `ng serve` he añadido la opción `--o`, que aunque no sea relevante para la configuración por entorno, sí que nos hace más cómoda la ejecución de la aplicación al hacer que se abra automáticamente nuestro navegador predeterminado.
 - Y para terminar también he añadido como mejora al fichero, más allá de la configuración por entorno, el comando `stats` para el [análisis de paquetes npm con webpack](/blog/optimizar-angular-analisis-paquetes-npm-webpack/).
 
 ## Extender la configuración de la plantilla inicial de _angular.json_ 
@@ -258,6 +258,8 @@ npm run build:development
 npm run build:staging
 npm run build:production
 ```
+
+> En el caso del comando `start`, podríamos obviar el comando `run` que le precede y simplificarlo con `npm start` ya que por sí mismo `start` es un comando de _npm_.
 
 ---
 <social-share class="social-share--footer" />
