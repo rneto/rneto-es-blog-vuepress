@@ -176,6 +176,7 @@ Creamos el fichero _elements-build.js_ en la raíz de nuestro proyecto con el co
 ``` js
 const fs = require('fs-extra');
 const concat = require('concat');
+const package = require('./package.json');
 
 (async function build() {
   const files = [
@@ -189,14 +190,16 @@ const concat = require('concat');
   files = files.filter(function (value, index, arr) {
     return fs.pathExistsSync(value);
   });
+  
+  const dir = `./dist/elements/${package.version}`;
 
-  await fs.ensureDir('./dist/elements');
+  await fs.ensureDir(dir);
 
-  await concat(files, './dist/elements/my-calendar.js');
+  await concat(files, `${dir}/my-calendar.js`);
 
   await fs.copyFile(
     './dist/my-calendar/styles.css',
-    './dist/elements/my-calendar.css'
+    `${dir}/my-calendar.css`
   );
 })();
 ```
@@ -229,7 +232,7 @@ Y ya podemos usar nuestro nuevo componente. En este caso he creado un fichero _i
     <title>My calendar</title>
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel='stylesheet' href='elements/my-calendar.css'>
+    <link rel='stylesheet' href='elements/0.0.0/my-calendar.css'>
 
     <script>
       function initCalendar() {
@@ -266,7 +269,7 @@ Y ya podemos usar nuestro nuevo componente. En este caso he creado un fichero _i
     </my-calendar>
 
     <script
-      src="elements/my-calendar.js"
+      src="elements/0.0.0/my-calendar.js"
       defer onload="initCalendar();"
     ></script>
   </body>
