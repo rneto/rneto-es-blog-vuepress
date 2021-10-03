@@ -12,7 +12,13 @@ permalink: /blog/:slug
 
 <social-share class="social-share--header" />
 
-Si todavía no sabes qué es Tailwind CSS, te recomiendo que le eches un vistazo a mi artículo sobre [¿Qué es Tailwind CSS?](/blog/tailwind-css/). Y si no conoces Material Design o Angular Material, también te sugiero que le eches un vistazo a este otro artículo sobre [¿Por qué usar Angular y Material Design?](/blog/por-que-usar-angular-material-design/) y donde planteo algunas de las ventajas de su uso.
+Si todavía no sabes qué es Tailwind CSS, te recomiendo que le eches un vistazo a mi artículo sobre [¿Qué es Tailwind CSS?](/blog/tailwind-css/).
+
+Si no conoces Material Design o Angular Material, también te sugiero que le eches un vistazo a este otro artículo sobre [¿Por qué usar Angular y Material Design?](/blog/por-que-usar-angular-material-design/) y donde planteo algunas de las ventajas de su uso.
+
+Podríamos hacer uso de Tailwind CSS o Angular Material por separado, pero creo que en esta ocasión, se complementan perfectamente ya que podemos disponer de una serie de componentes avanzados como son los ofrecidos por Angular Maetrial junto con un completo conjunto de herramientas adicionales como son las ofrecidas por Tailwind CSS.
+
+Si todavía no tienes instalado Angular Material en tu aplicación, te sugiero que sigas esta pequeña guía de [instalación de Angular Material](/blog/instalar-angular-material/).
 
 ## Instalación de Tailwind CSS en Angular
 
@@ -50,32 +56,6 @@ A partir de ese momento ya podemos empezar a usar Tailwind CSS en nuestra aplica
 
 ``` html
 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Button</button>
-```
-_app.component.html_
-
-## Instalación de Angular Material
-
-La instalación de Angular Material está completamente guiada a través de Angular CLI, por lo que al ejecutar el comando `ng add @angular/material` en nuestra aplicación, podremos instalar todo lo necesario.
-
-A continuación debemos importar los módulos de los componentes que queramos usar en nuestra aplicación:
-
-``` ts
-import { MatSliderModule } from '@angular/material/slider';
-import { MatButtonModule } from '@angular/material/button';
-…
-@NgModule ({....
-  imports: [...,
-  MatSliderModule,
-  MatButtonModule,
-…]
-})
-```
-
-Y así poder empezar a usarlos en nuestros componentes:
-
-``` html
-<mat-slider min="1" max="100" step="1" value="1"></mat-slider>
-<button mat-button>Basic</button>
 ```
 _app.component.html_
 
