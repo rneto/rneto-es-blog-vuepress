@@ -45,6 +45,7 @@ Si te estás planteando la pregunta de _¿por qué usar Angular y Material Desig
   - [Playground](https://www.typescriptlang.org/play/)
 - [Angular Material](https://material.angular.io/)
   - [Instalar Angular Material](/blog/instalar-angular-material/)
+  - [Crear un tema para Angular Material](/blog/crear-tema-angular-material/)
   - [Integrar Tailwind CSS con Angular Material en una aplicación Angular](/blog/integrar-tailwind-css-angular-material/)
 - [Material Design](https://material.io/)
   - [Introducción](https://material.io/design/introduction/)

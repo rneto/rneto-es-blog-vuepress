@@ -14,12 +14,14 @@ La instalación de [Angular Material](https://material.angular.io/) está comple
 
 Una de las partes más importantes de la instalación es aquella en la que se nos pregunta por el tema que queremos usar en nuestra aplicación. Para ello, el instalador nos ofrece la posibilidad de seleccionar alguno de los temas predefinidos (_Indigo/Pink_, _Deep Purple/Amber_, _Pink/Blue Grey_ o _Purple/Green_) o nuestro propio tema personalizado.
 
+> Si estás interesado es saber cómo crear un tema personalizado, te recomiendo que le eches un vistazo a este otro artículo sobre [cómo crear un tema para Angular Material](/blog/crear-tema-angular-material/).
+
 Además del tema, también se nos preguntará por si queremos que la tipografía de Angular Material se aplique a toda la aplicación y si queremos habilitar las animaciones para Angular Material.
 
 Una vez completada la instalación, se habrán producido los siguientes cambios en nuestro proyecto:
 
 - Se habrán añadido todas las dependencias necesarias al fichero _package.json_.
-- Si hemos seleccionado usar un tema predefinido, se habrá modificado el fichero _angular.json_ para incluirse la hoja de estilos correspondiente (por ejemplo _"./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css"_) en las listas de estilos de las secciones _architect.build.options.styles_ y  _architect.test.options.styles_.
+- Si hemos seleccionado usar un tema predefinido, se habrá modificado el fichero _angular.json_ para incluirse la hoja de estilos correspondiente (por ejemplo _"./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css"_) en las listas de estilos de las secciones _architect.build.options.styles_ y _architect.test.options.styles_.
 - Si en su lugar, hemos seleccionado usar un tema personalizado, se habrá modificado el fichero _styles.scss_ para la inclusión de un tema personalizado de ejemplo basado en el tema _Indigo/Pink_ para que hagamos los cambios que necesitemos para nuestro tema.
 - Al fichero _styles.scss_ se habrán añadido los estilos básicos para los elementos _html_ y _body_.
 - Al fichero _index.html_ se habrán agregados las referencias necesarias a las fuentes de Google.
