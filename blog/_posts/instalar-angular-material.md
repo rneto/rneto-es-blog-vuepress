@@ -57,7 +57,7 @@ Y así poder empezar a integrarlos en nuestros componentes:
 ``` html
 <mat-slider min="1" max="100" step="1" value="1"></mat-slider>
 
-<button mat-button>Botón básico</button>
+<button mat-button>Botón</button>
 
 <mat-card>
   <mat-calendar></mat-calendar>
