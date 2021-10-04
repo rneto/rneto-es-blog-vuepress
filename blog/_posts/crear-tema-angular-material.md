@@ -11,13 +11,13 @@ permalink: /blog/:slug
 
 <social-share class="social-share--header" />
 
-Si todavía no estás convencido de usar Angular Material, te recomiendo que le eches un vistazo a mi artículo sobre [¿Por qué usar Angular y Material Design?](/blog/por-que-usar-angular-material-design/)
-
-Y si ya estás convencido, pero no sabes por dónde empezar, te puedo ayudar a saber [cómo instalar Angular Material](/blog/instalar-angular-material/).
-
 Angular Material dispone de un sistema de generación de temas que permite la configuración de aspectos de color y tipografía de sus componentes. Dicho sistema ofrece diferentes alternativas de configuración basadas en características de _Sass_ que veremos a continuación.
 
 > Es importante destacar que me he basado en las recomendaciones de angular Material para la versión 12, siendo la última revisión disponible en el momento de creación del artículo la 12.2.8.
+
+Si todavía no estás convencido de usar Angular Material, te recomiendo que le eches un vistazo a mi artículo sobre [¿Por qué usar Angular y Material Design?](/blog/por-que-usar-angular-material-design/)
+
+Y si ya estás convencido, pero no sabes por dónde empezar, te puedo ayudar a saber [cómo instalar Angular Material](/blog/instalar-angular-material/).
 
 ## ¿Qué es Sass?
 
