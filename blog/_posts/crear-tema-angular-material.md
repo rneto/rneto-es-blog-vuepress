@@ -59,6 +59,10 @@ _styles.scss_
 
 En el mapa de tonos podemos apreciar la escala de colores desde la más clara (50) hasta la más oscura (900).
 
+En algunas paletas podemos encontrarnos con tonos numerados como A100, A200, A400 y A700, pero Angular Material no los requiere por lo que en esta ocasión los vamos a obviar.
+
+> Si queremos simplificar el proceso de creación de los mapas de colores para nuestras paletas, podemos usar el repositorio de [Material Design Color Generator](https://github.com/mbitson/mcg). Una vez accedamos a la herramienta, debemos usar la opción de exportación llamada _Angular JS 2 (Material 2)_ ya que como podemos comprobar, permite exportar las paletas a diferentes formatos.
+
 Del mismo modo que hemos visto cómo generar nuestras paletas personalizadas, también es posible hacer uso de cualquiera de las [paletas de Material Design](https://material.io/archive/guidelines/style/color.html#color-color-palette) incluidas en el paquete. Para ello basta incluirlas en nuestro fichero de la siguiente manera:
 
 ``` scss
@@ -70,18 +74,20 @@ $warn-palette: mat.define-palette(mat.$deep-orange-palette);
 ```
 _styles.scss_
 
-Otra opción también consiste en generar una paleta derivada de un tono de un color predefinido de Angular Material:
+Otra opción también consiste en generar una paleta derivada de un tono de una paleta de Material Design:
 
 ``` scss
-@import '~@angular/material/theming';
+@use '~@angular/material' as mat;
 
-$primary-palette: mat.define-palette(mat.$teal-palette, 500);
-$accent-palette: mat.define-palette(mat.$lime-palette, 500);
-$warn-palette: mat.define-palette(mat.$deep-orange-palette, 500);
+$primary-palette: mat.define-palette(mat.$teal-palette, 200);
+$accent-palette: mat.define-palette(mat.$lime-palette, 200);
+$warn-palette: mat.define-palette(mat.$deep-orange-palette, 200);
 ```
 _styles.scss_
 
-Una vez aclarado el concepto de paleta de colores, podemos meternos de lleno con la creación de nuestro propio tema para Angular Material. Para ello empezaremos por definir tres paletas que usaremos en la definición de nuestro tema:
+## Temas personalizados en Angular Material
+
+Lo primero que debemos definir para la creación de un tema es el conjunto de las tres paletas de colores de las que estará compuesto y que son las siguientes (si obviamos la tercera -_warn_-, se usará el rojo automáticamente, por lo que podrían ser solamente dos):
 
 - **Primaria** (_primary_): es paleta para el color más común en la aplicación.
 - **Secundaria** (_accent_): es la paleta para el color usado para destacar determinadas partes de la aplicación.
@@ -92,6 +98,7 @@ Una vez aclarado el concepto de paleta de colores, podemos meternos de lleno con
 ``` scss
 @use '~@angular/material' as mat;
 
+// Incluimos los estilos comunes de Angular Material
 @include mat.core();
 
 // Definimos los mapas de colores personalizados
@@ -127,7 +134,7 @@ $primary-palette: mat.define-palette($custom-primary-map);
 $accent-palette: mat.define-palette($custom-accent-map);
 $warm-palette: mat.define-palette($custom-warm-map);
 
-// Creamos el objeto del tema personalizado claro (también podríamos crear otro tema específico para el modo oscuro)
+// Creamos el objeto del tema personalizado claro (podríamos crear otro para el modo oscuro)
 $custom-theme: mat.define-light-theme((
   color: (
     primary: $primary-palette,
@@ -144,14 +151,14 @@ $custom-theme: mat.define-light-theme((
 ```
 _styles.scss_
 
-Una vez completada la configuración de colores, veamos cómo realizar la configuración de la tipografía de nuestro tema. Para ello será necesario usar la función Sass _define-typography-config_ para crear una la configuración que pasaremos al _mixin_ _core_ al principio de nuestro fichero Sass:
+Además de la configuración de colores podemos realizar la configuración de la tipografía de nuestro tema. Para ello será necesario usar la función Sass _define-typography-config_ para crear una la configuración que pasaremos al _mixin_ _core_ al principio de nuestro fichero Sass:
 
 ``` scss
 @use '~@angular/material' as mat;
 
 // Tipografía personalizada
 $custom-typography: mat.define-typography-config(
-  $font-family:   'Muli, sans-serif',
+  $font-family:   'Roboto, sans-serif',
   $display-4:     mat.define-typography-level(112px, 112px, 300, $letter-spacing: -0.05em),
   $display-3:     mat.define-typography-level(56px, 56px, 400, $letter-spacing: -0.02em),
   $display-2:     mat.define-typography-level(45px, 48px, 400, $letter-spacing: -0.005em),
@@ -169,8 +176,10 @@ $custom-typography: mat.define-typography-config(
 
 @include mat.core($custom-typography);
 
-// A esto habría que añadir el resto de la configuración del tema
+// A esto habría que añadir el resto de la configuración del tema en cuanto a colores
 ```
+
+> No nos olvidemos de incluir cuando sea necesario la fuente que usemos, bien como un enlace en el fichero _index.html_ o como importación en el fichero Sass.
 
 ## Temas predefinidos en Angular Material
 
@@ -218,7 +227,7 @@ Para usarlos, basta con incluir en nuestro fichero _angular.json_ una referencia
 
 ## Aplicar tipografía de Angular Material a la aplicación
 
-Y para terminar, si deseamos aplicar la tipografía de Angular Material a toda la aplicación (más allá de los componentes de angular Material), debemos añadir la clase _mat-typography_ al elemento _body_ del fichero _index.html_ de la aplicación.
+Si deseamos aplicar la tipografía de Angular Material a toda la aplicación (más allá de los componentes de angular Material), debemos añadir la clase _mat-typography_ al elemento _body_ del fichero _index.html_ de la aplicación.
 
 ---
 <social-share class="social-share--footer" />
