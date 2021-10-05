@@ -90,6 +90,10 @@ Una vez aclarado el concepto de paleta de colores, podemos meternos de lleno con
 ¿Cómo hacemos uso de las paletas creadas?
 
 ``` scss
+@use '~@angular/material' as mat;
+
+@include mat.core();
+
 // Definimos los mapas de colores personalizados
 $custom-primary-map: (
     50 : #e8eaf6,
@@ -164,6 +168,8 @@ $custom-typography: mat.define-typography-config(
 );
 
 @include mat.core($custom-typography);
+
+// A esto habría que añadir el resto de la configuración del tema
 ```
 
 ## Temas predefinidos en Angular Material
