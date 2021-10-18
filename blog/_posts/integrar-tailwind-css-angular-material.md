@@ -16,7 +16,7 @@ Si todavía no sabes qué es Tailwind CSS, te recomiendo que le eches un vistazo
 
 Si no conoces Material Design o Angular Material, también te sugiero que le eches un vistazo a este otro artículo sobre [¿Por qué usar Angular y Material Design?](/blog/por-que-usar-angular-material-design/) y donde planteo algunas de las ventajas de su uso.
 
-Podríamos hacer uso de Tailwind CSS o Angular Material por separado, pero creo que en esta ocasión, se complementan perfectamente ya que podemos disponer de una serie de componentes avanzados como son los ofrecidos por Angular Maetrial junto con un completo conjunto de herramientas adicionales como son las ofrecidas por Tailwind CSS.
+Podríamos hacer uso de Tailwind CSS o Angular Material por separado, pero creo que en esta ocasión, se complementan perfectamente ya que podemos disponer de una serie de componentes avanzados como son los ofrecidos por Angular Material junto con un completo conjunto de herramientas adicionales como son las ofrecidas por Tailwind CSS.
 
 Si todavía no tienes instalado Angular Material en tu aplicación, te sugiero que sigas esta pequeña guía de [instalación de Angular Material](/blog/instalar-angular-material/).
 
