@@ -183,7 +183,7 @@ _core-routing.module.ts_
 
 Gracias a la estructura de módulos definida, nuestros módulos de funcionalidades podrán cargarse de forma diferida una vez que se haya inicializado la aplicación, lo que reducirá enormemente el tiempo de arranque de la aplicación. Además de ello, cuando la aplicación crezca y se añadan más módulos, el paquete de núcleo de la aplicación y por lo tanto su tiempo de inicio seguirán siendo los mismos.
 
-## Flujo de datos
+## Flujo de datos y tipos de componentes
 
 En Angular, el flujo de datos preferido es unidirecional donde los datos fluyen de _arriba hacia abajo_, mucho más fácil de mantener y seguir que el enlace bidireccional. Los datos pasan del componente padre principal al componente hijo secundario y del componente hijo a la plantilla.
 
@@ -194,7 +194,7 @@ Cuando sea necesario estructurar los componentes por niveles, debemos seguir las
 - **_Componentes de nivel N_**
   - Definen las partes de la aplicación que contienen parte de lógica, la comunicación con los servicios y causan efectos secundarios (como llamadas a servicios o actualizaciones de estado). Es el que inyecta el servicio y lo usa para obtener los datos.
   - Son los contenedores de los componentes a los que se transferirán los datos a través de sus atributos.
-  - Son los componentes de entrada de las rutas del propio módulo por lo que cada componente estará asociado a una ruta del módulo.
+  - Desde el punto de vista del enrutamiento, podríamos considerarlos como los componentes de entrada de las rutas del propio módulo por lo que cada componente estaría asociado a una ruta del módulo.
   - Se deberá procurar que el número de componentes de este tipo sea el menor posible.
 - **_Componentes de nivel N+1_**
   - Son componentes con muy poca o ninguna lógica.
