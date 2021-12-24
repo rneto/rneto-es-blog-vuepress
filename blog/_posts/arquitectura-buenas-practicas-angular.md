@@ -8,7 +8,7 @@ permalink: /blog/:slug
 # Arquitectura y buenas prácticas para una aplicación basada en Angular
 
 <social-share class="social-share--header" />
-<!-- <last-updated /> -->
+<last-updated custom-value="22/10/2021" />
 
 En este artículo encontrarás el planteamiento de una posible evolución de los conceptos de arquitectura de una aplicación Angular que podemos extraer de la [guía de estilo de referencia oficial de Angular](https://angular.io/guide/styleguide). Para ello he definido una serie de pautas y buenas prácticas a la hora de planificar y estructurar nuestra aplicación con el objectivo de hacerla escalable.
 
