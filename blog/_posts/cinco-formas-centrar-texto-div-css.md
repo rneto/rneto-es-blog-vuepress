@@ -1,5 +1,5 @@
 ---
-date: 2021-8-18
+date: 2020-7-30
 tags:
   - CSS
   - HTML
@@ -10,7 +10,7 @@ permalink: /blog/:slug
 
 <social-share class="social-share--header" />
 
-<!-- <last-updated /> -->
+<last-updated lastUpdated="13/09/2021" />
 
 Aquí presento una lista de cinco técnicas para centrar el texto en un div mediante CSS.
 
