@@ -10,7 +10,7 @@ permalink: /blog/:slug
 
 <social-share class="social-share--header" />
 
-<last-updated lastUpdated="13/09/2021" />
+<last-updated custom-value="13/09/2021" />
 
 Aquí presento una lista de cinco técnicas para centrar el texto en un div mediante CSS.
 
