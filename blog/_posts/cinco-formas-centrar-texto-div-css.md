@@ -9,7 +9,6 @@ permalink: /blog/:slug
 # Cinco formas de centrar el texto en un div con CSS
 
 <social-share class="social-share--header" />
-
 <last-updated custom-value="13/09/2021" />
 
 Aquí presento una lista de cinco técnicas para centrar el texto en un div mediante CSS.
