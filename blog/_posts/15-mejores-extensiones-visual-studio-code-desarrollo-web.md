@@ -5,7 +5,7 @@ tags:
 permalink: /blog/15-mejores-extensiones-visual-studio-code-desarrollo-web
 ---
 
-# Las 15 mejores extensiones de Visual Studio Code (VSCode 2021) para el desarrollo web
+# Las 15 (+3) mejores extensiones de Visual Studio Code (VSCode 2021) para el desarrollo web
 
 <social-share class="social-share--header" />
 <last-updated custom-value="24/12/2021" />
@@ -120,7 +120,13 @@ Esta extensión usa distintos juegos de colores para facilitar la identificació
 
 > Desde la versión 1.60 ya contamos con esta funcionalidad de manera nativa en Visual Studio Code y dado que no está implementada de manera completamente idéntica a lo que ofrece la extensión, te sugiero que pruebes ambas opciones y elijas la que más te interese. Ten además en cuenta que _Bracket Pair Colorizer 2_ ya no se mantiene, así que es posible que en algún momento debas activarte la funcionalidad nativa. Para habilitar la nueva funcionalidad debemos configurar `"editor.bracketPairColorization.enabled": true`, así que pulsamos `Ctrl+,`, escribimos _bracketPairColorization_ en la caja de búsqueda y marcamos el check de la opción encontrada (_Editor > Bracket Pair Colorization: Enabled_).
 
-## 15+2. Spanish Language Pack for Visual Studio Code (Microsoft)
+## 15+2. Material Icon Theme (Philipp Kief)
+
+Si quieres dar un toque visual diferente al explorador de ficheros, esta extensión ofrece un paquete de iconos alternativos y personalizables que te podría interesar.
+
+[Material Icon Theme (Philipp Kief)](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+
+## 15+3. Spanish Language Pack for Visual Studio Code (Microsoft)
 
 Me gusta hacer uso del inglés en mi día a día como desarrolador de software, así que personalmente prefiero programar en inglés y la versión también en inglés de mis aplicaciones como Visual Studio Code, pero si todavía no quieres dar ese paso, puedes instalarte esta extensión que te permitirá tenerlo completamente personalizado en español.
 
