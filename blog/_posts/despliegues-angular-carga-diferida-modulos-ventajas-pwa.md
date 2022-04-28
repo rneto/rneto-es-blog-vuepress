@@ -23,7 +23,7 @@ dist/
 |- styles.182e3c991344b37810ea.css
 ```
 
-Podemos observar que en el nombre de los ficheros _css_ y _js_ existe una cadena de caracteres alfanuméricos aleatorios, que en realidad es un código hash que se calcula en base al contenido de cada fichero. Es por ello, que cuando realizamos cambios en nuestro código y volvemos a hacer una nueva generación y empaquetado de la aplicación, el código hash de cada fichero puede variar:
+Podemos observar que en el nombre de los ficheros _css_ y _js_ existe una cadena de caracteres alfanuméricos aleatorios, que en realidad es un código hash que se calcula en base al contenido de cada fichero. Es por ello que cuando realizamos cambios en nuestro código y volvemos a hacer una nueva generación y empaquetado de la aplicación, el código hash de cada fichero puede variar:
 
 ```
 dist/
@@ -36,7 +36,7 @@ dist/
 |- styles.55ff9c680cf12d9405cc.css
 ```
 
-Uno de los criterios que determina el número de ficheros en los que se empaquetará nuestra aplicación, tiene relación con una de las [buenas prácticas de Angular](/blog/arquitectura-buenas-practicas-angular/) usada muy habitualmente para optimizar su rendimiento y que consiste en el uso de la [carga diferida](/blog/arquitectura-buenas-practicas-angular/#carga-diferida) de los [módulos de funcionalidades](/blog/arquitectura-buenas-practicas-angular/#feature-modules). Dicha práctica permite que una vez generada y empaquetada nuestra aplicación, nuestro código se fragmente en más ficheros, los cuales se descargarán dinámicamente del servidor según la aplicación vaya haciendo uso de cada módulo en cuestión.
+Uno de los criterios que determina el número de ficheros en los que se empaquetará nuestra aplicación tiene relación con una de las [buenas prácticas de Angular](/blog/arquitectura-buenas-practicas-angular/) usada muy habitualmente para optimizar su rendimiento y que consiste en el uso de la [carga diferida](/blog/arquitectura-buenas-practicas-angular/#carga-diferida) de los [módulos de funcionalidades](/blog/arquitectura-buenas-practicas-angular/#feature-modules). Dicha práctica permite que una vez generada y empaquetada nuestra aplicación, nuestro código se fragmente en más ficheros, los cuales se descargarán dinámicamente del servidor según la aplicación vaya haciendo uso de cada módulo en cuestión.
 
 Dado este comportamiento del sistema de generación de Angular, podríamos preguntarnos:
 
@@ -44,7 +44,11 @@ Dado este comportamiento del sistema de generación de Angular, podríamos pregu
 
 El fichero _index.html_ tiene las referencias a los ficheros principales de la aplicación (según mi ejemplo, _main.*.js_, _polyfills.*.js_, _runtime.*.js_ y _styles.*.css_), los cuales a su vez, cargan dinámicamente el resto de ficheros cuando sea necesario (según mi ejemplo _339.*.js_ y _592.*.js_). Esto implica que si no hemos seguido una estrategia adecuada en cuanto a la configuración del servidor donde hemos publicado nuestra aplicación, es muy probable que en algún momento la aplicación le falle al cliente, bien porque está accediendo a recursos cacheados que ya no son válidos (puede que estemos realizando operaciones que ya no están disponibles) o porque intenta acceder a recursos o ficheros de fragmentos de código que ya no existen (este sería el error típico de _ChunkLoadError: Loading chunk 339 failed._, donde el 339 hace referencia a uno de los ficheros de fragmento de código de mi ejemplo).
 
-Así pues, una sencilla medida a tomar para evitar este problema, consiste en deshabilitar la caché del fichero _index.html_ de nuestra aplicación, agregándole el encabezado HTTP **_Cache-Control_** con el valor **_no-store, max-age=0_**.
+Así pues, una sencilla medida a tomar para evitar este problema, consiste en deshabilitar la caché del fichero _index.html_ de nuestra aplicación agregándole el encabezado HTTP **_Cache-Control_** con el valor **_no-store, max-age=0_**.
+
+> ¿Por qué _no-store_ en lugar de _no-cache_? Con _no-store_, el recurso no se almacena en ningún lugar. Con _no-cache_, el recurso puede almacenarse, pero el almacén debe validarse con el servidor antes de usarlo.
+
+> ¿Por qué _max-age=0_? Fuerza a que se borren las respuestas de caché válidas preexistentes (_no-store_ no lo hace).
 
 > Si estás usando Internet Information Services, te recomiendo que le eches un vistazo a mi artículo sobre [Desplegar una aplicación Angular en Internet Information Services](/blog/desplegar-angular-internet-information-services/) donde encontrarás cómo adaptar tu fichero _web.config_ para añadir la cabecera personalizada _Cache-Control_ al fichero _index.html_.
 
@@ -124,7 +128,7 @@ export class VersionUpdateService {
       });
 
       // 2. Comprobación
-      const ap ComprobaciónpIsStable$ = app.isStable.pipe(
+      const appIsStable$ = app.isStable.pipe(
         first((isStable) => isStable === true)
       );
       const checkInterval$ = interval(10 * 60 * 1000);
