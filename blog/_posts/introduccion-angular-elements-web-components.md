@@ -25,7 +25,7 @@ Los componentes web están compuestos por un conjunto de APIs que permiten crear
 
 - **_Custom elements_**: es la especificación usada para diseñar y definir los nuevos tipos de elementos DOM personalizados encapsulando contenido HTML, CSS y JavaScript.
 
-- **Shadow DOM**: es la especificación JavaScript que define cómo se usan los estilos y el marcado de etiquetas de manera privada (ocultos en la sombra) del documento DOM principal.
+- **_Shadow DOM_**: es la especificación JavaScript que define cómo se usan los estilos y el marcado de etiquetas de manera privada (ocultos en la sombra) del documento DOM principal.
 
 - **_ES Modules_**: es la especificación que define la sintaxis de los módulos JavaScript, así como la reutilización de documentos JavaScript mediante la exportación de objectos, funciones o variables desde un archivo JavaScript.
 
