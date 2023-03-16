@@ -3,7 +3,7 @@ http://rneto.es/*   https://rafaelneto.dev/:splat    301!
 /		https://rafaelneto.dev/    301!
 # /blog/5-mejores-extensiones-gratuitas-visual-studio/		https://rafaelneto.dev/blog/5-mejores-extensiones-gratuitas-visual-studio/    301!
 # /blog/cambiar-informacion-autor-git/		https://rafaelneto.dev/blog/cambiar-informacion-autor-git/    301!
-# /blog/15-mejores-extensiones-visual-studio-code-desarrollo-web/			https://rafaelneto.dev/blog/15-mejores-extensiones-visual-studio-code-desarrollo-web/    301!
+/blog/15-mejores-extensiones-visual-studio-code-desarrollo-web/			https://rafaelneto.dev/blog/15-mejores-extensiones-visual-studio-code-desarrollo-web/    301!
 # /blog/arquitectura-buenas-practicas-angular/		https://rafaelneto.dev/blog/arquitectura-buenas-practicas-angular/    301!
 # /blog/compartir-sesion-aplicaciones-asp-net/		https://rafaelneto.dev/blog/compartir-sesion-aplicaciones-asp-net/    301!
 /blog/cinco-formas-centrar-texto-div-css/		https://rafaelneto.dev/blog/cinco-formas-centrar-texto-div-css/    301!
