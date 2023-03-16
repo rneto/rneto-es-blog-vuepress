@@ -32,8 +32,8 @@ http://rneto.es/*   https://rafaelneto.dev/:splat    301!
 # /blog/usar-github-actions-automatizar-generacion-despliegue-blog-estatico-vuepress-github-pages/		https://rafaelneto.dev/blog/usar-github-actions-automatizar-generacion-despliegue-blog-estatico-vuepress-github-pages/    301!
 # /blog/usar-webpack-4-transformar-empaquetar-recursos-aplicacion-web/		https://rafaelneto.dev/blog/usar-webpack-4-transformar-empaquetar-recursos-aplicacion-web/    301!
 # /blog/por-que-usar-angular-material-design/		https://rafaelneto.dev/blog/por-que-usar-angular-material-design/    301!
-# /blog/		https://rafaelneto.dev/blog/    301!
-# /tag/		https://rafaelneto.dev/tag/    301!
+/blog/		https://rafaelneto.dev/blog/    301!
+/tag/		https://rafaelneto.dev/tag/    301!
 # /tag/VisualStudio/		https://rafaelneto.dev/tag/VisualStudio/    301!
 # /tag/Git/		https://rafaelneto.dev/tag/Git/    301!
 # /tag/VisualStudioCode/		https://rafaelneto.dev/tag/VisualStudioCode/    301!
@@ -65,7 +65,7 @@ http://rneto.es/*   https://rafaelneto.dev/:splat    301!
 # /tag/WebDeploy/		https://rafaelneto.dev/tag/WebDeploy/    301!
 # /tag/MaterialDesign/		https://rafaelneto.dev/tag/MaterialDesign/    301!
 # /tag/TailwindCSS/		https://rafaelneto.dev/tag/TailwindCSS/    301!
-# /tag/Algoritmo/		https://rafaelneto.dev/tag/Algoritmo/    301!
+/tag/Algoritmo/		https://rafaelneto.dev/tag/Algoritmo/    301!
 # /tag/HTTPServer/		https://rafaelneto.dev/tag/HTTPServer/    301!
 # /tag/GitHubActions/		https://rafaelneto.dev/tag/GitHubActions/    301!
 # /blog/page/2/		https://rafaelneto.dev/blog/page/2/    301!
