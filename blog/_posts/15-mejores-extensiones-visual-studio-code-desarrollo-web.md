@@ -1,11 +1,11 @@
 ---
-date: 2020-9-8
+date: 2023-03-18
 tags:
   - VisualStudioCode
 permalink: /blog/15-mejores-extensiones-visual-studio-code-desarrollo-web
 ---
 
-# Las 15 (+3) mejores extensiones de Visual Studio Code (VSCode 2021) para el desarrollo web
+# Las 15 mejores extensiones de Visual Studio Code (VSCode 2023) para el desarrollo web
 
 <social-share class="social-share--header" />
 <last-updated custom-value="24/12/2021" />
