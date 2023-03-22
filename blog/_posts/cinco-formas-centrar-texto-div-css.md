@@ -4,6 +4,7 @@ tags:
   - CSS
   - HTML
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/cinco-formas-centrar-texto-div-css/
 ---
 
 # Cinco formas de centrar el texto en un div con CSS
