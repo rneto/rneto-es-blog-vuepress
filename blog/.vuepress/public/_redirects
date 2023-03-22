@@ -7,7 +7,7 @@ http://rneto.es/*   https://rafaelneto.dev/:splat    301!
 # /blog/arquitectura-buenas-practicas-angular/		https://rafaelneto.dev/blog/arquitectura-buenas-practicas-angular/    301!
 # /blog/compartir-sesion-aplicaciones-asp-net/		https://rafaelneto.dev/blog/compartir-sesion-aplicaciones-asp-net/    301!
 /blog/cinco-formas-centrar-texto-div-css/		https://rafaelneto.dev/blog/cinco-formas-centrar-texto-div-css/    301!
-# /blog/configurar-variables-entorno-package-json-windows/		https://rafaelneto.dev/blog/configurar-variables-entorno-package-json-windows/    301!
+/blog/configurar-variables-entorno-package-json-windows/		https://rafaelneto.dev/blog/configurar-variables-entorno-package-json-windows/    301!
 # /blog/configurar-usuario-git/		https://rafaelneto.dev/blog/configurar-usuario-git/    301!
 # /blog/configurar-generar-angular-multiples-entornos-personalizados/		https://rafaelneto.dev/blog/configurar-generar-angular-multiples-entornos-personalizados/    301!
 # /blog/crear-blog-estatico-vuepress/		https://rafaelneto.dev/blog/crear-blog-estatico-vuepress/    301!
@@ -34,47 +34,47 @@ http://rneto.es/*   https://rafaelneto.dev/:splat    301!
 # /blog/por-que-usar-angular-material-design/		https://rafaelneto.dev/blog/por-que-usar-angular-material-design/    301!
 /blog/		https://rafaelneto.dev/blog/    301!
 /tag/		https://rafaelneto.dev/tag/    301!
-# /tag/VisualStudio/		https://rafaelneto.dev/tag/VisualStudio/    301!
-# /tag/Git/		https://rafaelneto.dev/tag/Git/    301!
-# /tag/VisualStudioCode/		https://rafaelneto.dev/tag/VisualStudioCode/    301!
-# /tag/Angular/		https://rafaelneto.dev/tag/Angular/    301!
-# /tag/ASPNET/		https://rafaelneto.dev/tag/ASPNET/    301!
-# /tag/SQLServer/		https://rafaelneto.dev/tag/SQLServer/    301!
-# /tag/CSS/		https://rafaelneto.dev/tag/CSS/    301!
-# /tag/HTML/		https://rafaelneto.dev/tag/HTML/    301!
-# /tag/Nodejs/		https://rafaelneto.dev/tag/Nodejs/    301!
-# /tag/npm/		https://rafaelneto.dev/tag/npm/    301!
-# /tag/VuePress/		https://rafaelneto.dev/tag/VuePress/    301!
-# /tag/Vuejs/		https://rafaelneto.dev/tag/Vuejs/    301!
-# /tag/blog/		https://rafaelneto.dev/tag/blog/    301!
-# /tag/AngularMaterial/		https://rafaelneto.dev/tag/AngularMaterial/    301!
-# /tag/Sass/		https://rafaelneto.dev/tag/Sass/    301!
-# /tag/TypeScript/		https://rafaelneto.dev/tag/TypeScript/    301!
-# /tag/PatronDeDise%C3%B1o/		https://rafaelneto.dev/tag/PatronDeDise%C3%B1o/    301!
-# /tag/InternetInformationServices/		https://rafaelneto.dev/tag/InternetInformationServices/    301!
-# /tag/PWA/		https://rafaelneto.dev/tag/PWA/    301!
-# /tag/RxJs/		https://rafaelneto.dev/tag/RxJs/    301!
-# /tag/nvm/		https://rafaelneto.dev/tag/nvm/    301!
-# /tag/AngularElements/		https://rafaelneto.dev/tag/AngularElements/    301!
-# /tag/WebComponents/		https://rafaelneto.dev/tag/WebComponents/    301!
-# /tag/webpack/		https://rafaelneto.dev/tag/webpack/    301!
-# /tag/JavaScript/		https://rafaelneto.dev/tag/JavaScript/    301!
-# /tag/ES2015/		https://rafaelneto.dev/tag/ES2015/    301!
-# /tag/NETCore/		https://rafaelneto.dev/tag/NETCore/    301!
-# /tag/IIS/		https://rafaelneto.dev/tag/IIS/    301!
-# /tag/WebDeploy/		https://rafaelneto.dev/tag/WebDeploy/    301!
-# /tag/MaterialDesign/		https://rafaelneto.dev/tag/MaterialDesign/    301!
-# /tag/TailwindCSS/		https://rafaelneto.dev/tag/TailwindCSS/    301!
+/tag/VisualStudio/		https://rafaelneto.dev/tag/VisualStudio/    301!
+/tag/Git/		https://rafaelneto.dev/tag/Git/    301!
+/tag/VisualStudioCode/		https://rafaelneto.dev/tag/VisualStudioCode/    301!
+/tag/Angular/		https://rafaelneto.dev/tag/Angular/    301!
+/tag/ASPNET/		https://rafaelneto.dev/tag/ASPNET/    301!
+/tag/SQLServer/		https://rafaelneto.dev/tag/SQLServer/    301!
+/tag/CSS/		https://rafaelneto.dev/tag/CSS/    301!
+/tag/HTML/		https://rafaelneto.dev/tag/HTML/    301!
+/tag/Nodejs/		https://rafaelneto.dev/tag/Nodejs/    301!
+/tag/npm/		https://rafaelneto.dev/tag/npm/    301!
+/tag/VuePress/		https://rafaelneto.dev/tag/VuePress/    301!
+/tag/Vuejs/		https://rafaelneto.dev/tag/Vuejs/    301!
+/tag/blog/		https://rafaelneto.dev/tag/blog/    301!
+/tag/AngularMaterial/		https://rafaelneto.dev/tag/AngularMaterial/    301!
+/tag/Sass/		https://rafaelneto.dev/tag/Sass/    301!
+/tag/TypeScript/		https://rafaelneto.dev/tag/TypeScript/    301!
+/tag/PatronDeDise%C3%B1o/		https://rafaelneto.dev/tag/PatronDeDise%C3%B1o/    301!
+/tag/InternetInformationServices/		https://rafaelneto.dev/tag/InternetInformationServices/    301!
+/tag/PWA/		https://rafaelneto.dev/tag/PWA/    301!
+/tag/RxJs/		https://rafaelneto.dev/tag/RxJs/    301!
+/tag/nvm/		https://rafaelneto.dev/tag/nvm/    301!
+/tag/AngularElements/		https://rafaelneto.dev/tag/AngularElements/    301!
+/tag/WebComponents/		https://rafaelneto.dev/tag/WebComponents/    301!
+/tag/webpack/		https://rafaelneto.dev/tag/webpack/    301!
+/tag/JavaScript/		https://rafaelneto.dev/tag/JavaScript/    301!
+/tag/ES2015/		https://rafaelneto.dev/tag/ES2015/    301!
+/tag/NETCore/		https://rafaelneto.dev/tag/NETCore/    301!
+/tag/IIS/		https://rafaelneto.dev/tag/IIS/    301!
+/tag/WebDeploy/		https://rafaelneto.dev/tag/WebDeploy/    301!
+/tag/MaterialDesign/		https://rafaelneto.dev/tag/MaterialDesign/    301!
+/tag/TailwindCSS/		https://rafaelneto.dev/tag/TailwindCSS/    301!
 /tag/Algoritmo/		https://rafaelneto.dev/tag/Algoritmo/    301!
-# /tag/HTTPServer/		https://rafaelneto.dev/tag/HTTPServer/    301!
-# /tag/GitHubActions/		https://rafaelneto.dev/tag/GitHubActions/    301!
-# /blog/page/2/		https://rafaelneto.dev/blog/page/2/    301!
-# /blog/page/3/		https://rafaelneto.dev/blog/page/3/    301!
-# /blog/page/4/		https://rafaelneto.dev/blog/page/4/    301!
-# /blog/page/5/		https://rafaelneto.dev/blog/page/5/    301!
-# /blog/page/6/		https://rafaelneto.dev/blog/page/6/    301!
-# /blog/page/7/		https://rafaelneto.dev/blog/page/7/    301!
-# /tag/Angular/page/2/		https://rafaelneto.dev/tag/Angular/page/2/    301!
-# /tag/Angular/page/3/		https://rafaelneto.dev/tag/Angular/page/3/    301!
-# /tag/npm/page/2/		https://rafaelneto.dev/tag/npm/page/2/    301!
+/tag/HTTPServer/		https://rafaelneto.dev/tag/HTTPServer/    301!
+/tag/GitHubActions/		https://rafaelneto.dev/tag/GitHubActions/    301!
+/blog/page/2/		https://rafaelneto.dev/blog/page/2/    301!
+/blog/page/3/		https://rafaelneto.dev/blog/page/3/    301!
+/blog/page/4/		https://rafaelneto.dev/blog/page/4/    301!
+/blog/page/5/		https://rafaelneto.dev/blog/page/5/    301!
+/blog/page/6/		https://rafaelneto.dev/blog/page/6/    301!
+/blog/page/7/		https://rafaelneto.dev/blog/page/7/    301!
+/tag/Angular/page/2/		https://rafaelneto.dev/tag/Angular/page/2/    301!
+/tag/Angular/page/3/		https://rafaelneto.dev/tag/Angular/page/3/    301!
+/tag/npm/page/2/		https://rafaelneto.dev/tag/npm/page/2/    301!
 /404.html		https://rafaelneto.dev/404.html    301!
