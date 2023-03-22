@@ -3,7 +3,7 @@ date: 2023-03-18
 tags:
   - VisualStudioCode
 permalink: /blog/15-mejores-extensiones-visual-studio-code-desarrollo-web
-canonical: https://rafaelneto.dev/blog/15-mejores-extensiones-visual-studio-code-desarrollo-web/
+canonicalUrl: https://rafaelneto.dev/blog/15-mejores-extensiones-visual-studio-code-desarrollo-web/
 ---
 
 # Las 15 mejores extensiones de Visual Studio Code (VSCode 2023) para el desarrollo web
