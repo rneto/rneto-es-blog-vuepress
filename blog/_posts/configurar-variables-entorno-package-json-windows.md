@@ -4,6 +4,7 @@ tags:
   - Nodejs
   - npm
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/configurar-variables-entorno-package-json-windows/
 ---
 
 # Configurar el uso de variables de entorno en package.json para Windows
