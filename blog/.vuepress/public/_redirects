@@ -16,7 +16,7 @@ http://rneto.es/*   https://rafaelneto.dev/:splat    301!
 # /blog/desplegar-angular-internet-information-services/		https://rafaelneto.dev/blog/desplegar-angular-internet-information-services/    301!
 # /blog/despliegues-angular-carga-diferida-modulos-ventajas-pwa/		https://rafaelneto.dev/blog/despliegues-angular-carga-diferida-modulos-ventajas-pwa/    301!
 # /blog/gestionar-estado-angular-rxjs-behaviorsubject-servicios-datos-observables/		https://rafaelneto.dev/blog/gestionar-estado-angular-rxjs-behaviorsubject-servicios-datos-observables/    301!
-# /blog/instalar-multiples-versiones-nodejs-windows/		https://rafaelneto.dev/blog/instalar-multiples-versiones-nodejs-windows/    301!
+/blog/instalar-multiples-versiones-nodejs-windows/		https://rafaelneto.dev/blog/instalar-multiples-versiones-nodejs-windows/    301!
 # /blog/instalar-angular-material/		https://rafaelneto.dev/blog/instalar-angular-material/    301!
 # /blog/introduccion-angular-elements-web-components/		https://rafaelneto.dev/blog/introduccion-angular-elements-web-components/    301!
 # /blog/optimizar-angular-analisis-paquetes-npm-webpack/		https://rafaelneto.dev/blog/optimizar-angular-analisis-paquetes-npm-webpack/    301!
