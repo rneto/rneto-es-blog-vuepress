@@ -23,7 +23,7 @@ http://rneto.es/*   https://rafaelneto.dev/:splat    301!
 # /blog/optimizar-bucles-javascript/		https://rafaelneto.dev/blog/optimizar-bucles-javascript/    301!
 # /blog/podicoteo-ordenacion-propiedades-css/		https://rafaelneto.dev/blog/podicoteo-ordenacion-propiedades-css/    301!
 # /blog/propiedad-css-box-sizing/		https://rafaelneto.dev/blog/propiedad-css-box-sizing/    301!
-/blog/publicar-net-core-web-deploy-visual-studio-entornos-implementacion/		https://rafaelneto.dev/blog/publicar-net-core-web-deploy-visual-studio-entornos-implementacion/    301!
+# /blog/publicar-net-core-web-deploy-visual-studio-entornos-implementacion/		https://rafaelneto.dev/blog/publicar-net-core-web-deploy-visual-studio-entornos-implementacion/    301!
 # /blog/integrar-tailwind-css-angular-material/		https://rafaelneto.dev/blog/integrar-tailwind-css-angular-material/    301!
 # /blog/quicksort-bridge-typescript/		https://rafaelneto.dev/blog/quicksort-bridge-typescript/    301!
 # /blog/servir-archivos-html-estaticos-localmente-nodejs-http-server/		https://rafaelneto.dev/blog/servir-archivos-html-estaticos-localmente-nodejs-http-server/    301!
