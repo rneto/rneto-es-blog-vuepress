@@ -5,6 +5,7 @@ tags:
   - nvm
   - npm
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/instalar-multiples-versiones-nodejs-windows/
 ---
 
 # Instalar múltiples versiones de Node.js en Windows
