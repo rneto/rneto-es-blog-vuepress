@@ -4,6 +4,7 @@ tags:
   - TypeScript
   - PatronDeDiseño
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/decoradores-typescript/
 ---
 
 # Decoradores en TypeScript

@@ -4,6 +4,7 @@ tags:
   - VuePress
   - GitHubActions
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/usar-github-actions-automatizar-generacion-despliegue-blog-estatico-vuepress-github-pages/
 ---
 
 # Usar GitHub Actions para automatizar la generación y despliegue de un blog estático creado con VuePress en GitHub Pages

@@ -5,6 +5,7 @@ tags:
   - MaterialDesign
   - AngularMaterial
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/por-que-usar-angular-material-design/
 ---
 
 # ¿Por qué usar Angular y Material Design?

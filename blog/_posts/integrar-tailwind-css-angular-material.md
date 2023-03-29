@@ -6,6 +6,7 @@ tags:
   - MaterialDesign
   - TailwindCSS
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/integrar-tailwind-css-angular-material/
 ---
 
 # Integrar Tailwind CSS en Angular y combinarlo con Material

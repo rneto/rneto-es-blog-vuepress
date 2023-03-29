@@ -3,6 +3,7 @@ date: 2020-12-19
 tags:
   - Angular
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/arquitectura-buenas-practicas-angular/
 ---
 
 # Arquitectura y buenas prácticas para una aplicación basada en Angular

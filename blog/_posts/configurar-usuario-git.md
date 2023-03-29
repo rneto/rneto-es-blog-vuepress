@@ -3,6 +3,7 @@ date: 2020-5-14
 tags:
   - Git
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/configurar-usuario-git/
 ---
 
 # Configurar el usuario en Git

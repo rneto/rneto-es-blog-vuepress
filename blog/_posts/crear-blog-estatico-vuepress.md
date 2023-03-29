@@ -5,6 +5,7 @@ tags:
   - Vuejs
   - blog
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/crear-blog-estatico-vuepress/
 ---
 
 # Crear un blog estático con VuePress

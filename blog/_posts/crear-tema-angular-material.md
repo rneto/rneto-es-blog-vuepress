@@ -5,6 +5,7 @@ tags:
   - AngularMaterial
   - Sass
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/crear-tema-angular-material/
 ---
 
 # Crear un tema para Angular Material

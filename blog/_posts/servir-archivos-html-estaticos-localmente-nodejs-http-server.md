@@ -5,6 +5,7 @@ tags:
   - npm
   - HTTPServer
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/servir-archivos-html-estaticos-localmente-nodejs-http-server/
 ---
 
 # Servir archivos HTML estáticos localmente con Node.js y http-server

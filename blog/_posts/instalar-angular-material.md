@@ -4,6 +4,7 @@ tags:
   - Angular
   - AngularMaterial
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/instalar-angular-material/
 ---
 
 # Instalar Angular Material

@@ -4,6 +4,7 @@ tags:
   - npm
   - VisualStudio
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/usar-tareas-comandos-npm-visual-studio/
 ---
 
 # Usar tareas y comandos npm en Visual Studio (2019, 2017, 2015)

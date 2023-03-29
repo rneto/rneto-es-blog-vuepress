@@ -4,6 +4,7 @@ tags:
   - Angular
   - InternetInformationServices
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/desplegar-angular-internet-information-services/
 ---
 
 # Desplegar una aplicación Angular en Internet Information Services

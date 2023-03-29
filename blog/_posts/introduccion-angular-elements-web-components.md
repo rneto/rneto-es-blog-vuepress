@@ -5,6 +5,7 @@ tags:
   - AngularElements
   - WebComponents
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/introduccion-angular-elements-web-components/
 ---
 
 # Introducción a Angular Elements y Web Components
@@ -190,7 +191,7 @@ const package = require('./package.json');
   files = files.filter(function (value, index, arr) {
     return fs.pathExistsSync(value);
   });
-  
+
   const dir = `./dist/elements/${package.version}`;
 
   await fs.ensureDir(dir);

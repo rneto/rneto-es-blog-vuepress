@@ -3,6 +3,7 @@ date: 2021-6-12
 tags:
   - VisualStudio
 permalink: /blog/5-mejores-extensiones-gratuitas-visual-studio
+canonicalUrl: https://rafaelneto.dev/blog/5-mejores-extensiones-gratuitas-visual-studio/
 ---
 
 # Las 5 mejores extensiones gratuitas para Visual Studio

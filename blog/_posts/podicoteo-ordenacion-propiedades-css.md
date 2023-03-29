@@ -3,6 +3,7 @@ date: 2020-12-1
 tags:
   - CSS
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/podicoteo-ordenacion-propiedades-css/
 ---
 
 # _PODICOTEO_ para la ordenación de las propiedades CSS

@@ -3,6 +3,7 @@ date: 2021-03-08
 tags:
   - TailwindCSS
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/tailwind-css/
 ---
 
 # ¿Qué es Tailwind CSS?

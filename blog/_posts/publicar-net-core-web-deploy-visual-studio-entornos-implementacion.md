@@ -7,6 +7,7 @@ tags:
   - WebDeploy
   - VisualStudio
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/publicar-net-core-web-deploy-visual-studio-entornos-implementacion/
 ---
 
 # Publicar aplicaciones ASP.NET Core en IIS con Web Deploy mediante perfiles de publicación de Visual Studio y diferenciando entornos de implementación

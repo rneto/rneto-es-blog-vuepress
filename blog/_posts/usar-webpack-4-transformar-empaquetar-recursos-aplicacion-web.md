@@ -5,6 +5,7 @@ tags:
   - npm
   - webpack
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/usar-webpack-4-transformar-empaquetar-recursos-aplicacion-web/
 ---
 
 # Usar Webpack 4 para transformar y empaquetar recursos de una aplicación web

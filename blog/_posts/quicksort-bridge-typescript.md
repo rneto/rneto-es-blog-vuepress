@@ -5,6 +5,7 @@ tags:
   - TypeScript
   - PatronDeDiseño
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/quicksort-bridge-typescript/
 ---
 
 # Implementaciones del algoritmo QuickSort y uso del patrón Bridge con TypeScript

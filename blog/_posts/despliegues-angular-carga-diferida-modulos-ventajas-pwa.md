@@ -4,6 +4,7 @@ tags:
   - Angular
   - PWA
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/despliegues-angular-carga-diferida-modulos-ventajas-pwa/
 ---
 
 # Sobre los despliegues con Angular, la carga diferida de módulos y las ventajas de una PWA

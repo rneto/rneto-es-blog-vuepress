@@ -3,6 +3,7 @@ date: 2020-12-23
 tags:
   - CSS
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/propiedad-css-box-sizing/
 ---
 
 # Sobre la propiedad CSS _box-sizing_

@@ -4,6 +4,7 @@ tags:
   - ASPNET
   - SQLServer
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/compartir-sesion-aplicaciones-asp-net/
 ---
 
 # Compartir la sesión entre aplicaciones web ASP.NET

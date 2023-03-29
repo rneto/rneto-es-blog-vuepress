@@ -4,6 +4,7 @@ tags:
   - JavaScript
   - ES2015
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/optimizar-bucles-javascript/
 ---
 
 # Optimizar bucles en JavaScript

@@ -3,6 +3,7 @@ date: 2020-6-5
 tags:
   - Git
 permalink: /blog/:slug
+canonicalUrl: https://rafaelneto.dev/blog/cambiar-informacion-autor-git/
 ---
 
 # Cambiar la información del autor en Git
