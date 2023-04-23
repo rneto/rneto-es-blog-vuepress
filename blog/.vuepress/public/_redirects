@@ -60,7 +60,7 @@ http://rneto.es/*   https://rafaelneto.dev/:splat    301!
 /tag/webpack/		https://rafaelneto.dev/tag/webpack/    301!
 /tag/JavaScript/		https://rafaelneto.dev/tag/JavaScript/    301!
 /tag/ES2015/		https://rafaelneto.dev/tag/ES2015/    301!
-/tag/NETCore/		https://rafaelneto.dev/tag/NETCore/    301!
+/tag/NETCore/		https://rafaelneto.dev/tag/ASPNETCore/    301!
 /tag/IIS/		https://rafaelneto.dev/tag/IIS/    301!
 /tag/WebDeploy/		https://rafaelneto.dev/tag/WebDeploy/    301!
 /tag/MaterialDesign/		https://rafaelneto.dev/tag/MaterialDesign/    301!
