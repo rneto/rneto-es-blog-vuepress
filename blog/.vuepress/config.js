@@ -8,7 +8,9 @@ module.exports = {
     ['link', { rel: 'apple-touch-icon', href: '/images/icons/icon-152x152.png' }],
     ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#8a278c' }],
     ['meta', { name: 'msapplication-TileImage', content: '/images/icons/icon-144x144' }],
-    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
+    ['script', { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-S8PRT356B6' }],
+    ['script', {}, [ "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-S8PRT356B6', { 'anonymize_ip': true });" ]]
   ],
   title: 'Rafael Neto',
   description: 'Apuntes de un programador Full Stack, JavaScript, HTML, CSS, .NET',
@@ -109,7 +111,7 @@ module.exports = {
       }
     ],
     [
-      '@vuepress/google-analytics',
+      '@NO-vuepress/google-analytics',
       {
         'ga': 'UA-164903805-1'
       }
