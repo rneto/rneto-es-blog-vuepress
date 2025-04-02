@@ -1,5 +1,6 @@
 ---
 title: Sobre mí
+canonicalUrl: https://rafaelneto.dev/
 ---
 
 <h1>Hola, soy Rafael Neto</h1>
