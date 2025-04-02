@@ -78,4 +78,3 @@ http://rneto.es/*   https://rafaelneto.dev/:splat    301!
 /tag/Angular/page/3/		https://rafaelneto.dev/tag/Angular/page/3/    301!
 /tag/npm/page/2/		https://rafaelneto.dev/tag/npm/page/2/    301!
 /404.html		https://rafaelneto.dev/404.html    301!
-/index.html		https://rafaelneto.dev/index.html    301!
